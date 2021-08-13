@@ -2,7 +2,7 @@
 
 ### Steps to Starting in `Replit.com`
 
-1.  Create an account at [Replit](Replit.com)
+1.  Create an account at [Replit](https://replit.com)
 
 2.  Send your username and email address to my email account:
 
