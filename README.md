@@ -2,19 +2,21 @@
 
 ### Steps to Starting in `Replit.com`
 
-1.  Create an account at Replit.com
+1.  Create an account at [Replit](Replit.com)
 
 2.  Send your username and email address to my email account:
 
     `subject: replit account`
 
-    in body:
+    in body of email simply put:
 
-    `username: <...>`
+    `username: <your username>`
 
-    `email: <.....>@<domain>.<tld>`
+    `email: <your email>@<domain>.<tld>`
 
-3.  Create a python repl
+3.  Create a `python` repl
+
+    ![Create python repl](/assets/images/replify.gif)
 
 
 
