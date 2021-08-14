@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Creating a repl"
+title: "repl"
 date: 2021-08-26 hh:mm:ss -0000
 categories: replit.com repl setup
 ---
