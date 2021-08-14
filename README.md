@@ -18,6 +18,9 @@
 
     ![Create python repl](/assets/images/replify.gif)
 
+4.  Testing better image
+
+    <img width="1200" height="400" src="assets/images/replify.gif">
 
 
 
