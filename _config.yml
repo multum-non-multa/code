@@ -6,7 +6,8 @@ logo: /assets/images/logo.png
 author: multum-non-multa
   # name: "multum-non-multa"
   # email: nomailtaken@email.com
-# description: > # this means to ignore newlines until "show_excerpts:"
+description: > # this means to ignore newlines until "show_excerpts:"
+  OK?
 
 
 show_excerpts: false # set to true to show excerpts on the homepage
