@@ -6,4 +6,4 @@ permalink: /about/
 
 ## About
 
-About page ...
+These pages are intended to help set up a Python environment and follow coding practices for its code.
