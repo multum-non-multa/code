@@ -1,6 +1,7 @@
 ---
 layout: post
 title: "Creating a repl"
+show_excerpts: "this is a test excerpt"
 ---
 
 ## Steps to Starting in Replit.com
