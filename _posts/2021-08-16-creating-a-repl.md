@@ -21,6 +21,17 @@ title: "Creating a repl"
 
     ![Create python repl](/code/assets/images/replify.gif)
 
+4.  In the `main.py` file add:
+
+```python
+
+print("Hello, World.")
+
+```
+
+5.  Run it to see print out in the console window.
+
+
 
 
 
