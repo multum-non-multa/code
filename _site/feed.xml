@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-16T16:16:18-05:00</updated><id>/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Creating a repl</title><link href="/2021/08/16/creating-a-repl.html" rel="alternate" type="text/html" title="Creating a repl" /><published>2021-08-16T00:00:00-05:00</published><updated>2021-08-16T00:00:00-05:00</updated><id>/2021/08/16/creating-a-repl</id><content type="html" xml:base="/2021/08/16/creating-a-repl.html">&lt;h2 id=&quot;steps-to-starting-in-replitcom&quot;&gt;Steps to Starting in Replit.com&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2021-08-16T16:20:13-05:00</updated><id>/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Creating a repl</title><link href="/2021/08/16/creating-a-repl.html" rel="alternate" type="text/html" title="Creating a repl" /><published>2021-08-16T00:00:00-05:00</published><updated>2021-08-16T00:00:00-05:00</updated><id>/2021/08/16/creating-a-repl</id><content type="html" xml:base="/2021/08/16/creating-a-repl.html">&lt;h2 id=&quot;steps-to-starting-in-replitcom&quot;&gt;Steps to Starting in Replit.com&lt;/h2&gt;
 
 &lt;ol&gt;
   &lt;li&gt;
@@ -20,4 +20,12 @@
 
     &lt;p&gt;&lt;img src=&quot;/assets/images/replify.gif&quot; alt=&quot;Create python repl&quot; /&gt;&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Steps to Starting in Replit.com</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Steps to Starting in Replit.com</summary></entry><entry><title type="html">Testing base url</title><link href="/2021/08/13/testing.html" rel="alternate" type="text/html" title="Testing base url" /><published>2021-08-13T00:00:00-05:00</published><updated>2021-08-13T00:00:00-05:00</updated><id>/2021/08/13/testing</id><content type="html" xml:base="/2021/08/13/testing.html">&lt;h2 id=&quot;i-am-just-testing-here&quot;&gt;I am just testing here&lt;/h2&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;what_is_base&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;pass&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;and testing styling …&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">I am just testing here</summary></entry></feed>
