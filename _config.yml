@@ -3,7 +3,7 @@ theme: minima
 # markdown: kramdown
 logo: /assets/images/logo.png
 
-baseurl: "/code"
+baseurl: "/code/"
 
 author: multum-non-multa
   # name: "multum-non-multa"
