@@ -1,3 +1,3 @@
 ## Readme
 
-[Module 00 - Creating a Repl](/00-createrepl)
+[Module 00 - Creating a Repl](/code/00-createrepl)
