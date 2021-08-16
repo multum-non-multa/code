@@ -1,7 +1,6 @@
 ---
 layout: post
 title: "Creating a repl"
-categories: Replit setup
 ---
 
 ## Steps to Starting in Replit.com
