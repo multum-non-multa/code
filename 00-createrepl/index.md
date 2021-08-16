@@ -20,7 +20,7 @@ permalink: /00-createrepl/
 
 3.  Create a `python` repl
 
-    ![Create python repl](/assets/images/replify.gif)
+    ![Create python repl](/code/assets/images/replify.gif)
 
 
 
