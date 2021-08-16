@@ -1,17 +1,21 @@
 title: Code
 theme: minima
-markdown: kramdown
+# markdown: kramdown
 logo: /assets/images/logo.png
-author:
-  name: multum-non-multa
-  # email: your-email@domain.com
-description: > # this means to ignore newlines until "show_excerpts:"
-  Just for coding ...
+
+author: multum-non-multa
+  # name: "multum-non-multa"
+  # email: nomailtaken@email.com
+# description: > # this means to ignore newlines until "show_excerpts:"
+
+
 show_excerpts: false # set to true to show excerpts on the homepage
+
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this
 minima:
   date_format: "%b %-d, %Y"
+
   # generate social links in footer
   social_links:
     github:  multum-non-multa
@@ -50,7 +54,6 @@ minima:
 # - about.md
 
 # Build settings
-# theme up there ^
 
 # plugins:
 #  - jekyll-feed

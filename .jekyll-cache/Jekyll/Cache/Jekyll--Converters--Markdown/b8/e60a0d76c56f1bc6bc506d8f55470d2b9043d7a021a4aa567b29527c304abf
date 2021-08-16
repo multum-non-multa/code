@@ -1,0 +1,25 @@
+I"^<h2 id="steps-to-starting-in-replitcom">Steps to Starting in <code class="language-plaintext highlighter-rouge">Replit.com</code></h2>
+
+<ol>
+  <li>
+    <p>Create an account at <a href="https://replit.com">Replit</a></p>
+  </li>
+  <li>
+    <p>Send your username and email address to my email account:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">subject: replit account</code></p>
+
+    <p>in body of email simply put:</p>
+
+    <p><code class="language-plaintext highlighter-rouge">username: &lt;your username&gt;</code></p>
+
+    <p><code class="language-plaintext highlighter-rouge">email: &lt;your email&gt;@&lt;domain&gt;.&lt;tld&gt;</code></p>
+  </li>
+  <li>
+    <p>Create a <code class="language-plaintext highlighter-rouge">python</code> repl</p>
+
+    <p><img src="/assets/images/replify.gif" alt="Create python repl" /></p>
+  </li>
+</ol>
+
+:ET
