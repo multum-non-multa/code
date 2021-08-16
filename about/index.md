@@ -4,4 +4,4 @@ title: "About"
 permalink: /about/
 ---
 
-These pages are intended to help set up a Python environment and follow coding practices for its code.
+If you don't know why you're here, you probably shouldn't be.
