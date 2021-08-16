@@ -3,6 +3,8 @@ theme: minima
 # markdown: kramdown
 logo: /assets/images/logo.png
 
+baseurl: "/code"
+
 author: multum-non-multa
   # name: "multum-non-multa"
   # email: nomailtaken@email.com
@@ -55,5 +57,6 @@ minima:
 # Build settings
 
 # plugins:
-#  - jekyll-feed
-#  - jekyll-seo-tag
+# - jekyll-asset-path-plugin
+# - jekyll-feed
+# - jekyll-seo-tag
