@@ -3,8 +3,6 @@ theme: minima
 # markdown: kramdown
 logo: /assets/images/logo.png
 
-base_url: "/code/"
-
 author: multum-non-multa
   # name: "multum-non-multa"
   # email: nomailtaken@email.com
