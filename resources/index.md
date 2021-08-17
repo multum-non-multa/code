@@ -4,8 +4,7 @@ title: "Resources"
 permalink: /resources/
 ---
 
-
-## Python Resources
+## Python
 
 #### [Python's official documentation](https://docs.python.org/3/)
 
@@ -23,7 +22,16 @@ Just look around.  You'll see a lot of the basic stuff covered.
 
 #### [Google's Python Tutorial](https://developers.google.com/edu/python)
 
-## Bash / Shell Resources
+#### [Replit Intermediate Python Course](https://docs.replit.com/teaching-curriculum/intermediate-python)
+
+<hr/>
+
+## Bash / Shell
+
+
+<hr/>
+
+## Chips, CPUs, etc
 
 
 
