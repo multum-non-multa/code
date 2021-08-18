@@ -3,7 +3,7 @@ layout: post
 title: "Print and Strings"
 ---
 
-# Project Goal: Generate a Title with Two Separate String Inputs
+## Project Goal: Generate a Title with Two Separate String Inputs
 
 The idea is simply to take two inputs from the console and, after combining them, print out the result:
 
