@@ -117,9 +117,10 @@ print('a string to print')  # ... the right it
 
 #### `string` concatenation
 
-- Data types typically come with a set of 'operators' that can be used on them.
+What is 'concatenation' of `strings`?
 
-- E.g.,
+Well, Data types typically come with a set of 'operators' that can be used on them, e.g.,
+
 ```python
 # math on two number data types
 1 + 2
@@ -183,7 +184,10 @@ Neither line 1 nor line 2 will run.  Why?
 
 Line 1:  Python, unlike many other languages, determines how to interpret code based on, among other things, the _indentation_ of a line of code.
 
-Line 2: Because it is a type of 'compilation' or interpreter error, the interpreter will not even get to line 2;  remove correct or remove line 1 and line 2 will print.
+Line 2: Because it is a type of 'compilation' or interpreter error, the interpreter will not even get to line 2.
+
+If you correct line 1, then both lines will print.
+
 
 
 
