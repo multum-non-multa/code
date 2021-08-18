@@ -3,9 +3,9 @@ layout: post
 title: print() and Strings
 ---
 
-## Project Goal: Generate a Title with Two Separate String Inputs
+## Project: Generate a Title with Two Separate String Inputs
 
-The idea is simply to take two inputs from the console and, after combining them, print out the result:
+Result:  Take two inputs from the console and, after combining them, print out the result:
 
 ```python
 > Enter the name of your hometown:
@@ -13,10 +13,9 @@ Chicago
 > Enter the name of a pasta:
 Mostaccioli
 > You generated the title Mostaccioli Chicago
-
 ```
 
-### Review Printing to the Console in Python
+### 1. Review Printing to the Console in Python
 
 - `print()` function
 
@@ -27,7 +26,7 @@ Mostaccioli
 - here two of Python's _built-in_ functions are  introduced, `print()` and `input()`
 
 
-### String Manipulation and Code Intelligence
+### 2. String Manipulation and Code Intelligence
 
 - `string` is a data type in Python
 
@@ -137,11 +136,11 @@ Under the hood, `strings` are essentially another type called in some programmin
 
 Python, however, makes no distinction between the two but treats one or more characters together as a `string`.
 
+Knowing this the term 'concatenation' makes a bit more sense:
 
+> concatenare, from con- ‘together’ + catenare, from catena ‘chain’
 
-
-
-
+A `string` is a chaining together of characters or `chars` in some languages.  Perhaps not relevant to you now, but a `string` in Python is actually an `array` of characters stored in memory together.
 
 
 ### Exercise - Debugging Practice
