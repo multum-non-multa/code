@@ -168,12 +168,22 @@ print('Hello' + ' ' + 'World')
 
 ```python =
 1   print('some string to print')
+
 2 print('some string to print')
+
 ```
 
-The line 1 will not run; line 2 will.  Why?
+```bash
+File "main.py", line 1
+    print('some string to print')
+    ^
+IndentationError: unexpected indent
+```
+Neither line 1 nor line 2 will run.  Why?
 
-Python, unlike many other languages, determines how to interpret code based on, among other things, the indentation of a line of code.  E.g.,
+Line 1:  Python, unlike many other languages, determines how to interpret code based on, among other things, the _indentation_ of a line of code.
+
+Line 2: Because it is a type of 'compilation' or interpreter error, the interpreter will not even get to line 2;  remove correct or remove line 1 and line 2 will print.
 
 
 
