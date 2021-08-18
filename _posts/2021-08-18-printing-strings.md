@@ -12,7 +12,7 @@ The idea is simply to take two inputs from the console and, after combining them
 Chicago
 > Enter the name of a pasta:
 Mostaccioli
- > You generated the title Mostaccioli Chicago
+> You generated the title Mostaccioli Chicago
 
 ```
 
@@ -99,6 +99,20 @@ print('a string to print')  # ... the right it
 # or
 "Goodbye 'Cruel' World" # combine single and double
 
+# also new line and tab characters
+
+"Hello\nHello"
+
+# if printed will print out
+# Hello
+# Hello
+# The escape n or \n instructs the interpreted to insert a line break
+
+"Hello\tHello"
+
+# will print
+# Hello     Hello
+# inserting a tab space between the two words
 
 
 
