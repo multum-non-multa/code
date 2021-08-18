@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Print and Strings"
+title: print() and Strings
 ---
 
 ## Project Goal: Generate a Title with Two Separate String Inputs
