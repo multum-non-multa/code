@@ -1,4 +1,135 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-17T14:31:12-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Creating a repl</title><link href="https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl.html" rel="alternate" type="text/html" title="Creating a repl" /><published>2021-08-16T00:00:00-05:00</published><updated>2021-08-16T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl.html">&lt;ol&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-18T12:07:05-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Print and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Print and Strings" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;h1 id=&quot;project-goal-generate-a-title-with-two-separate-string-inputs&quot;&gt;Project Goal: Generate a Title with Two Separate String Inputs&lt;/h1&gt;
+
+&lt;p&gt;The idea is simply to take two inputs from the console and, after combining them, print out the result:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Enter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hometown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Chicago&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Enter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pasta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Mostaccioli&lt;/span&gt;
+ &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;You&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generated&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Mostaccioli&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Chicago&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;review-printing-to-the-console-in-python&quot;&gt;Review Printing to the Console in Python&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print()&lt;/code&gt; function&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;think of functions as mini-programs&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;a great deal of the code you write will consist of functions so a great deal more to come on them&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;here two of Python’s &lt;em&gt;built-in&lt;/em&gt; functions are  introduced, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h3 id=&quot;string-manipulation-and-code-intelligence&quot;&gt;String Manipulation and Code Intelligence&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; is a data type in Python&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the contents can be between either double or single quotes, just don’t mix them.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;common error with strings - leave off a quotation mark&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;main.py&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Hello, World)
+                       ^
+SyntaxError: EOL while scanning string literal
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;But how to interpret the error message?&lt;/p&gt;
+
+&lt;p&gt;Well, you do know:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;occurred in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;File &quot;main.py&quot;&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;on line 1 of that file&lt;/li&gt;
+  &lt;li&gt;that it was a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SyntaxError&lt;/code&gt; involving &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EOL&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;What is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SyntaxError&lt;/code&gt;?  What does the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;^&lt;/code&gt; tell you?  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EOL&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;Errors&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Get used to them&lt;/li&gt;
+  &lt;li&gt;Learn to decipher them&lt;/li&gt;
+  &lt;li&gt;Don’t be afraid of them&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;If you cannot for the life of you figure out what the message means, copy the error and dump it into a search engine.  Typically you find yourself at &lt;em&gt;StackOverflow&lt;/em&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;a-closer-look-at-the-string-data-type-and-comments&quot;&gt;A closer look at the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; data type and comments&lt;/h3&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c1&quot;&gt;# this is a comment
+# the hashtag tells the Python interpreter to ignore the whole line or ...
+&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a string to print&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# ... the right it
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# You will use comments a lot ... more on that later
+&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# Note these strings
+&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&quot;Hello&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# vs
+&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&apos;Hello&apos;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# but not
+&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&quot;Hello&apos;
+
+#  also
+
+&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Goodbye&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;Cruel&apos;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;World&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;
+
+# vs
+
+&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Goodbye&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Cruel&quot;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;World&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;
+
+# special characters for strings and printing
+# escape
+&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Goodbye&lt;/span&gt; \&lt;span class=&quot;s&quot;&gt;&quot;Cruel&lt;/span&gt;&lt;span class=&quot;se&quot;&gt;\&quot;&lt;/span&gt;&lt;span class=&quot;s&quot;&gt; World&quot;&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# prints: Goodbye &quot;Cruel&quot; World
+# or
+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Goodbye &apos;Cruel&apos; World&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# combine single and double
+&lt;/span&gt;
+
+
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;exercise---debugging-practice&quot;&gt;Exercise - Debugging Practice&lt;/h3&gt;
+
+&lt;h3 id=&quot;the-python-input-function&quot;&gt;The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt; Function&lt;/h3&gt;
+
+&lt;h3 id=&quot;exercise---input-function&quot;&gt;Exercise - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt; Function&lt;/h3&gt;
+
+&lt;h3 id=&quot;variables&quot;&gt;Variables&lt;/h3&gt;
+
+&lt;h3 id=&quot;exercise---variables&quot;&gt;Exercise - Variables&lt;/h3&gt;
+
+&lt;h3 id=&quot;variable-naming&quot;&gt;Variable Naming&lt;/h3&gt;
+
+&lt;h3 id=&quot;quiz-2-variable-naming-quiz&quot;&gt;Quiz 2: Variable Naming Quiz&lt;/h3&gt;
+
+&lt;h3 id=&quot;project-title-generator&quot;&gt;Project: Title Generator&lt;/h3&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Project Goal: Generate a Title with Two Separate String Inputs</summary></entry><entry><title type="html">Creating a repl</title><link href="https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl.html" rel="alternate" type="text/html" title="Creating a repl" /><published>2021-08-16T00:00:00-05:00</published><updated>2021-08-16T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl.html">&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;Create an account at &lt;a href=&quot;https://replit.com&quot;&gt;Replit&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
