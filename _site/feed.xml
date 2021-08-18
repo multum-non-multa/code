@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-18T12:44:34-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Print and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Print and Strings" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;h2 id=&quot;project-goal-generate-a-title-with-two-separate-string-inputs&quot;&gt;Project Goal: Generate a Title with Two Separate String Inputs&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-18T12:53:31-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Print and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Print and Strings" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;h2 id=&quot;project-goal-generate-a-title-with-two-separate-string-inputs&quot;&gt;Project Goal: Generate a Title with Two Separate String Inputs&lt;/h2&gt;
 
 &lt;p&gt;The idea is simply to take two inputs from the console and, after combining them, print out the result:&lt;/p&gt;
 
@@ -69,7 +69,7 @@ SyntaxError: EOL while scanning string literal
 
 &lt;p&gt;If you cannot for the life of you figure out what the message means, copy the error and dump it into a search engine.  Typically you find yourself at &lt;em&gt;StackOverflow&lt;/em&gt;.&lt;/p&gt;
 
-&lt;h3 id=&quot;a-closer-look-at-the-string-data-type-and-comments&quot;&gt;A closer look at the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; data type and comments&lt;/h3&gt;
+&lt;h4 id=&quot;string-data-type-and-comments&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; data type and comments&lt;/h4&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 &lt;span class=&quot;c1&quot;&gt;# this is a comment
@@ -122,12 +122,32 @@ SyntaxError: EOL while scanning string literal
 # Hello     Hello
 # inserting a tab space between the two words
 &lt;/span&gt;
-
-
-
-
-
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h4 id=&quot;string-concatenation&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; concatenation&lt;/h4&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Data types typically come with a set of ‘operators’ that can be used on them.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;E.g.,&lt;/p&gt;
+    &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# math on two number data types
+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Those &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; signs are called ‘operators,’ i.e., they operate on the numbers which, to carry the terminology to technical use, are ‘operands,’ i.e., expressions on which the operators operate.&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; have operators as well.  But first, more on terminology.&lt;/p&gt;
+
+&lt;p&gt;Why do they call text &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;Under the hood, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; are essentially another type called in some programming languages &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chars&lt;/code&gt; or characters.  More than one &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;char&lt;/code&gt; between quotes is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; of such data type.&lt;/p&gt;
+
+&lt;p&gt;Python, however, makes no distinction between the two but treats one or more characters together as a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt;.&lt;/p&gt;
 
 &lt;h3 id=&quot;exercise---debugging-practice&quot;&gt;Exercise - Debugging Practice&lt;/h3&gt;
 

@@ -60,7 +60,7 @@ Errors
 
 If you cannot for the life of you figure out what the message means, copy the error and dump it into a search engine.  Typically you find yourself at _StackOverflow_.
 
-### A closer look at the `string` data type and comments
+#### `string` data type and comments
 
 ```python
 
@@ -114,12 +114,31 @@ print('a string to print')  # ... the right it
 # Hello     Hello
 # inserting a tab space between the two words
 
-
-
-
-
-
 ```
+
+#### `string` concatenation
+
+- Data types typically come with a set of 'operators' that can be used on them.
+
+- E.g.,
+```python
+# math on two number data types
+1 + 2
+1 - 2
+```
+
+Those `+` and `-` signs are called 'operators,' i.e., they operate on the numbers which, to carry the terminology to technical use, are 'operands,' i.e., expressions on which the operators operate.
+
+`strings` have operators as well.  But first, more on terminology.
+
+Why do they call text `strings`?
+
+Under the hood, `strings` are essentially another type called in some programming languages `chars` or characters.  More than one `char` between quotes is a `string` of such data type.
+
+Python, however, makes no distinction between the two but treats one or more characters together as a `string`.
+
+
+
 
 
 
