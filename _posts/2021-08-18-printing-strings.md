@@ -126,7 +126,7 @@ print('a string to print')  # ... the right it
 1 - 2
 ```
 
-Those `+` and `-` signs are called 'operators,' i.e., they operate on the numbers which, to carry the terminology to technical use, are 'operands,' i.e., expressions on which the operators operate.
+Those `+` and `-` signs are called 'operators,' i.e., they operate on the numbers which, to carry the terminology to technical use, are 'operands,' i.e., expressions on which the 'operators' 'operate.'
 
 `strings` have operators as well.  But first, more on terminology.
 
@@ -141,6 +141,19 @@ Knowing this the term 'concatenation' makes a bit more sense:
 > concatenare, from con- ‘together’ + catenare, from catena ‘chain’
 
 A `string` is a chaining together of characters or `chars` in some languages.  Perhaps not relevant to you now, but a `string` in Python is actually an `array` of characters stored in memory together.
+
+As it turns out the `+` operator works on `strings` as well as numbers.  E.g.,
+
+```python
+print('Hello' + 'World')
+# prints HelloWorld
+
+print('Hello ' + 'World')
+# prints Hello World
+#             ^
+# note the space - because the string 'Hello ' inserted a space at end
+```
+
 
 
 ### Exercise - Debugging Practice
