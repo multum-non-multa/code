@@ -154,6 +154,33 @@ print('Hello ' + 'World')
 # note the space - because the string 'Hello ' inserted a space at end
 ```
 
+If you concatenate `strings`, you will often need to insert spacing, e.g.,
+
+```python
+print('Hello ' + 'World')
+# or
+print('Hello' + ' World')
+# or
+print('Hello' + ' ' + 'World')
+```
+
+### notes on Python spacing
+
+```python =
+1   print('some string to print')
+2 print('some string to print')
+```
+
+The line 1 will not run; line 2 will.  Why?
+
+Python, unlike many other languages, determines how to interpret code based on, among other things, the indentation of a line of code.  E.g.,
+
+
+
+
+
+
+
 
 
 ### Exercise - Debugging Practice
