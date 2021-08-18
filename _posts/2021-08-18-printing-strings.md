@@ -119,7 +119,7 @@ print('a string to print')  # ... the right it
 
 What is 'concatenation' of `strings`?
 
-Well, Data types typically come with a set of 'operators' that can be used on them, e.g.,
+Well, data types typically come with a set of 'operators' that can be used on them, e.g.,
 
 ```python
 # math on two number data types
@@ -131,11 +131,11 @@ Those `+` and `-` signs are called 'operators,' i.e., they operate on the number
 
 `strings` have operators as well.  But first, more on terminology.
 
-Why do they call text `strings`?
+Why do they even call text `strings`?
 
-Under the hood, `strings` are essentially another type called in some programming languages `chars` or characters.  More than one `char` between quotes is a `string` of such data type.
+Under the hood, `strings` are essentially another type called, in some programming languages, `chars` or characters.  More than one `char` between quotes is a `string` of such data type.
 
-Python, however, makes no distinction between the two but treats one or more characters together as a `string`.
+Python, however, makes no distinction between the two but treats one or more characters together as a `string`, i.e., a `string` is nothing but one or more `chars` chained together such as `H` + `e` + . . .
 
 Knowing this the term 'concatenation' makes a bit more sense:
 
