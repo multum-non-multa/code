@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-18T12:53:31-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Print and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Print and Strings" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;h2 id=&quot;project-goal-generate-a-title-with-two-separate-string-inputs&quot;&gt;Project Goal: Generate a Title with Two Separate String Inputs&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-18T12:55:09-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Print and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Print and Strings" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;h2 id=&quot;project-goal-generate-a-title-with-two-separate-string-inputs&quot;&gt;Project Goal: Generate a Title with Two Separate String Inputs&lt;/h2&gt;
 
 &lt;p&gt;The idea is simply to take two inputs from the console and, after combining them, print out the result:&lt;/p&gt;
 
@@ -168,15 +168,13 @@ SyntaxError: EOL while scanning string literal
     &lt;p&gt;Create an account at &lt;a href=&quot;https://replit.com&quot;&gt;Replit&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Send your username and email address to my email account:&lt;/p&gt;
+    &lt;p&gt;Email me your username:&lt;/p&gt;
 
     &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;subject: replit account&lt;/code&gt;&lt;/p&gt;
 
     &lt;p&gt;in body of email simply put:&lt;/p&gt;
 
     &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;username: &amp;lt;your username&amp;gt;&lt;/code&gt;&lt;/p&gt;
-
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;email: &amp;lt;your email&amp;gt;@&amp;lt;domain&amp;gt;.&amp;lt;tld&amp;gt;&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;Create a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;python&lt;/code&gt; repl&lt;/p&gt;

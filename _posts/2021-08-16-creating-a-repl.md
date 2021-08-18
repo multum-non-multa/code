@@ -5,15 +5,13 @@ title: "Creating a repl"
 
 1. Create an account at [Replit](https://replit.com)
 
-2. Send your username and email address to my email account:
+2. Email me your username:
 
     `subject: replit account`
 
     in body of email simply put:
 
     `username: <your username>`
-
-    `email: <your email>@<domain>.<tld>`
 
 3. Create a `python` repl
 
@@ -28,8 +26,3 @@ title: "Creating a repl"
     ```
 
 5. Run it to see print out in the console window.
-
-
-
-
-
