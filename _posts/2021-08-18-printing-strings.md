@@ -166,7 +166,7 @@ print('Hello' + ' ' + 'World')
 
 ### notes on Python spacing
 
-```python =
+```python
 1   print('some string to print')
 
 2 print('some string to print')
