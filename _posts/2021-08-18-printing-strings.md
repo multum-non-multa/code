@@ -229,7 +229,7 @@ Programs use a lot of data because, in the end, programs are, for the most part,
 
 Think of a program as a matter of i.p.o., i.e.
 
-![input-process-output](ipo.png)
+![input_output](ipo.png)
 
 #### c. `input()`
 
