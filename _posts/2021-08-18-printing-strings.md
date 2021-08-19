@@ -229,9 +229,36 @@ Programs use a lot of data because, in the end, programs are, for the most part,
 
 Think of a program as a matter of i.p.o., i.e.
 
-![input_output](ipo.png)
+> Input > Process > Output
 
 #### c. `input()`
+
+The `input()` function is different from `print()` in a few ways.  You can think of it as almost the reverse of `print`.  That latter outputs to the console; the former takes input from the console:
+
+```python
+my_variable_here = input('What is your name? ')
+print('You said your name is ' + my_variable_here)
+```
+
+The console would look like this:
+
+```bash
+> What is your name?
+# upon entering a name of 'Fred' such that the line would appear
+> What is your name? Fred
+# the output would appear
+You said your name is Fred
+```
+
+A few things to note for now:
+
+- we used a variable for the first time:  `my_variable_here`
+
+- `input()` actually _returned_ a value, i.e., whatever is typed into the console by the user in response to the prompt is then taken in by `input()` and returned from it.  That, value returned, in fact, is what was stored in `my_variable_here`.
+
+
+
+-
 
 
 ### 7. Practice Using `input`
