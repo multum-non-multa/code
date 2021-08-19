@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-19T14:43:16-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">print() and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="print() and Strings" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-19T14:46:53-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">print() and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="print() and Strings" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#project--generate-a-title-with-two-separate-string-inputs&quot;&gt;Project: Generate a Title with Two Separate String Inputs&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#1-review-printing-to-the-console-in-python&quot;&gt;1. Review Printing to the Console in Python&lt;/a&gt;&lt;/li&gt;
@@ -232,15 +232,15 @@ IndentationError: unexpected indent
 
 &lt;p&gt;Go to the team projects and work on the error and debugging exercises.&lt;/p&gt;
 
-&lt;h3 id=&quot;6-the-python-input-function&quot;&gt;6. The Python input Function&lt;/h3&gt;
+&lt;h3 id=&quot;6-the-python-input-function&quot;&gt;6. The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; Function&lt;/h3&gt;
 
 &lt;h4 id=&quot;a-data-in-general&quot;&gt;a. Data in general&lt;/h4&gt;
 
 &lt;h4 id=&quot;b-a-program-model&quot;&gt;b. A Program Model&lt;/h4&gt;
 
-&lt;h4 id=&quot;c-input&quot;&gt;c. input&lt;/h4&gt;
+&lt;h4 id=&quot;c-input&quot;&gt;c. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt;&lt;/h4&gt;
 
-&lt;h3 id=&quot;7-practice-using-input&quot;&gt;7. Practice Using input&lt;/h3&gt;
+&lt;h3 id=&quot;7-practice-using-input&quot;&gt;7. Practice Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;&lt;/h3&gt;
 
 &lt;h3 id=&quot;8-variables&quot;&gt;8. Variables&lt;/h3&gt;
 
