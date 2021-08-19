@@ -3,6 +3,26 @@ layout: post
 title: print() and Strings
 ---
 
+- [Project: Generate a Title with Two Separate String Inputs](#project--generate-a-title-with-two-separate-string-inputs)
+  * [1. Review Printing to the Console in Python](#1-review-printing-to-the-console-in-python)
+  * [2. String Manipulation](#2-string-manipulation)
+    + [`string` data type and comments](#-string--data-type-and-comments)
+    + [`string` concatenation](#-string--concatenation)
+  * [3. Spacing Python Code](#3-spacing-python-code)
+  * [Using Code Intelligence](#using-code-intelligence)
+  * [Exercises - Quick Practice Debugging Errors](#exercises---quick-practice-debugging-errors)
+  * [The Python `input()` Function](#the-python--input----function)
+    + [Data, in general](#data--in-general)
+  * [Exercise - `input()` Function](#exercise----input----function)
+  * [Variables](#variables)
+  * [Exercise - Variables](#exercise---variables)
+  * [Variable Naming](#variable-naming)
+  * [Quiz 2: Variable Naming Quiz](#quiz-2--variable-naming-quiz)
+  * [Project: Title Generator](#project--title-generator)
+
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+
+
 ## Project: Generate a Title with Two Separate String Inputs
 
 Result:  Take two inputs from the console and, after combining them, print out the result:
@@ -193,13 +213,18 @@ If you correct line 1, both lines will print.
 
 ### Using Code Intelligence
 
-
+A word on syntax helpers ...
 
 ### Exercises - Quick Practice Debugging Errors
 
 Go to the team projects and work on the error and debugging exercises.
 
 ### The Python `input()` Function
+
+#### Data, in general
+
+
+
 
 ### Exercise - `input()` Function
 

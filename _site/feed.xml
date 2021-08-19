@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-19T12:25:39-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">print() and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="print() and Strings" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;h2 id=&quot;project-generate-a-title-with-two-separate-string-inputs&quot;&gt;Project: Generate a Title with Two Separate String Inputs&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-19T13:36:59-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">print() and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="print() and Strings" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;h2 id=&quot;project-generate-a-title-with-two-separate-string-inputs&quot;&gt;Project: Generate a Title with Two Separate String Inputs&lt;/h2&gt;
 
 &lt;p&gt;Result:  Take two inputs from the console and, after combining them, print out the result:&lt;/p&gt;
 
@@ -194,9 +194,11 @@ IndentationError: unexpected indent
 
 &lt;p&gt;If you correct line 1, both lines will print.&lt;/p&gt;
 
-&lt;h3 id=&quot;using-code-intelligence-to&quot;&gt;Using Code Intelligence to&lt;/h3&gt;
+&lt;h3 id=&quot;using-code-intelligence&quot;&gt;Using Code Intelligence&lt;/h3&gt;
 
-&lt;h3 id=&quot;exercise---debugging-practice&quot;&gt;Exercise - Debugging Practice&lt;/h3&gt;
+&lt;h3 id=&quot;exercises---quick-practice-debugging-errors&quot;&gt;Exercises - Quick Practice Debugging Errors&lt;/h3&gt;
+
+&lt;p&gt;Go to the team projects and work on the error and debugging exercises.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-python-input-function&quot;&gt;The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt; Function&lt;/h3&gt;
 
