@@ -219,16 +219,16 @@ A word on syntax helpers ...
 
 Go to the team projects and work on the error and debugging exercises.
 
-### 6. The Python input Function
+### 6. The Python `input` Function
 
 #### a. Data in general
 
 #### b. A Program Model
 
-#### c. input
+#### c. `input()`
 
 
-### 7. Practice Using input
+### 7. Practice Using `input`
 
 ### 8. Variables
 
