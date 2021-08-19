@@ -191,15 +191,13 @@ If you correct line 1, both lines will print.
 
 
 
-### Using Code Intelligence to
+### Using Code Intelligence
 
 
 
+### Exercises - Quick Practice Debugging Errors
 
-
-
-### Exercise - Debugging Practice
-
+Go to the team projects and work on the error and debugging exercises.
 
 ### The Python `input()` Function
 
