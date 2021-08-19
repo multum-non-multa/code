@@ -223,7 +223,13 @@ Go to the team projects and work on the error and debugging exercises.
 
 #### a. Data in general
 
+Programs use a lot of data because, in the end, programs are, for the most part, a matter of trying to produce the correct data with a given set of data.  Here we'll sometimes provide manual data, sometimes some 'dummy' data; sometimes from files, sometimes from elsewhere.
+
 #### b. A Program Model
+
+Think of a program as a matter of i.p.o., i.e.
+
+![input-process-output](ipo.png)
 
 #### c. `input()`
 
