@@ -26,7 +26,7 @@ Mostaccioli
 - here two of Python's _built-in_ functions are  introduced, `print()` and `input()`
 
 
-### 2. String Manipulation and Code Intelligence
+### 2. String Manipulation
 
 - `string` is a data type in Python
 
@@ -165,13 +165,13 @@ print('Hello' + ' World')
 print('Hello' + ' ' + 'World')
 ```
 
-### notes on Python spacing
+### 3. Spacing Python Code
 
 ```python
+# put a space or two or three before the print
 1   print('some string to print')
-
+# remove the spaces
 2 print('some string to print')
-
 ```
 
 ```bash
@@ -180,17 +180,18 @@ File "main.py", line 1
     ^
 IndentationError: unexpected indent
 ```
+
 Neither line 1 nor line 2 will run.  Why?
 
 Line 1:  Python, unlike many other languages, determines how to interpret code based on, among other things, the _indentation_ of a line of code.
 
 Line 2: Because it is a type of 'compilation' or interpreter error, the interpreter will not even get to line 2.
 
-If you correct line 1, then both lines will print.
+If you correct line 1, both lines will print.
 
 
 
-
+### Using Code Intelligence to
 
 
 
