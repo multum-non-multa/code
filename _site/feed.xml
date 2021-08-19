@@ -1,4 +1,34 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-19T13:36:59-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">print() and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="print() and Strings" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;h2 id=&quot;project-generate-a-title-with-two-separate-string-inputs&quot;&gt;Project: Generate a Title with Two Separate String Inputs&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-19T14:32:45-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">print() and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="print() and Strings" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#project--generate-a-title-with-two-separate-string-inputs&quot;&gt;Project: Generate a Title with Two Separate String Inputs&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#1-review-printing-to-the-console-in-python&quot;&gt;1. Review Printing to the Console in Python&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#2-string-manipulation&quot;&gt;2. String Manipulation&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#-string--data-type-and-comments&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; data type and comments&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#-string--concatenation&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; concatenation&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#3-spacing-python-code&quot;&gt;3. Spacing Python Code&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#using-code-intelligence&quot;&gt;Using Code Intelligence&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#exercises---quick-practice-debugging-errors&quot;&gt;Exercises - Quick Practice Debugging Errors&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#the-python--input----function&quot;&gt;The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt; Function&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#data--in-general&quot;&gt;Data, in general&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#exercise----input----function&quot;&gt;Exercise - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt; Function&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#variables&quot;&gt;Variables&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#exercise---variables&quot;&gt;Exercise - Variables&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#variable-naming&quot;&gt;Variable Naming&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#quiz-2--variable-naming-quiz&quot;&gt;Quiz 2: Variable Naming Quiz&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#project--title-generator&quot;&gt;Project: Title Generator&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;project-generate-a-title-with-two-separate-string-inputs&quot;&gt;Project: Generate a Title with Two Separate String Inputs&lt;/h2&gt;
 
 &lt;p&gt;Result:  Take two inputs from the console and, after combining them, print out the result:&lt;/p&gt;
 
@@ -196,11 +226,15 @@ IndentationError: unexpected indent
 
 &lt;h3 id=&quot;using-code-intelligence&quot;&gt;Using Code Intelligence&lt;/h3&gt;
 
+&lt;p&gt;A word on syntax helpers …&lt;/p&gt;
+
 &lt;h3 id=&quot;exercises---quick-practice-debugging-errors&quot;&gt;Exercises - Quick Practice Debugging Errors&lt;/h3&gt;
 
 &lt;p&gt;Go to the team projects and work on the error and debugging exercises.&lt;/p&gt;
 
 &lt;h3 id=&quot;the-python-input-function&quot;&gt;The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt; Function&lt;/h3&gt;
+
+&lt;h4 id=&quot;data-in-general&quot;&gt;Data, in general&lt;/h4&gt;
 
 &lt;h3 id=&quot;exercise---input-function&quot;&gt;Exercise - &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt; Function&lt;/h3&gt;
 
@@ -212,7 +246,7 @@ IndentationError: unexpected indent
 
 &lt;h3 id=&quot;quiz-2-variable-naming-quiz&quot;&gt;Quiz 2: Variable Naming Quiz&lt;/h3&gt;
 
-&lt;h3 id=&quot;project-title-generator&quot;&gt;Project: Title Generator&lt;/h3&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Project: Generate a Title with Two Separate String Inputs</summary></entry><entry><title type="html">Creating a repl</title><link href="https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl.html" rel="alternate" type="text/html" title="Creating a repl" /><published>2021-08-16T00:00:00-05:00</published><updated>2021-08-16T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl.html">&lt;ol&gt;
+&lt;h3 id=&quot;project-title-generator&quot;&gt;Project: Title Generator&lt;/h3&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Project: Generate a Title with Two Separate String Inputs 1. Review Printing to the Console in Python 2. String Manipulation string data type and comments string concatenation 3. Spacing Python Code Using Code Intelligence Exercises - Quick Practice Debugging Errors The Python input() Function Data, in general Exercise - input() Function Variables Exercise - Variables Variable Naming Quiz 2: Variable Naming Quiz Project: Title Generator</summary></entry><entry><title type="html">Creating a repl</title><link href="https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl.html" rel="alternate" type="text/html" title="Creating a repl" /><published>2021-08-16T00:00:00-05:00</published><updated>2021-08-16T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl.html">&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;Create an account at &lt;a href=&quot;https://replit.com&quot;&gt;Replit&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;

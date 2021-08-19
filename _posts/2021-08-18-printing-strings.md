@@ -9,18 +9,18 @@ title: print() and Strings
     + [`string` data type and comments](#-string--data-type-and-comments)
     + [`string` concatenation](#-string--concatenation)
   * [3. Spacing Python Code](#3-spacing-python-code)
-  * [Using Code Intelligence](#using-code-intelligence)
-  * [Exercises - Quick Practice Debugging Errors](#exercises---quick-practice-debugging-errors)
-  * [The Python `input()` Function](#the-python--input----function)
-    + [Data, in general](#data--in-general)
-  * [Exercise - `input()` Function](#exercise----input----function)
-  * [Variables](#variables)
-  * [Exercise - Variables](#exercise---variables)
-  * [Variable Naming](#variable-naming)
-  * [Quiz 2: Variable Naming Quiz](#quiz-2--variable-naming-quiz)
-  * [Project: Title Generator](#project--title-generator)
-
-<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
+  * [4. Code Intelligence](#4-code-intelligence)
+  * [5. Practice Debugging Errors](#5-practice-debugging-errors)
+  * [6. The Python input Function](#6-the-python-input-function)
+    + [a. Data in general](#a-data-in-general)
+    + [b. A Program Model](#b-a-program-model)
+    + [c. input](#c-input)
+  * [7. Practice Using input](#7-practice-using-input)
+  * [8. Variables](#8-variables)
+  * [9. Practice with Variables](#9-practice-with-variables)
+  * [10. Variable Naming](#10-variable-naming)
+  * [11. Variable Naming Quiz](#11-variable-naming-quiz)
+  * [12. Title Generator](#12-title-generator)
 
 
 ## Project: Generate a Title with Two Separate String Inputs
@@ -211,29 +211,38 @@ If you correct line 1, both lines will print.
 
 
 
-### Using Code Intelligence
+### 4. Code Intelligence
 
 A word on syntax helpers ...
 
-### Exercises - Quick Practice Debugging Errors
+### 5. Practice Debugging Errors
 
 Go to the team projects and work on the error and debugging exercises.
 
-### The Python `input()` Function
+### 6. The Python input Function
 
-#### Data, in general
+#### a. Data in general
+
+#### b. A Program Model
+
+#### c. input
+
+
+### 7. Practice Using input
+
+### 8. Variables
+
+### 9. Practice with Variables
+
+### 10. Variable Naming
+
+### 11. Variable Naming Quiz
+
+### 12. Title Generator
 
 
 
 
-### Exercise - `input()` Function
 
-### Variables
 
-### Exercise - Variables
-
-### Variable Naming
-
-### Quiz 2: Variable Naming Quiz
-
-### Project: Title Generator
+<small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>
