@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-19T16:44:17-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">print() and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="print() and Strings" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-19T19:50:08-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">print() and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="print() and Strings" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#project--generate-a-title-with-two-separate-string-inputs&quot;&gt;Project: Generate a Title with Two Separate String Inputs&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#1-review-printing-to-the-console-in-python&quot;&gt;1. Review Printing to the Console in Python&lt;/a&gt;&lt;/li&gt;
@@ -234,19 +234,17 @@ IndentationError: unexpected indent
 
 &lt;h3 id=&quot;6-the-python-input-function&quot;&gt;6. The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; Function&lt;/h3&gt;
 
-&lt;h4 id=&quot;a-data-in-general&quot;&gt;a. Data in general&lt;/h4&gt;
+&lt;h4 id=&quot;a-data-in-general-and-a-program-model&quot;&gt;a. Data in general and a program model&lt;/h4&gt;
 
 &lt;p&gt;Programs use a lot of data because, in the end, programs are, for the most part, a matter of trying to produce the correct data with a given set of data.  Here we’ll sometimes provide manual data, sometimes some ‘dummy’ data; sometimes from files, sometimes from elsewhere.&lt;/p&gt;
-
-&lt;h4 id=&quot;b-a-program-model&quot;&gt;b. A Program Model&lt;/h4&gt;
 
 &lt;p&gt;Think of a program as a matter of i.p.o., i.e.&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Input &amp;gt; Process &amp;gt; Output&lt;/p&gt;
+  &lt;p&gt;&lt;em&gt;Input of Data &amp;gt; Processing of Data &amp;gt; Output of New Data&lt;/em&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h4 id=&quot;c-input&quot;&gt;c. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt;&lt;/h4&gt;
+&lt;h4 id=&quot;b-input&quot;&gt;b. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt;&lt;/h4&gt;
 
 &lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt; function is different from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print()&lt;/code&gt; in a few ways.  You can think of it as almost the reverse of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print&lt;/code&gt;.  That latter outputs to the console; the former takes input from the console:&lt;/p&gt;
 
@@ -274,11 +272,91 @@ You said your name is Fred
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;-&lt;/p&gt;
+&lt;p&gt;The Python documentation says of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt;:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The function … reads a line from input, converts it to a string (stripping a trailing newline), and returns that.&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;h3 id=&quot;7-practice-using-input&quot;&gt;7. Practice Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;&lt;/h3&gt;
 
+&lt;p&gt;When running a program from the command line or, as it is done in a repl, you should notice something about the prompt.  A prompt can take on any kind of look, but for the most part you’ll see an angle bracket or ‘greater than’ sign [&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;] or a dollar sign [&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt;], e.g.:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;or&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;err&quot;&gt;$&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;But however the prompt appears, it plays an important role when running programs at the command line or console:  as long as you see the prompt and cursor on the same line, then no program is currently running.  If you had been running a program, it is now finished.  E.g.:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c&quot;&gt;# before the program runs, at the console the prompt is visible&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# program is run and&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# input function asks for name&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# and you enter &apos;Fred&apos;&lt;/span&gt;
+What is your name? Fred
+&lt;span class=&quot;c&quot;&gt;# Note: if you had not entered anything, the program would remain running awaiting some input&lt;/span&gt;
+
+&lt;span class=&quot;c&quot;&gt;# the print function produces &apos;Fred&apos;&lt;/span&gt;
+Fred
+&lt;span class=&quot;c&quot;&gt;# program has now finished and you are back to the prompt&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;see team project&lt;/li&gt;
+&lt;/ul&gt;
+
 &lt;h3 id=&quot;8-variables&quot;&gt;8. Variables&lt;/h3&gt;
+
+&lt;h4 id=&quot;a-variables-in-general&quot;&gt;a. Variables in General&lt;/h4&gt;
+
+&lt;p&gt;Program data must be stored in memory if for no other reason than to process it.  However, most such data must be recalled for additional processing.  Hence the need to use names or variable names or, as they are more generally called, ‘identifiers’ for an object or data value.&lt;/p&gt;
+
+&lt;p&gt;For example, above the string literal, ‘Hello, World’ is used.  That very simple example, however, may be used in code in which some message must be passed to a user every time he logs in.  So, let’s say the user is one Fred and the string should be ‘Welcome back, Fred.’&lt;/p&gt;
+
+&lt;p&gt;Somewhere in the program that produces that welcome screen on login a variable, or identifier, must be used.  Hence, the program might read:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;c1&quot;&gt;# upon first login
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Please enter your first name? &apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# store that variable first_name in a database of users
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;store_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# where store_name() is some function that does the heavy lifting of stores the name in a database, to be retrieved upon each login.
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;first_name&lt;/code&gt; is that variable.  It might be used several times.  First, the programe will typically verify the accuracy of the name entered; later on the program may produce a special username based on that first name.&lt;/p&gt;
+
+&lt;p&gt;The point is: merely using the string literal, like ‘Fred’ is not sufficient.  The programmer will need to refer to the value later on and the way to hold on to it is to use a name for it.&lt;/p&gt;
+
+&lt;h4 id=&quot;b-rules-on-variable-names&quot;&gt;b. Rules on Variable Names&lt;/h4&gt;
+
+&lt;p&gt;But not everything will be accepted by the Python interpreter as a variable name.  Moreover, it is a good idea to adhere to certain naming conventions.  First the requirements.&lt;/p&gt;
+
+&lt;h5 id=&quot;i-python-variable-naming-rules&quot;&gt;i. Python Variable-Naming Rules&lt;/h5&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;can use any alphabet character&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;can use any integer as long as the variable name does not &lt;em&gt;begin&lt;/em&gt; with an integer&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;can use underscores&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;variable names are case sensitive&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;do not use a Python ‘keyword’ for a variable name.  A keyword is a reserved in the language for its own purposes, e.g., you should not use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print&lt;/code&gt; because it will confuse the interpreter.&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h5 id=&quot;ii-python-variable-naming-conventions&quot;&gt;ii. Python Variable-Naming Conventions&lt;/h5&gt;
 
 &lt;h3 id=&quot;9-practice-with-variables&quot;&gt;9. Practice with Variables&lt;/h3&gt;
 
