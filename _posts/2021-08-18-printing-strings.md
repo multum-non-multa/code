@@ -335,12 +335,15 @@ But not everything will be accepted by the Python interpreter as a variable name
 
 ##### ii. Python Variable-Naming Conventions
 
+You are not required to, but Pythonic code follows some conventions for variable names, e.g.,
 
+- variables are usually lower-case (exceptions will be discussed later)
 
+- use descriptive names, e.g., if a city name you may call the variable `city_name`
 
+- compound variable words, like `city_name`, are joined by what is called 'snake case' --- `this_is_snake_case` (vs. something like camelCase)
 
-
-
+More conventions are to follow, but that's sufficient for now.
 
 ### 9. Practice with Variables
 
