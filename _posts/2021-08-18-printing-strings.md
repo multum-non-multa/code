@@ -221,17 +221,15 @@ Go to the team projects and work on the error and debugging exercises.
 
 ### 6. The Python `input` Function
 
-#### a. Data in general
+#### a. Data in general and a program model
 
 Programs use a lot of data because, in the end, programs are, for the most part, a matter of trying to produce the correct data with a given set of data.  Here we'll sometimes provide manual data, sometimes some 'dummy' data; sometimes from files, sometimes from elsewhere.
 
-#### b. A Program Model
-
 Think of a program as a matter of i.p.o., i.e.
 
-> Input > Process > Output
+> _Input of Data > Processing of Data > Output of New Data_
 
-#### c. `input()`
+#### b. `input()`
 
 The `input()` function is different from `print()` in a few ways.  You can think of it as almost the reverse of `print`.  That latter outputs to the console; the former takes input from the console:
 
@@ -256,14 +254,93 @@ A few things to note for now:
 
 - `input()` actually _returned_ a value, i.e., whatever is typed into the console by the user in response to the prompt is then taken in by `input()` and returned from it.  That, value returned, in fact, is what was stored in `my_variable_here`.
 
+The Python documentation says of `input()`:
+
+>The function ... reads a line from input, converts it to a string (stripping a trailing newline), and returns that.
 
 
--
 
 
 ### 7. Practice Using `input`
 
+When running a program from the command line or, as it is done in a repl, you should notice something about the prompt.  A prompt can take on any kind of look, but for the most part you'll see an angle bracket or 'greater than' sign [`>`] or a dollar sign [`$`], e.g.:
+
+```bash
+>
+```
+
+or
+
+```bash
+$
+```
+
+But however the prompt appears, it plays an important role when running programs at the command line or console:  as long as you see the prompt and cursor on the same line, then no program is currently running.  If you had been running a program, it is now finished.  E.g.:
+
+```bash
+# before the program runs, at the console the prompt is visible
+>
+# program is run and
+# input function asks for name
+# and you enter 'Fred'
+What is your name? Fred
+# Note: if you had not entered anything, the program would remain running awaiting some input
+
+# the print function produces 'Fred'
+Fred
+# program has now finished and you are back to the prompt
+>
+```
+
+- see team project
+
 ### 8. Variables
+
+#### a. Variables in General
+
+Program data must be stored in memory if for no other reason than to process it.  However, most such data must be recalled for additional processing.  Hence the need to use names or variable names or, as they are more generally called, 'identifiers' for an object or data value.
+
+For example, above the string literal, 'Hello, World' is used.  That very simple example, however, may be used in code in which some message must be passed to a user every time he logs in.  So, let's say the user is one Fred and the string should be 'Welcome back, Fred.'
+
+Somewhere in the program that produces that welcome screen on login a variable, or identifier, must be used.  Hence, the program might read:
+
+```python
+
+# upon first login
+first_name = input('Please enter your first name? ')
+# store that variable first_name in a database of users
+store_name(first_name)
+# where store_name() is some function that does the heavy lifting of stores the name in a database, to be retrieved upon each login.
+```
+
+`first_name` is that variable.  It might be used several times.  First, the programe will typically verify the accuracy of the name entered; later on the program may produce a special username based on that first name.
+
+The point is: merely using the string literal, like 'Fred' is not sufficient.  The programmer will need to refer to the value later on and the way to hold on to it is to use a name for it.
+
+#### b. Rules on Variable Names
+
+But not everything will be accepted by the Python interpreter as a variable name.  Moreover, it is a good idea to adhere to certain naming conventions.  First the requirements.
+
+##### i. Python Variable-Naming Rules
+
+- can use any alphabet character
+
+- can use any integer as long as the variable name does not _begin_ with an integer
+
+- can use underscores
+
+- variable names are case sensitive
+
+- do not use a Python 'keyword' for a variable name.  A keyword is a reserved in the language for its own purposes, e.g., you should not use `print` because it will confuse the interpreter.
+
+##### ii. Python Variable-Naming Conventions
+
+
+
+
+
+
+
 
 ### 9. Practice with Variables
 
