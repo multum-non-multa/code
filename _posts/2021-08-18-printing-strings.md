@@ -317,7 +317,18 @@ store_name(first_name)
 
 The point is: merely using the string literal, like 'Fred' is not sufficient.  The programmer will need to refer to the value later on and the way to hold on to it is to use a name for it.
 
-#### b. Rules on Variable Names
+#### b. Variable-Naming Syntax
+
+```python
+# left side: variable name
+# middle: assignment operator =
+# right side: value to be stored
+variable_name = 'the value'
+
+
+```
+
+#### c. Rules on Variable Names
 
 But not everything will be accepted by the Python interpreter as a variable name.  Moreover, it is a good idea to adhere to certain naming conventions.  First the requirements.
 
@@ -330,6 +341,13 @@ But not everything will be accepted by the Python interpreter as a variable name
 - can use underscores
 
 - variable names are case sensitive
+
+```python
+jumbo = 'elephant'
+largest_elephant = 'humungo'
+
+
+```
 
 - do not use a Python 'keyword' for a variable name.  A keyword is a reserved in the language for its own purposes, e.g., you should not use `print` because it will confuse the interpreter.
 
