@@ -345,7 +345,7 @@ But not everything will be accepted by the Python interpreter as a variable name
 ```python
 jumbo = 'elephant'
 largest_elephant = 'humungo'
-
+_
 
 ```
 
