@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-26T19:32:26-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">strings, printing, getting input, and variables</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="strings, printing, getting input, and variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-26T20:14:41-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">strings, printing, getting input, and variables</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="strings, printing, getting input, and variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#project--generate-a-title-with-two-separate-string-inputs&quot;&gt;Project: Generate a Title with Two Separate String Inputs&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#1-review-printing-to-the-console-in-python&quot;&gt;1. Review Printing to the Console in Python&lt;/a&gt;&lt;/li&gt;
@@ -399,9 +399,77 @@ Fred
 
 &lt;h3 id=&quot;12-title-generator&quot;&gt;12. Title Generator&lt;/h3&gt;
 
-&lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Project: Generate a Title with Two Separate String Inputs 1. Review Printing to the Console in Python 2. String Manipulation string data type and comments string concatenation 3. Spacing Python Code 4. Code Intelligence 5. Practice Debugging Errors 6. The Python input Function a. Data in general b. A Program Model c. input() 7. Practice Using input 8. Variables 9. Practice with Variables 10. Variable Naming 11. Variable Naming Quiz 12. Title Generator</summary></entry><entry><title type="html">Tour of Repl Interface</title><link href="https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl.html" rel="alternate" type="text/html" title="Tour of Repl Interface" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl.html">&lt;h3 id=&quot;home-page-interface&quot;&gt;Home Page Interface&lt;/h3&gt;
+&lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Project: Generate a Title with Two Separate String Inputs 1. Review Printing to the Console in Python 2. String Manipulation string data type and comments string concatenation 3. Spacing Python Code 4. Code Intelligence 5. Practice Debugging Errors 6. The Python input Function a. Data in general b. A Program Model c. input() 7. Practice Using input 8. Variables 9. Practice with Variables 10. Variable Naming 11. Variable Naming Quiz 12. Title Generator</summary></entry><entry><title type="html">Tour of a Repl’s Interface</title><link href="https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl.html" rel="alternate" type="text/html" title="Tour of a Repl’s Interface" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl.html">&lt;h3 id=&quot;after-creating-a-repl-in-python-&quot;&gt;After creating a repl in Python …&lt;/h3&gt;
 
-&lt;p&gt;&lt;img src=&quot;/code/assets/images/repl-001.jpg&quot; alt=&quot;Create a repl&quot; /&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Home Page Interface</summary></entry><entry><title type="html">Creating a repl</title><link href="https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl.html" rel="alternate" type="text/html" title="Creating a repl" /><published>2021-08-16T00:00:00-05:00</published><updated>2021-08-16T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl.html">&lt;ol&gt;
+&lt;p&gt;&lt;img src=&quot;/code/assets/images/repl-001.jpg&quot; alt=&quot;Create a repl&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;… you’ll be re-directed to the repl itself.&lt;/p&gt;
+
+&lt;h3 id=&quot;entire-interface&quot;&gt;Entire interface&lt;/h3&gt;
+
+&lt;p&gt;Here we’ve chosen Python as the language.  Thus, the interface looks so:&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/code/assets/images/repl-002.jpg&quot; alt=&quot;Create a repl&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;center-of-interface&quot;&gt;Center of interface&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is where you will write your code.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Note that this is a Python file, i.e., it ends in ‘.py’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;You may, later on, create other Python files, but you’ll always have this main.py.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;&lt;img src=&quot;/code/assets/images/repl-003.jpg&quot; alt=&quot;Create a repl&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;right-side-of-interface&quot;&gt;Right side of interface&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;This is a two-part terminal.  Note a tab ‘Console’ and one ‘Shell’.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;These are closely related and we’ll cover more about them in class.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/code/assets/images/repl-004.jpg&quot; alt=&quot;Create a repl&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;left-side-of-interface&quot;&gt;Left side of interface&lt;/h3&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;The left side has a ton of features, some of which we will use.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/code/assets/images/repl-005.jpg&quot; alt=&quot;Create a repl&quot; /&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;For now click on the settings gear wheel, i.e., the 6th icon from the top&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;img src=&quot;/code/assets/images/repl-006.jpg&quot; alt=&quot;Create a repl&quot; /&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Play with the top three — &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Layout&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Theme&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Font size&lt;/code&gt;.  The others leave for now.&lt;/p&gt;
+&lt;/blockquote&gt;</content><author><name>multum-non-multa</name></author><summary type="html">After creating a repl in Python …</summary></entry><entry><title type="html">Creating a repl</title><link href="https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl.html" rel="alternate" type="text/html" title="Creating a repl" /><published>2021-08-16T00:00:00-05:00</published><updated>2021-08-16T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/16/creating-a-repl.html">&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;Create an account at &lt;a href=&quot;https://replit.com&quot;&gt;Replit&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
