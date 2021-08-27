@@ -1,6 +1,6 @@
 ---
 layout: post
-title: strings print() input() and variables
+title: strings, printing, getting input, and variables
 ---
 
 - [Project: Generate a Title with Two Separate String Inputs](#project--generate-a-title-with-two-separate-string-inputs)
