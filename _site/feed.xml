@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-26T20:14:41-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">strings, printing, getting input, and variables</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="strings, printing, getting input, and variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-29T13:21:00-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">strings, printing, getting input, and variables</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="strings, printing, getting input, and variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#project--generate-a-title-with-two-separate-string-inputs&quot;&gt;Project: Generate a Title with Two Separate String Inputs&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#1-review-printing-to-the-console-in-python&quot;&gt;1. Review Printing to the Console in Python&lt;/a&gt;&lt;/li&gt;
@@ -28,18 +28,61 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h2 id=&quot;project-generate-a-title-with-two-separate-string-inputs&quot;&gt;Project: Generate a Title with Two Separate String Inputs&lt;/h2&gt;
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;1--project&quot;&gt;1.  Project&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;div style=&quot;position: relative; padding-bottom: 46.32352941176471%; height: 0;&quot;&gt;&lt;iframe src=&quot;https://www.loom.com/embed/3bef87aeacfb4254bb1d5949e5a4bb35&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot; style=&quot;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;a--goal-generate-a-title-with-two-separate-string-inputs&quot;&gt;a.  Goal: Generate a ‘Title’ with Two Separate String Inputs&lt;/h3&gt;
 
 &lt;p&gt;Result:  Take two inputs from the console and, after combining them, print out the result:&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Enter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;your&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;hometown&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Chicago&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Enter&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;name&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;of&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;pasta&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;Mostaccioli&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;You&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;generated&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;the&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;title&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Mostaccioli&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Chicago&lt;/span&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+Welcome.
+This program generates a title for any number of uses --- a restaurant, a band, whatever.
+
+In what town or city were you born?
+
+Chicago
+
+What is your favorite food?
+
+Pizza
+
+You generated the title Pizza Chicago
+
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;1-review-printing-to-the-console-in-python&quot;&gt;1. Review Printing to the Console in Python&lt;/h3&gt;
+&lt;h3 id=&quot;b--requirements&quot;&gt;b.  Requirements&lt;/h3&gt;
+
+&lt;p&gt;In order to complete this project, we need to know how to:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;handle &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;obtain input from a user&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;use variables&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f&lt;/code&gt; format operator to embed variables in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;print variables&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;2-printing-to-the-console-in-python&quot;&gt;2. Printing to the Console in Python&lt;/h3&gt;
+
+&lt;hr /&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -49,18 +92,31 @@
     &lt;p&gt;think of functions as mini-programs&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;a great deal of the code you write will consist of functions so a great deal more to come on them&lt;/p&gt;
+    &lt;p&gt;a great deal of the code you write will consist of functions&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;don’t worry about the details of functions now; you’ll be writing thousands of your own soon enough.&lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;here two of Python’s &lt;em&gt;built-in&lt;/em&gt; functions are  introduced, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print()&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt;&lt;/p&gt;
+    &lt;p&gt;here we use two Python &lt;em&gt;&lt;u&gt;built-in&lt;/u&gt;&lt;/em&gt; functions:&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print()&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;2-string-manipulation&quot;&gt;2. String Manipulation&lt;/h3&gt;
+&lt;h3 id=&quot;3-string-manipulation&quot;&gt;3. String Manipulation&lt;/h3&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; is a data type in Python&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; is a &lt;em&gt;&lt;u&gt;data type&lt;/u&gt;&lt;/em&gt; in Python&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;the contents can be between either double or single quotes, just don’t mix them.&lt;/p&gt;
@@ -166,9 +222,7 @@ SyntaxError: EOL while scanning string literal
 
 &lt;p&gt;Those &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; signs are called ‘operators,’ i.e., they operate on the numbers which, to carry the terminology to technical use, are ‘operands,’ i.e., expressions on which the ‘operators’ ‘operate.’&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; have operators as well.  But first, more on terminology.&lt;/p&gt;
-
-&lt;p&gt;Why do they even call text &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; have operators as well.  But first, were does the term &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; originate?&lt;/p&gt;
 
 &lt;p&gt;Under the hood, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; are essentially another type called, in some programming languages, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chars&lt;/code&gt; or characters.  More than one &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;char&lt;/code&gt; between quotes is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; of such data type.&lt;/p&gt;
 
@@ -202,7 +256,7 @@ SyntaxError: EOL while scanning string literal
 &lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Hello&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;World&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;3-spacing-python-code&quot;&gt;3. Spacing Python Code&lt;/h3&gt;
+&lt;h3 id=&quot;4-indentation--spacing-python-code&quot;&gt;4. Indentation &amp;amp; Spacing Python Code&lt;/h3&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# put a space or two or three before the print
 &lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;some string to print&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
@@ -218,31 +272,49 @@ IndentationError: unexpected indent
 
 &lt;p&gt;Neither line 1 nor line 2 will run.  Why?&lt;/p&gt;
 
-&lt;p&gt;Line 1:  Python, unlike many other languages, determines how to interpret code based on, among other things, the &lt;em&gt;indentation&lt;/em&gt; of a line of code.&lt;/p&gt;
+&lt;p&gt;Line 1:  Python, unlike many other languages, determines how to interpret code based on, among other things, the &lt;strong&gt;&lt;u&gt;indentation&lt;/u&gt;&lt;/strong&gt; of a line of code.&lt;/p&gt;
 
 &lt;p&gt;Line 2: Because it is a type of ‘compilation’ or interpreter error, the interpreter will not even get to line 2.&lt;/p&gt;
 
 &lt;p&gt;If you correct line 1, both lines will print.&lt;/p&gt;
 
-&lt;h3 id=&quot;4-code-intelligence&quot;&gt;4. Code Intelligence&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;5-code-intelligence&quot;&gt;5. Code Intelligence&lt;/h3&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;A word on syntax helpers …&lt;/p&gt;
 
-&lt;h3 id=&quot;5-practice-debugging-errors&quot;&gt;5. Practice Debugging Errors&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;6-practice-debugging-errors&quot;&gt;6. Practice Debugging Errors&lt;/h3&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;Go to the team projects and work on the error and debugging exercises.&lt;/p&gt;
 
-&lt;h3 id=&quot;6-the-python-input-function&quot;&gt;6. The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; Function&lt;/h3&gt;
+&lt;hr /&gt;
 
-&lt;h4 id=&quot;a-data-in-general-and-a-program-model&quot;&gt;a. Data in general and a program model&lt;/h4&gt;
+&lt;h3 id=&quot;7-the-python-input-function&quot;&gt;7. The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; Function&lt;/h3&gt;
 
-&lt;p&gt;Programs use a lot of data because, in the end, programs are, for the most part, a matter of trying to produce the correct data with a given set of data.  Here we’ll sometimes provide manual data, sometimes some ‘dummy’ data; sometimes from files, sometimes from elsewhere.&lt;/p&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;Think of a program as a matter of i.p.o., i.e.&lt;/p&gt;
+&lt;h4 id=&quot;a-model-for-a-program-ipo&quot;&gt;a. Model for a Program: I.P.O.&lt;/h4&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;&lt;em&gt;Input of Data &amp;gt; Processing of Data &amp;gt; Output of New Data&lt;/em&gt;&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Programs use a lot of data because, in the end, programs are, for the most part, a matter of trying to produce the correct data with data you currently have or can obtain.&lt;/p&gt;
+
+&lt;p&gt;Here we’ll sometimes provide manual data, sometimes some ‘dummy’ data; sometimes from files, sometimes from elsewhere.&lt;/p&gt;
+
+&lt;p&gt;Think of a program as a matter of &lt;strong&gt;&lt;u&gt;I&lt;/u&gt;&lt;/strong&gt;.&lt;strong&gt;&lt;u&gt;P&lt;/u&gt;&lt;/strong&gt;.&lt;strong&gt;&lt;u&gt;O&lt;/u&gt;&lt;/strong&gt;., i.e.&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;I&lt;/u&gt;nput&lt;/strong&gt; of data&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;P&lt;/u&gt;rocessing&lt;/strong&gt; of data&lt;/p&gt;
+
+&lt;p&gt;&lt;strong&gt;&lt;u&gt;O&lt;/u&gt;utput&lt;/strong&gt; of new data&lt;/p&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; function enables you to get data at the console from a user.&lt;/p&gt;
 
 &lt;h4 id=&quot;b-input&quot;&gt;b. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt;&lt;/h4&gt;
 
@@ -278,7 +350,7 @@ You said your name is Fred
   &lt;p&gt;The function … reads a line from input, converts it to a string (stripping a trailing newline), and returns that.&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;h3 id=&quot;7-practice-using-input&quot;&gt;7. Practice Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;8-practice-using-input&quot;&gt;8. Practice Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;&lt;/h3&gt;
 
 &lt;p&gt;When running a program from the command line or, as it is done in a repl, you should notice something about the prompt.  A prompt can take on any kind of look, but for the most part you’ll see an angle bracket or ‘greater than’ sign [&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;] or a dollar sign [&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt;], e.g.:&lt;/p&gt;
 
@@ -307,10 +379,14 @@ Fred
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
-  &lt;li&gt;see team project&lt;/li&gt;
+  &lt;li&gt;see team project regarding input function&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h3 id=&quot;8-variables&quot;&gt;8. Variables&lt;/h3&gt;
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;9-variables&quot;&gt;9. Variables&lt;/h3&gt;
+
+&lt;hr /&gt;
 
 &lt;h4 id=&quot;a-variables-in-general&quot;&gt;a. Variables in General&lt;/h4&gt;
 
@@ -391,13 +467,33 @@ Fred
 
 &lt;p&gt;More conventions are to follow, but that’s sufficient for now.&lt;/p&gt;
 
-&lt;h3 id=&quot;9-practice-with-variables&quot;&gt;9. Practice with Variables&lt;/h3&gt;
+&lt;hr /&gt;
 
-&lt;h3 id=&quot;10-variable-naming&quot;&gt;10. Variable Naming&lt;/h3&gt;
+&lt;h3 id=&quot;10-practice-with-variables&quot;&gt;10. Practice with Variables&lt;/h3&gt;
 
-&lt;h3 id=&quot;11-variable-naming-quiz&quot;&gt;11. Variable Naming Quiz&lt;/h3&gt;
+&lt;hr /&gt;
 
-&lt;h3 id=&quot;12-title-generator&quot;&gt;12. Title Generator&lt;/h3&gt;
+&lt;h3 id=&quot;11-formatted-string-literals&quot;&gt;11. Formatted String Literals&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;A formatted string literal or f-string is a string literal that is prefixed with ‘f’ or ‘F’.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;12-variable-naming&quot;&gt;12. Variable Naming&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;13-variable-naming-quiz&quot;&gt;13. Variable Naming Quiz&lt;/h3&gt;
+
+&lt;hr /&gt;
+
+&lt;h3 id=&quot;14-title-generator&quot;&gt;14. Title Generator&lt;/h3&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Project: Generate a Title with Two Separate String Inputs 1. Review Printing to the Console in Python 2. String Manipulation string data type and comments string concatenation 3. Spacing Python Code 4. Code Intelligence 5. Practice Debugging Errors 6. The Python input Function a. Data in general b. A Program Model c. input() 7. Practice Using input 8. Variables 9. Practice with Variables 10. Variable Naming 11. Variable Naming Quiz 12. Title Generator</summary></entry><entry><title type="html">Tour of a Repl’s Interface</title><link href="https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl.html" rel="alternate" type="text/html" title="Tour of a Repl’s Interface" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl.html">&lt;h3 id=&quot;after-creating-a-repl-in-python-&quot;&gt;After creating a repl in Python …&lt;/h3&gt;
 

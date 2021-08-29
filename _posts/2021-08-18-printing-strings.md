@@ -22,33 +22,74 @@ title: strings, printing, getting input, and variables
   * [11. Variable Naming Quiz](#11-variable-naming-quiz)
   * [12. Title Generator](#12-title-generator)
 
+---
 
-## Project: Generate a Title with Two Separate String Inputs
+## 1.  Project
+
+---
+
+<div style="position: relative; padding-bottom: 46.32352941176471%; height: 0;"><iframe src="https://www.loom.com/embed/3bef87aeacfb4254bb1d5949e5a4bb35" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+
+### a.  Goal: Generate a 'Title' with Two Separate String Inputs
 
 Result:  Take two inputs from the console and, after combining them, print out the result:
 
-```python
-> Enter the name of your hometown:
-Chicago
-> Enter the name of a pasta:
-Mostaccioli
-> You generated the title Mostaccioli Chicago
 ```
 
-### 1. Review Printing to the Console in Python
+Welcome.
+This program generates a title for any number of uses --- a restaurant, a band, whatever.
+
+In what town or city were you born?
+
+Chicago
+
+What is your favorite food?
+
+Pizza
+
+You generated the title Pizza Chicago
+
+```
+
+### b.  Requirements
+
+In order to complete this project, we need to know how to:
+
+- handle `strings`
+
+- obtain input from a user
+
+- use variables
+
+- use `f` format operator to embed variables in `strings`
+
+- print variables
+
+---
+
+### 2. Printing to the Console in Python
+
+---
 
 - `print()` function
 
 - think of functions as mini-programs
 
-- a great deal of the code you write will consist of functions so a great deal more to come on them
+- a great deal of the code you write will consist of functions
 
-- here two of Python's _built-in_ functions are  introduced, `print()` and `input()`
+  - don't worry about the details of functions now; you'll be writing thousands of your own soon enough.
+
+- here we use two Python _<u>built-in</u>_ functions:
+
+  - `print()`
+
+  - `input()`
 
 
-### 2. String Manipulation
+### 3. String Manipulation
 
-- `string` is a data type in Python
+- `string` is a _<u>data type</u>_ in Python
 
 - the contents can be between either double or single quotes, just don't mix them.
 
@@ -149,9 +190,7 @@ Well, data types typically come with a set of 'operators' that can be used on th
 
 Those `+` and `-` signs are called 'operators,' i.e., they operate on the numbers which, to carry the terminology to technical use, are 'operands,' i.e., expressions on which the 'operators' 'operate.'
 
-`strings` have operators as well.  But first, more on terminology.
-
-Why do they even call text `strings`?
+`strings` have operators as well.  But first, were does the term `strings` originate?
 
 Under the hood, `strings` are essentially another type called, in some programming languages, `chars` or characters.  More than one `char` between quotes is a `string` of such data type.
 
@@ -185,7 +224,7 @@ print('Hello' + ' World')
 print('Hello' + ' ' + 'World')
 ```
 
-### 3. Spacing Python Code
+### 4. Indentation & Spacing Python Code
 
 ```python
 # put a space or two or three before the print
@@ -203,31 +242,50 @@ IndentationError: unexpected indent
 
 Neither line 1 nor line 2 will run.  Why?
 
-Line 1:  Python, unlike many other languages, determines how to interpret code based on, among other things, the _indentation_ of a line of code.
+Line 1:  Python, unlike many other languages, determines how to interpret code based on, among other things, the __<u>indentation</u>__ of a line of code.
 
 Line 2: Because it is a type of 'compilation' or interpreter error, the interpreter will not even get to line 2.
 
 If you correct line 1, both lines will print.
 
 
+---
 
-### 4. Code Intelligence
+### 5. Code Intelligence
+
+---
 
 A word on syntax helpers ...
 
-### 5. Practice Debugging Errors
+---
+
+### 6. Practice Debugging Errors
+
+---
 
 Go to the team projects and work on the error and debugging exercises.
 
-### 6. The Python `input` Function
+---
 
-#### a. Data in general and a program model
+### 7. The Python `input` Function
 
-Programs use a lot of data because, in the end, programs are, for the most part, a matter of trying to produce the correct data with a given set of data.  Here we'll sometimes provide manual data, sometimes some 'dummy' data; sometimes from files, sometimes from elsewhere.
+---
 
-Think of a program as a matter of i.p.o., i.e.
+#### a. Model for a Program: I.P.O.
 
-> _Input of Data > Processing of Data > Output of New Data_
+Programs use a lot of data because, in the end, programs are, for the most part, a matter of trying to produce the correct data with data you currently have or can obtain.
+
+Here we'll sometimes provide manual data, sometimes some 'dummy' data; sometimes from files, sometimes from elsewhere.
+
+Think of a program as a matter of __<u>I</u>__.__<u>P</u>__.__<u>O</u>__., i.e.
+
+__<u>I</u>nput__ of data
+
+__<u>P</u>rocessing__ of data
+
+__<u>O</u>utput__ of new data
+
+The `input` function enables you to get data at the console from a user.
 
 #### b. `input()`
 
@@ -261,7 +319,7 @@ The Python documentation says of `input()`:
 
 
 
-### 7. Practice Using `input`
+### 8. Practice Using `input`
 
 When running a program from the command line or, as it is done in a repl, you should notice something about the prompt.  A prompt can take on any kind of look, but for the most part you'll see an angle bracket or 'greater than' sign [`>`] or a dollar sign [`$`], e.g.:
 
@@ -292,9 +350,13 @@ Fred
 >
 ```
 
-- see team project
+- see team project regarding input function
 
-### 8. Variables
+---
+
+### 9. Variables
+
+---
 
 #### a. Variables in General
 
@@ -363,13 +425,34 @@ You are not required to, but Pythonic code follows some conventions for variable
 
 More conventions are to follow, but that's sufficient for now.
 
-### 9. Practice with Variables
+---
 
-### 10. Variable Naming
+### 10. Practice with Variables
 
-### 11. Variable Naming Quiz
 
-### 12. Title Generator
+---
+
+### 11. Formatted String Literals
+
+---
+
+A formatted string literal or f-string is a string literal that is prefixed with 'f' or 'F'.
+
+---
+
+### 12. Variable Naming
+
+---
+
+---
+
+### 13. Variable Naming Quiz
+
+---
+
+### 14. Title Generator
+
+---
 
 
 
