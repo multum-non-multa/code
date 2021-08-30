@@ -1,31 +1,43 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-29T19:35:18-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">strings, printing, getting input, and variables</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="strings, printing, getting input, and variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#project--generate-a-title-with-two-separate-string-inputs&quot;&gt;Project: Generate a Title with Two Separate String Inputs&lt;/a&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-29T20:38:15-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">strings, printing, getting input, and variables</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="strings, printing, getting input, and variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;ul&gt;
+  &lt;li&gt;&lt;a href=&quot;#1--project&quot;&gt;1.  Project&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#a--goal--generate-a--title--with-two-separate-string-inputs&quot;&gt;a.  Goal: Generate a ‘Title’ with Two Separate String Inputs&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#b--requirements&quot;&gt;b.  Requirements&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#2-printing-to-the-console-in-python&quot;&gt;2. Printing to the Console in Python&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#3-string-manipulation&quot;&gt;3. String Manipulation&lt;/a&gt;
     &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#1-review-printing-to-the-console-in-python&quot;&gt;1. Review Printing to the Console in Python&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#2-string-manipulation&quot;&gt;2. String Manipulation&lt;/a&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#-string--data-type-and-comments&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; data type and comments&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#-string--concatenation&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; concatenation&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#3-spacing-python-code&quot;&gt;3. Spacing Python Code&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#4-code-intelligence&quot;&gt;4. Code Intelligence&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#5-practice-debugging-errors&quot;&gt;5. Practice Debugging Errors&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#6-the-python--input--function&quot;&gt;6. The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; Function&lt;/a&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#a-data-in-general&quot;&gt;a. Data in general&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#b-a-program-model&quot;&gt;b. A Program Model&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#c--input---&quot;&gt;c. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#7-practice-using--input-&quot;&gt;7. Practice Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#8-variables&quot;&gt;8. Variables&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#9-practice-with-variables&quot;&gt;9. Practice with Variables&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#10-variable-naming&quot;&gt;10. Variable Naming&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#11-variable-naming-quiz&quot;&gt;11. Variable Naming Quiz&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#12-title-generator&quot;&gt;12. Title Generator&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#a-string-is-a--data-type-&quot;&gt;a. String is a ‘data type’&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#b-error-messages&quot;&gt;b. Error Messages&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#c--string--data-type-and-comments&quot;&gt;c. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; data type and comments&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#d--string--concatenation&quot;&gt;d. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; concatenation&lt;/a&gt;&lt;/li&gt;
     &lt;/ul&gt;
   &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#4-indentation---spacing-python-code&quot;&gt;4. Indentation &amp;amp; Spacing Python Code&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#5-code-intelligence&quot;&gt;5. Code Intelligence&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#6-practice-debugging-errors&quot;&gt;6. Practice Debugging Errors&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#7-the-python--input--function&quot;&gt;7. The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; Function&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#a-model-for-a-program--ipo&quot;&gt;a. Model for a Program: I.P.O.&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#b--input---&quot;&gt;b. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#8-practice-using--input-&quot;&gt;8. Practice Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#9-variables&quot;&gt;9. Variables&lt;/a&gt;
+    &lt;ul&gt;
+      &lt;li&gt;&lt;a href=&quot;#a-variables-in-general&quot;&gt;a. Variables in General&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#b-variable-naming-syntax&quot;&gt;b. Variable-Naming Syntax&lt;/a&gt;&lt;/li&gt;
+      &lt;li&gt;&lt;a href=&quot;#c-rules-on-variable-names&quot;&gt;c. Rules on Variable Names&lt;/a&gt;
+        &lt;ul&gt;
+          &lt;li&gt;&lt;a href=&quot;#-i--python-variable-naming-rules&quot;&gt;(i) Python Variable-Naming Rules&lt;/a&gt;&lt;/li&gt;
+          &lt;li&gt;&lt;a href=&quot;#-ii--python-variable-naming-conventions&quot;&gt;(ii) Python Variable-Naming Conventions&lt;/a&gt;&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#10-practice-with-variables&quot;&gt;10. Practice with Variables&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#11-formatted-string-literals&quot;&gt;11. Formatted String Literals&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#12-variable-naming&quot;&gt;12. Variable Naming&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#13-variable-naming-quiz&quot;&gt;13. Variable Naming Quiz&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#14-title-generator&quot;&gt;14. Title Generator&lt;/a&gt;&lt;/li&gt;
 &lt;/ul&gt;
 
 &lt;hr /&gt;
@@ -34,9 +46,9 @@
 
 &lt;hr /&gt;
 
-&lt;div style=&quot;position: relative; padding-bottom: 46.32352941176471%; height: 0;&quot;&gt;&lt;iframe src=&quot;https://www.loom.com/embed/3bef87aeacfb4254bb1d5949e5a4bb35&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot; style=&quot;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
-
 &lt;h3 id=&quot;a--goal-generate-a-title-with-two-separate-string-inputs&quot;&gt;a.  Goal: Generate a ‘Title’ with Two Separate String Inputs&lt;/h3&gt;
+
+&lt;div style=&quot;position: relative; padding-bottom: 46.32352941176471%; height: 0;&quot;&gt;&lt;iframe src=&quot;https://www.loom.com/embed/3bef87aeacfb4254bb1d5949e5a4bb35&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot; style=&quot;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
 &lt;p&gt;Result:  Take two inputs from the console and, after combining them, print out the result:&lt;/p&gt;
 
@@ -112,7 +124,11 @@ You generated the title Pizza Chicago
   &lt;/li&gt;
 &lt;/ul&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&quot;3-string-manipulation&quot;&gt;3. String Manipulation&lt;/h3&gt;
+
+&lt;hr /&gt;
 
 &lt;h4 id=&quot;a-string-is-a-data-type&quot;&gt;a. String is a ‘data type’&lt;/h4&gt;
 
@@ -142,7 +158,7 @@ You generated the title Pizza Chicago
     &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; can be between either double &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&lt;/code&gt; or single &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&apos;&lt;/code&gt; quotes; the rule: &lt;em&gt;whatever type of quote mark you use, finish with it&lt;/em&gt;&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; can be between either double &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&lt;/code&gt; or single &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;'&lt;/code&gt; quotes; the rule: &lt;em&gt;whatever type of quote mark you use, finish with it&lt;/em&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
     &lt;p&gt;a &lt;em&gt;very&lt;/em&gt; common error with strings is to forget one of the quotation marks&lt;/p&gt;
@@ -150,7 +166,7 @@ You generated the title Pizza Chicago
 &lt;/ul&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;File &lt;span class=&quot;s2&quot;&gt;&quot;main.py&quot;&lt;/span&gt;, line 1
-    print&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Hello, World)
+    print&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'Hello, World)
                        ^
 SyntaxError: EOL while scanning string literal
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -187,7 +203,7 @@ SyntaxError: EOL while scanning string literal
 &lt;span class=&quot;c1&quot;&gt;# this is a comment
 # the hashtag tells the Python interpreter to ignore the whole line or ...
 &lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;a string to print&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# ... the right it
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'a string to print'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# ... the right it
 &lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# You will use comments a lot ... more on that later
 &lt;/span&gt;
@@ -197,15 +213,15 @@ SyntaxError: EOL while scanning string literal
 
 &lt;span class=&quot;c1&quot;&gt;# vs
 &lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&apos;Hello&apos;&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;'Hello'&lt;/span&gt;
 
 &lt;span class=&quot;c1&quot;&gt;# but not
 &lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&quot;Hello&apos;
+&lt;span class=&quot;s&quot;&gt;&quot;Hello'
 
 #  also
 
-&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Goodbye&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;Cruel&apos;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;World&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;
+&quot;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;Goodbye&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'Cruel'&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;World&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;
 
 # vs
 
@@ -217,7 +233,7 @@ SyntaxError: EOL while scanning string literal
 
 &lt;span class=&quot;c1&quot;&gt;# prints: Goodbye &quot;Cruel&quot; World
 # or
-&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Goodbye &apos;Cruel&apos; World&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# combine single and double
+&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Goodbye 'Cruel' World&quot;&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# combine single and double
 &lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# also new line and tab characters
 &lt;/span&gt;
@@ -269,34 +285,37 @@ SyntaxError: EOL while scanning string literal
 
 &lt;p&gt;As it turns out the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; operator works on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; as well as numbers.  E.g.,&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Hello&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;World&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Hello'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'World'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# prints HelloWorld
 &lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Hello &apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;World&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Hello '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'World'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# prints Hello World
 #             ^
-# note the space - because the string &apos;Hello &apos; inserted a space at end
+# note the space - because the string 'Hello ' inserted a space at end
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;If you concatenate &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt;, you will often need to insert spacing, e.g.,&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Hello &apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;World&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Hello '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'World'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# or
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Hello&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos; World&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Hello'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;' World'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# or
-&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Hello&apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos; &apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;World&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Hello'&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;' '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'World'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;hr /&gt;
 
 &lt;h3 id=&quot;4-indentation--spacing-python-code&quot;&gt;4. Indentation &amp;amp; Spacing Python Code&lt;/h3&gt;
 
+&lt;hr /&gt;
+
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# put a space or two or three before the print
-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;string number 1 to print&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'string number 1 to print'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# remove the spaces
-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;string number 2 to print&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'string number 2 to print'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;File &lt;span class=&quot;s2&quot;&gt;&quot;main.py&quot;&lt;/span&gt;, line 1
-    print&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;string number 1 to print&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    print&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;'string number 1 to print'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
     ^
 IndentationError: unexpected indent
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
@@ -317,17 +336,29 @@ IndentationError: unexpected indent
 
 &lt;hr /&gt;
 
-&lt;p&gt;To both spot errors &lt;em&gt;before&lt;/em&gt; you run your code &lt;strong&gt;and&lt;/strong&gt; obtain help with Python, enable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Code intelligence&lt;/code&gt; in your repl:&lt;/p&gt;
+&lt;p&gt;To both spot errors &lt;em&gt;before&lt;/em&gt; you run your code &lt;strong&gt;and&lt;/strong&gt; obtain help with Python, enable &lt;em&gt;Code intelligence&lt;/em&gt; in your repl:&lt;/p&gt;
 
 &lt;iframe width=&quot;465&quot; height=&quot;816&quot; src=&quot;https://www.loom.com/embed/9335f63e611a49a1a336e6abce26a810&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
-&lt;p&gt;When you enable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code intelligence&lt;/code&gt; notice a few things …&lt;/p&gt;
+&lt;hr /&gt;
+
+&lt;p&gt;When you enable code intelligence notice a few things …&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;div style=&quot;position: relative; padding-bottom: 45.729537366548044%; height: 0;&quot;&gt;&lt;iframe src=&quot;https://www.loom.com/embed/786180e2818c4ee38a025ee30f8d9f7a&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot; style=&quot;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
+&lt;hr /&gt;
 &lt;ul&gt;
-  &lt;li&gt;Somewhere in the line of code, a red, underscore&lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Somewhere in the line of code, a red, underscore squiggly line shows that something is not right.  Moreover, the red bar to the right of the frame emphasizes a problem.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The other thing you’ll notice a type of ‘drop-down menu’ of code possibilities.  Ignore that for now.  That rather busy snippet of code is for helping you when, later on, you write code and you want to see more information on code you are writing.&lt;/p&gt;
+  &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;If you find this too annoying, simply disable the code intelligence.&lt;/p&gt;
 
 &lt;hr /&gt;
 
@@ -363,14 +394,14 @@ IndentationError: unexpected indent
 
 &lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt; function is different from &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print()&lt;/code&gt; in a few ways.  You can think of it as almost the reverse of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print&lt;/code&gt;.  That latter outputs to the console; the former takes input from the console:&lt;/p&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;my_variable_here&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;What is your name? &apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;You said your name is &apos;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_variable_here&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;my_variable_here&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'What is your name? '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'You said your name is '&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;my_variable_here&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;The console would look like this:&lt;/p&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; What is your name?
-&lt;span class=&quot;c&quot;&gt;# upon entering a name of &apos;Fred&apos; such that the line would appear&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# upon entering a name of 'Fred' such that the line would appear&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt; What is your name? Fred
 &lt;span class=&quot;c&quot;&gt;# the output would appear&lt;/span&gt;
 You said your name is Fred
@@ -393,7 +424,11 @@ You said your name is Fred
   &lt;p&gt;The function … reads a line from input, converts it to a string (stripping a trailing newline), and returns that.&lt;/p&gt;
 &lt;/blockquote&gt;
 
+&lt;hr /&gt;
+
 &lt;h3 id=&quot;8-practice-using-input&quot;&gt;8. Practice Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;&lt;/h3&gt;
+
+&lt;hr /&gt;
 
 &lt;p&gt;When running a program from the command line or, as it is done in a repl, you should notice something about the prompt.  A prompt can take on any kind of look, but for the most part you’ll see an angle bracket or ‘greater than’ sign [&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt;] or a dollar sign [&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;$&lt;/code&gt;], e.g.:&lt;/p&gt;
 
@@ -411,11 +446,11 @@ You said your name is Fred
 &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# program is run and&lt;/span&gt;
 &lt;span class=&quot;c&quot;&gt;# input function asks for name&lt;/span&gt;
-&lt;span class=&quot;c&quot;&gt;# and you enter &apos;Fred&apos;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# and you enter 'Fred'&lt;/span&gt;
 What is your name? Fred
 &lt;span class=&quot;c&quot;&gt;# Note: if you had not entered anything, the program would remain running awaiting some input&lt;/span&gt;
 
-&lt;span class=&quot;c&quot;&gt;# the print function produces &apos;Fred&apos;&lt;/span&gt;
+&lt;span class=&quot;c&quot;&gt;# the print function produces 'Fred'&lt;/span&gt;
 Fred
 &lt;span class=&quot;c&quot;&gt;# program has now finished and you are back to the prompt&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
@@ -441,7 +476,7 @@ Fred
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 &lt;span class=&quot;c1&quot;&gt;# upon first login
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Please enter your first name? &apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'Please enter your first name? '&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# store that variable first_name in a database of users
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;store_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;first_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# where store_name() is some function that does the heavy lifting of stores the name in a database, to be retrieved upon each login.
@@ -458,14 +493,14 @@ Fred
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# left side: variable name
 # middle: assignment operator =
 # right side: value to be stored
-&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;variable_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;the value&apos;&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;variable_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'the value'&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;c-rules-on-variable-names&quot;&gt;c. Rules on Variable Names&lt;/h4&gt;
 
 &lt;p&gt;But not everything will be accepted by the Python interpreter as a variable name.  Moreover, it is a good idea to adhere to certain naming conventions.  First the requirements.&lt;/p&gt;
 
-&lt;h5 id=&quot;i-python-variable-naming-rules&quot;&gt;i. Python Variable-Naming Rules&lt;/h5&gt;
+&lt;h5 id=&quot;i-python-variable-naming-rules&quot;&gt;(i) Python Variable-Naming Rules&lt;/h5&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
@@ -482,17 +517,15 @@ Fred
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;jumbo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;elephant&apos;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;largest_elephant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;humungo&apos;&lt;/span&gt;
-&lt;span class=&quot;n&quot;&gt;_&lt;/span&gt;
-
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;jumbo&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'elephant'&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;largest_elephant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'humungo'&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;ul&gt;
   &lt;li&gt;do not use a Python ‘keyword’ for a variable name.  A keyword is a reserved in the language for its own purposes, e.g., you should not use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print&lt;/code&gt; because it will confuse the interpreter.&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;h5 id=&quot;ii-python-variable-naming-conventions&quot;&gt;ii. Python Variable-Naming Conventions&lt;/h5&gt;
+&lt;h5 id=&quot;ii-python-variable-naming-conventions&quot;&gt;(ii) Python Variable-Naming Conventions&lt;/h5&gt;
 
 &lt;p&gt;You are not required to, but Pythonic code follows some conventions for variable names, e.g.,&lt;/p&gt;
 
@@ -538,7 +571,7 @@ Fred
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Project: Generate a Title with Two Separate String Inputs 1. Review Printing to the Console in Python 2. String Manipulation string data type and comments string concatenation 3. Spacing Python Code 4. Code Intelligence 5. Practice Debugging Errors 6. The Python input Function a. Data in general b. A Program Model c. input() 7. Practice Using input 8. Variables 9. Practice with Variables 10. Variable Naming 11. Variable Naming Quiz 12. Title Generator</summary></entry><entry><title type="html">Tour of a Repl’s Interface</title><link href="https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl.html" rel="alternate" type="text/html" title="Tour of a Repl’s Interface" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl.html">&lt;h3 id=&quot;after-creating-a-repl-in-python-&quot;&gt;After creating a repl in Python …&lt;/h3&gt;
+&lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">1. Project a. Goal: Generate a ‘Title’ with Two Separate String Inputs b. Requirements 2. Printing to the Console in Python 3. String Manipulation a. String is a ‘data type’ b. Error Messages c. string data type and comments d. string concatenation 4. Indentation &amp;amp; Spacing Python Code 5. Code Intelligence 6. Practice Debugging Errors 7. The Python input Function a. Model for a Program: I.P.O. b. input() 8. Practice Using input 9. Variables a. Variables in General b. Variable-Naming Syntax c. Rules on Variable Names (i) Python Variable-Naming Rules (ii) Python Variable-Naming Conventions 10. Practice with Variables 11. Formatted String Literals 12. Variable Naming 13. Variable Naming Quiz 14. Title Generator</summary></entry><entry><title type="html">Tour of a Repl’s Interface</title><link href="https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl.html" rel="alternate" type="text/html" title="Tour of a Repl’s Interface" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/17/tour-of-repl.html">&lt;h3 id=&quot;after-creating-a-repl-in-python-&quot;&gt;After creating a repl in Python …&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;/code/assets/images/repl-001.jpg&quot; alt=&quot;Create a repl&quot; /&gt;&lt;/p&gt;
 

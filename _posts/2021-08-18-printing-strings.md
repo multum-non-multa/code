@@ -3,24 +3,34 @@ layout: post
 title: strings, printing, getting input, and variables
 ---
 
-- [Project: Generate a Title with Two Separate String Inputs](#project--generate-a-title-with-two-separate-string-inputs)
-  * [1. Review Printing to the Console in Python](#1-review-printing-to-the-console-in-python)
-  * [2. String Manipulation](#2-string-manipulation)
-    + [`string` data type and comments](#-string--data-type-and-comments)
-    + [`string` concatenation](#-string--concatenation)
-  * [3. Spacing Python Code](#3-spacing-python-code)
-  * [4. Code Intelligence](#4-code-intelligence)
-  * [5. Practice Debugging Errors](#5-practice-debugging-errors)
-  * [6. The Python `input` Function](#6-the-python--input--function)
-    + [a. Data in general](#a-data-in-general)
-    + [b. A Program Model](#b-a-program-model)
-    + [c. `input()`](#c--input---)
-  * [7. Practice Using `input`](#7-practice-using--input-)
-  * [8. Variables](#8-variables)
-  * [9. Practice with Variables](#9-practice-with-variables)
-  * [10. Variable Naming](#10-variable-naming)
-  * [11. Variable Naming Quiz](#11-variable-naming-quiz)
-  * [12. Title Generator](#12-title-generator)
+ * [1.  Project](#1--project)
+  * [a.  Goal: Generate a 'Title' with Two Separate String Inputs](#a--goal--generate-a--title--with-two-separate-string-inputs)
+  * [b.  Requirements](#b--requirements)
+  * [2. Printing to the Console in Python](#2-printing-to-the-console-in-python)
+  * [3. String Manipulation](#3-string-manipulation)
+    + [a. String is a 'data type'](#a-string-is-a--data-type-)
+    + [b. Error Messages](#b-error-messages)
+    + [c. `string` data type and comments](#c--string--data-type-and-comments)
+    + [d. `string` concatenation](#d--string--concatenation)
+  * [4. Indentation & Spacing Python Code](#4-indentation---spacing-python-code)
+  * [5. Code Intelligence](#5-code-intelligence)
+  * [6. Practice Debugging Errors](#6-practice-debugging-errors)
+  * [7. The Python `input` Function](#7-the-python--input--function)
+    + [a. Model for a Program: I.P.O.](#a-model-for-a-program--ipo)
+    + [b. `input()`](#b--input---)
+  * [8. Practice Using `input`](#8-practice-using--input-)
+  * [9. Variables](#9-variables)
+    + [a. Variables in General](#a-variables-in-general)
+    + [b. Variable-Naming Syntax](#b-variable-naming-syntax)
+    + [c. Rules on Variable Names](#c-rules-on-variable-names)
+      - [(i) Python Variable-Naming Rules](#-i--python-variable-naming-rules)
+      - [(ii) Python Variable-Naming Conventions](#-ii--python-variable-naming-conventions)
+  * [10. Practice with Variables](#10-practice-with-variables)
+  * [11. Formatted String Literals](#11-formatted-string-literals)
+  * [12. Variable Naming](#12-variable-naming)
+  * [13. Variable Naming Quiz](#13-variable-naming-quiz)
+  * [14. Title Generator](#14-title-generator)
+
 
 ---
 
@@ -28,10 +38,9 @@ title: strings, printing, getting input, and variables
 
 ---
 
-<div style="position: relative; padding-bottom: 46.32352941176471%; height: 0;"><iframe src="https://www.loom.com/embed/3bef87aeacfb4254bb1d5949e5a4bb35" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
-
-
 ### a.  Goal: Generate a 'Title' with Two Separate String Inputs
+
+<div style="position: relative; padding-bottom: 46.32352941176471%; height: 0;"><iframe src="https://www.loom.com/embed/3bef87aeacfb4254bb1d5949e5a4bb35" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
 Result:  Take two inputs from the console and, after combining them, print out the result:
 
@@ -86,8 +95,11 @@ In order to complete this project, we need to know how to:
 
   - `input()`
 
+---
 
 ### 3. String Manipulation
+
+---
 
 #### a. String is a 'data type'
 
@@ -241,8 +253,11 @@ print('Hello' + ' World')
 # or
 print('Hello' + ' ' + 'World')
 ```
+---
 
 ### 4. Indentation & Spacing Python Code
+
+---
 
 ```python
 # put a space or two or three before the print
@@ -274,16 +289,24 @@ If you correct line 1, both lines will print.
 
 ---
 
-To both spot errors _before_ you run your code __and__ obtain help with Python, enable `Code intelligence` in your repl:
+To both spot errors _before_ you run your code __and__ obtain help with Python, enable _Code intelligence_ in your repl:
 
 <iframe width="465" height="816" src="https://www.loom.com/embed/9335f63e611a49a1a336e6abce26a810" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-When you enable `code intelligence` notice a few things ...
+---
+
+When you enable code intelligence notice a few things ...
+
+---
 
 <div style="position: relative; padding-bottom: 45.729537366548044%; height: 0;"><iframe src="https://www.loom.com/embed/786180e2818c4ee38a025ee30f8d9f7a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
 
-- Somewhere in the line of code, a red, underscore
+---
+- Somewhere in the line of code, a red, underscore squiggly line shows that something is not right.  Moreover, the red bar to the right of the frame emphasizes a problem.
 
+- The other thing you'll notice a type of 'drop-down menu' of code possibilities.  Ignore that for now.  That rather busy snippet of code is for helping you when, later on, you write code and you want to see more information on code you are writing. 
+
+If you find this too annoying, simply disable the code intelligence.
 
 ---
 
@@ -345,9 +368,11 @@ The Python documentation says of `input()`:
 >The function ... reads a line from input, converts it to a string (stripping a trailing newline), and returns that.
 
 
-
+---
 
 ### 8. Practice Using `input`
+
+---
 
 When running a program from the command line or, as it is done in a repl, you should notice something about the prompt.  A prompt can take on any kind of look, but for the most part you'll see an angle bracket or 'greater than' sign [`>`] or a dollar sign [`$`], e.g.:
 
@@ -422,7 +447,7 @@ variable_name = 'the value'
 
 But not everything will be accepted by the Python interpreter as a variable name.  Moreover, it is a good idea to adhere to certain naming conventions.  First the requirements.
 
-##### i. Python Variable-Naming Rules
+##### (i) Python Variable-Naming Rules
 
 - can use any alphabet character
 
@@ -435,13 +460,11 @@ But not everything will be accepted by the Python interpreter as a variable name
 ```python
 jumbo = 'elephant'
 largest_elephant = 'humungo'
-_
-
 ```
 
 - do not use a Python 'keyword' for a variable name.  A keyword is a reserved in the language for its own purposes, e.g., you should not use `print` because it will confuse the interpreter.
 
-##### ii. Python Variable-Naming Conventions
+##### (ii) Python Variable-Naming Conventions
 
 You are not required to, but Pythonic code follows some conventions for variable names, e.g.,
 
@@ -456,7 +479,6 @@ More conventions are to follow, but that's sufficient for now.
 ---
 
 ### 10. Practice with Variables
-
 
 ---
 
@@ -481,9 +503,6 @@ A formatted string literal or f-string is a string literal that is prefixed with
 ### 14. Title Generator
 
 ---
-
-
-
 
 
 
