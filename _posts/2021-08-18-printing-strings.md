@@ -459,7 +459,8 @@ But not everything will be accepted by the Python interpreter as a variable name
 
 ```python
 jumbo = 'elephant'
-largest_elephant = 'humungo'
+Jumbo = 'elephant'
+# these two variables do not refer to the same object in memory
 ```
 
 - do not use a Python 'keyword' for a variable name.  A keyword is a reserved in the language for its own purposes, e.g., you should not use `print` because it will confuse the interpreter.
@@ -487,6 +488,15 @@ More conventions are to follow, but that's sufficient for now.
 ---
 
 A formatted string literal or f-string is a string literal that is prefixed with 'f' or 'F'.
+
+```python
+first_name = 'Fred'
+# print message using f-string
+print(f"Hello, {first_name}")
+# that is, begin the string with 'f' or 'F', insert variable in curly braces in string
+
+
+```
 
 ---
 
