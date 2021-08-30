@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-29T13:21:00-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">strings, printing, getting input, and variables</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="strings, printing, getting input, and variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-08-29T19:35:18-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">strings, printing, getting input, and variables</title><link href="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="strings, printing, getting input, and variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/18/printing-strings</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html">&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#project--generate-a-title-with-two-separate-string-inputs&quot;&gt;Project: Generate a Title with Two Separate String Inputs&lt;/a&gt;
     &lt;ul&gt;
       &lt;li&gt;&lt;a href=&quot;#1-review-printing-to-the-console-in-python&quot;&gt;1. Review Printing to the Console in Python&lt;/a&gt;&lt;/li&gt;
@@ -114,25 +114,50 @@ You generated the title Pizza Chicago
 
 &lt;h3 id=&quot;3-string-manipulation&quot;&gt;3. String Manipulation&lt;/h3&gt;
 
+&lt;h4 id=&quot;a-string-is-a-data-type&quot;&gt;a. String is a ‘data type’&lt;/h4&gt;
+
 &lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; is a &lt;em&gt;&lt;u&gt;data type&lt;/u&gt;&lt;/em&gt; in Python&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Python has several data types, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; one of the fundamental types.  Other fundamental types we will deal with over the next few days are:&lt;/p&gt;
+
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;integers&lt;/code&gt;&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;floats&lt;/code&gt;&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;booleans&lt;/code&gt; (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;True&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;False&lt;/code&gt;)&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;None&lt;/code&gt; (you read that right)&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;the contents can be between either double or single quotes, just don’t mix them.&lt;/p&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; can be between either double &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;&lt;/code&gt; or single &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&apos;&lt;/code&gt; quotes; the rule: &lt;em&gt;whatever type of quote mark you use, finish with it&lt;/em&gt;&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;common error with strings - leave off a quotation mark&lt;/p&gt;
+    &lt;p&gt;a &lt;em&gt;very&lt;/em&gt; common error with strings is to forget one of the quotation marks&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;main.py&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
-    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;Hello, World)
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;File &lt;span class=&quot;s2&quot;&gt;&quot;main.py&quot;&lt;/span&gt;, line 1
+    print&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;Hello, World)
                        ^
 SyntaxError: EOL while scanning string literal
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;But how to interpret the error message?&lt;/p&gt;
+&lt;h4 id=&quot;b-error-messages&quot;&gt;b. Error Messages&lt;/h4&gt;
+
+&lt;p&gt;But how to interpret the error message above?&lt;/p&gt;
 
 &lt;p&gt;Well, you do know:&lt;/p&gt;
 
@@ -144,7 +169,7 @@ SyntaxError: EOL while scanning string literal
 
 &lt;p&gt;What is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;SyntaxError&lt;/code&gt;?  What does the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;^&lt;/code&gt; tell you?  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;EOL&lt;/code&gt;?&lt;/p&gt;
 
-&lt;p&gt;Errors&lt;/p&gt;
+&lt;p&gt;The first three things to remember about error messages:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;Get used to them&lt;/li&gt;
@@ -152,9 +177,11 @@ SyntaxError: EOL while scanning string literal
   &lt;li&gt;Don’t be afraid of them&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;If you cannot for the life of you figure out what the message means, copy the error and dump it into a search engine.  Typically you find yourself at &lt;em&gt;StackOverflow&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;The error message itself will usually tell you where and what the problem is.  It is one of your first methods for ‘debugging’ your code.&lt;/p&gt;
 
-&lt;h4 id=&quot;string-data-type-and-comments&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; data type and comments&lt;/h4&gt;
+&lt;p&gt;If you cannot for the life of you figure out what the message means, copy the error and dump it into a search engine.  Typically you find yourself at &lt;a href=&quot;https://stackoverflow.com/&quot;&gt;StackOverflow&lt;/a&gt;.  For example, if you type into Google, “SyntaxError: EOL while scanning string literal”, one of your first results will be at &lt;a href=&quot;https://stackoverflow.com/questions/3561691/python-syntaxerror-eol-while-scanning-string-literal&quot;&gt;StackOverflow’s page where that question was posed&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h4 id=&quot;c-string-data-type-and-comments&quot;&gt;c. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; data type and comments&lt;/h4&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 &lt;span class=&quot;c1&quot;&gt;# this is a comment
@@ -209,9 +236,9 @@ SyntaxError: EOL while scanning string literal
 &lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h4 id=&quot;string-concatenation&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; concatenation&lt;/h4&gt;
+&lt;h4 id=&quot;d-string-concatenation&quot;&gt;d. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; concatenation&lt;/h4&gt;
 
-&lt;p&gt;What is ‘concatenation’ of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt;?&lt;/p&gt;
+&lt;p&gt;What is &lt;strong&gt;‘concatenation’&lt;/strong&gt; of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt;?&lt;/p&gt;
 
 &lt;p&gt;Well, data types typically come with a set of ‘operators’ that can be used on them, e.g.,&lt;/p&gt;
 
@@ -222,19 +249,23 @@ SyntaxError: EOL while scanning string literal
 
 &lt;p&gt;Those &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; signs are called ‘operators,’ i.e., they operate on the numbers which, to carry the terminology to technical use, are ‘operands,’ i.e., expressions on which the ‘operators’ ‘operate.’&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; have operators as well.  But first, were does the term &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; originate?&lt;/p&gt;
+&lt;p&gt;Without getting bogged down right now in too much terminology, just remember that &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; have operators as well.&lt;/p&gt;
 
-&lt;p&gt;Under the hood, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; are essentially another type called, in some programming languages, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chars&lt;/code&gt; or characters.  More than one &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;char&lt;/code&gt; between quotes is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; of such data type.&lt;/p&gt;
+&lt;p&gt;To understand what some of those might be, first understand the origin of the term &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;Python, however, makes no distinction between the two but treats one or more characters together as a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt;, i.e., a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; is nothing but one or more &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chars&lt;/code&gt; chained together such as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;H&lt;/code&gt; + &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;e&lt;/code&gt; + . . .&lt;/p&gt;
+&lt;p&gt;Under the hood, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; are essentially one or more characters, as long as they are all between quotation marks.&lt;/p&gt;
 
 &lt;p&gt;Knowing this the term ‘concatenation’ makes a bit more sense:&lt;/p&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;concatenare, from con- ‘together’ + catenare, from catena ‘chain’&lt;/p&gt;
+  &lt;p&gt;concatenare, from con- ‘together’&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;A &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; is a chaining together of characters or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;chars&lt;/code&gt; in some languages.  Perhaps not relevant to you now, but a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; in Python is actually an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;array&lt;/code&gt; of characters stored in memory together.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;catenare, from catena ‘chain’&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;A &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; is a &lt;em&gt;chaining together&lt;/em&gt; of characters.  (Perhaps not relevant to you now, but a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; in Python is actually an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;array&lt;/code&gt; of characters stored in memory together.)&lt;/p&gt;
 
 &lt;p&gt;As it turns out the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; operator works on &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; as well as numbers.  E.g.,&lt;/p&gt;
 
@@ -259,18 +290,20 @@ SyntaxError: EOL while scanning string literal
 &lt;h3 id=&quot;4-indentation--spacing-python-code&quot;&gt;4. Indentation &amp;amp; Spacing Python Code&lt;/h3&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# put a space or two or three before the print
-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;some string to print&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;   &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;string number 1 to print&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# remove the spaces
-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;some string to print&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;string number 2 to print&apos;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;File &lt;span class=&quot;s2&quot;&gt;&quot;main.py&quot;&lt;/span&gt;, line 1
-    print&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;some string to print&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
+    print&lt;span class=&quot;o&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s1&quot;&gt;&apos;string number 1 to print&apos;&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;)&lt;/span&gt;
     ^
 IndentationError: unexpected indent
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Neither line 1 nor line 2 will run.  Why?&lt;/p&gt;
+&lt;p&gt;Neither line 1 nor line 2 will run.&lt;/p&gt;
+
+&lt;p&gt;Why?&lt;/p&gt;
 
 &lt;p&gt;Line 1:  Python, unlike many other languages, determines how to interpret code based on, among other things, the &lt;strong&gt;&lt;u&gt;indentation&lt;/u&gt;&lt;/strong&gt; of a line of code.&lt;/p&gt;
 
@@ -284,7 +317,17 @@ IndentationError: unexpected indent
 
 &lt;hr /&gt;
 
-&lt;p&gt;A word on syntax helpers …&lt;/p&gt;
+&lt;p&gt;To both spot errors &lt;em&gt;before&lt;/em&gt; you run your code &lt;strong&gt;and&lt;/strong&gt; obtain help with Python, enable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Code intelligence&lt;/code&gt; in your repl:&lt;/p&gt;
+
+&lt;iframe width=&quot;465&quot; height=&quot;816&quot; src=&quot;https://www.loom.com/embed/9335f63e611a49a1a336e6abce26a810&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
+
+&lt;p&gt;When you enable &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;code intelligence&lt;/code&gt; notice a few things …&lt;/p&gt;
+
+&lt;div style=&quot;position: relative; padding-bottom: 45.729537366548044%; height: 0;&quot;&gt;&lt;iframe src=&quot;https://www.loom.com/embed/786180e2818c4ee38a025ee30f8d9f7a&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot; style=&quot;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Somewhere in the line of code, a red, underscore&lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -404,9 +447,11 @@ Fred
 &lt;span class=&quot;c1&quot;&gt;# where store_name() is some function that does the heavy lifting of stores the name in a database, to be retrieved upon each login.
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;first_name&lt;/code&gt; is that variable.  It might be used several times.  First, the programe will typically verify the accuracy of the name entered; later on the program may produce a special username based on that first name.&lt;/p&gt;
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;first_name&lt;/code&gt; is that variable.  It might be used several times.&lt;/p&gt;
 
-&lt;p&gt;The point is: merely using the string literal, like ‘Fred’ is not sufficient.  The programmer will need to refer to the value later on and the way to hold on to it is to use a name for it.&lt;/p&gt;
+&lt;p&gt;First, the program will typically verify the accuracy of the name entered; later on the program may produce a special username based on that first name.&lt;/p&gt;
+
+&lt;p&gt;The point is: merely using the string literal, like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Fred&lt;/code&gt;, is not sufficient — the programmer will need to refer to the value later on.  The way to “hold on” to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Fred&lt;/code&gt; is to use a variable name for it.&lt;/p&gt;
 
 &lt;h4 id=&quot;b-variable-naming-syntax&quot;&gt;b. Variable-Naming Syntax&lt;/h4&gt;
 
@@ -414,8 +459,6 @@ Fred
 # middle: assignment operator =
 # right side: value to be stored
 &lt;/span&gt;&lt;span class=&quot;n&quot;&gt;variable_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&apos;the value&apos;&lt;/span&gt;
-
-
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h4 id=&quot;c-rules-on-variable-names&quot;&gt;c. Rules on Variable Names&lt;/h4&gt;

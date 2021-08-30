@@ -89,20 +89,34 @@ In order to complete this project, we need to know how to:
 
 ### 3. String Manipulation
 
+#### a. String is a 'data type'
+
 - `string` is a _<u>data type</u>_ in Python
 
-- the contents can be between either double or single quotes, just don't mix them.
+  - Python has several data types, `strings` one of the fundamental types.  Other fundamental types we will deal with over the next few days are:
 
-- common error with strings - leave off a quotation mark
+    - `integers`
 
-```python
+    - `floats`
+
+    - `booleans` (`True` or `False`)
+
+    - `None` (you read that right)
+
+- `strings` can be between either double `"` or single `'` quotes; the rule: _whatever type of quote mark you use, finish with it_
+
+- a _very_ common error with strings is to forget one of the quotation marks
+
+```bash
 File "main.py", line 1
     print('Hello, World)
                        ^
 SyntaxError: EOL while scanning string literal
 ```
 
-But how to interpret the error message?
+#### b. Error Messages
+
+But how to interpret the error message above?
 
 Well, you do know:
 
@@ -112,15 +126,17 @@ Well, you do know:
 
 What is a `SyntaxError`?  What does the `^` tell you?  `EOL`?
 
-Errors
+The first three things to remember about error messages:
 
 - Get used to them
 - Learn to decipher them
 - Don't be afraid of them
 
-If you cannot for the life of you figure out what the message means, copy the error and dump it into a search engine.  Typically you find yourself at _StackOverflow_.
+The error message itself will usually tell you where and what the problem is.  It is one of your first methods for 'debugging' your code.
 
-#### `string` data type and comments
+If you cannot for the life of you figure out what the message means, copy the error and dump it into a search engine.  Typically you find yourself at [StackOverflow](https://stackoverflow.com/).  For example, if you type into Google, "SyntaxError: EOL while scanning string literal", one of your first results will be at [StackOverflow's page where that question was posed](https://stackoverflow.com/questions/3561691/python-syntaxerror-eol-while-scanning-string-literal).
+
+#### c. `string` data type and comments
 
 ```python
 
@@ -176,9 +192,9 @@ print('a string to print')  # ... the right it
 
 ```
 
-#### `string` concatenation
+#### d. `string` concatenation
 
-What is 'concatenation' of `strings`?
+What is __'concatenation'__ of `strings`?
 
 Well, data types typically come with a set of 'operators' that can be used on them, e.g.,
 
@@ -190,17 +206,19 @@ Well, data types typically come with a set of 'operators' that can be used on th
 
 Those `+` and `-` signs are called 'operators,' i.e., they operate on the numbers which, to carry the terminology to technical use, are 'operands,' i.e., expressions on which the 'operators' 'operate.'
 
-`strings` have operators as well.  But first, were does the term `strings` originate?
+Without getting bogged down right now in too much terminology, just remember that `strings` have operators as well.
 
-Under the hood, `strings` are essentially another type called, in some programming languages, `chars` or characters.  More than one `char` between quotes is a `string` of such data type.
+To understand what some of those might be, first understand the origin of the term `strings`.
 
-Python, however, makes no distinction between the two but treats one or more characters together as a `string`, i.e., a `string` is nothing but one or more `chars` chained together such as `H` + `e` + . . .
+Under the hood, `strings` are essentially one or more characters, as long as they are all between quotation marks.
 
 Knowing this the term 'concatenation' makes a bit more sense:
 
-> concatenare, from con- ‘together’ + catenare, from catena ‘chain’
+> concatenare, from con- ‘together’
 
-A `string` is a chaining together of characters or `chars` in some languages.  Perhaps not relevant to you now, but a `string` in Python is actually an `array` of characters stored in memory together.
+> catenare, from catena ‘chain’
+
+A `string` is a _chaining together_ of characters.  (Perhaps not relevant to you now, but a `string` in Python is actually an `array` of characters stored in memory together.)
 
 As it turns out the `+` operator works on `strings` as well as numbers.  E.g.,
 
@@ -228,19 +246,21 @@ print('Hello' + ' ' + 'World')
 
 ```python
 # put a space or two or three before the print
-1   print('some string to print')
+1   print('string number 1 to print')
 # remove the spaces
-2 print('some string to print')
+2 print('string number 2 to print')
 ```
 
 ```bash
 File "main.py", line 1
-    print('some string to print')
+    print('string number 1 to print')
     ^
 IndentationError: unexpected indent
 ```
 
-Neither line 1 nor line 2 will run.  Why?
+Neither line 1 nor line 2 will run.
+
+Why?
 
 Line 1:  Python, unlike many other languages, determines how to interpret code based on, among other things, the __<u>indentation</u>__ of a line of code.
 
@@ -248,14 +268,22 @@ Line 2: Because it is a type of 'compilation' or interpreter error, the interpre
 
 If you correct line 1, both lines will print.
 
-
 ---
 
 ### 5. Code Intelligence
 
 ---
 
-A word on syntax helpers ...
+To both spot errors _before_ you run your code __and__ obtain help with Python, enable `Code intelligence` in your repl:
+
+<iframe width="465" height="816" src="https://www.loom.com/embed/9335f63e611a49a1a336e6abce26a810" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+
+When you enable `code intelligence` notice a few things ...
+
+<div style="position: relative; padding-bottom: 45.729537366548044%; height: 0;"><iframe src="https://www.loom.com/embed/786180e2818c4ee38a025ee30f8d9f7a" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+- Somewhere in the line of code, a red, underscore
+
 
 ---
 
@@ -375,9 +403,11 @@ store_name(first_name)
 # where store_name() is some function that does the heavy lifting of stores the name in a database, to be retrieved upon each login.
 ```
 
-`first_name` is that variable.  It might be used several times.  First, the programe will typically verify the accuracy of the name entered; later on the program may produce a special username based on that first name.
+`first_name` is that variable.  It might be used several times.
 
-The point is: merely using the string literal, like 'Fred' is not sufficient.  The programmer will need to refer to the value later on and the way to hold on to it is to use a name for it.
+First, the program will typically verify the accuracy of the name entered; later on the program may produce a special username based on that first name.
+
+The point is: merely using the string literal, like `Fred`, is not sufficient --- the programmer will need to refer to the value later on.  The way to "hold on" to `Fred` is to use a variable name for it.
 
 #### b. Variable-Naming Syntax
 
@@ -386,8 +416,6 @@ The point is: merely using the string literal, like 'Fred' is not sufficient.  T
 # middle: assignment operator =
 # right side: value to be stored
 variable_name = 'the value'
-
-
 ```
 
 #### c. Rules on Variable Names
