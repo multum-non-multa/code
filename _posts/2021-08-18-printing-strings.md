@@ -115,7 +115,7 @@ In order to complete this project, we need to know how to:
 
     - `None` (you read that right)
 
-- `strings` can be between either double `"` or single `'` quotes; the rule: _whatever type of quote mark you use, finish with it_
+- `strings` can be between either double `"` or single `'` quotes; the rule: _whatever type of quote mark you start with, finish with_
 
 - a _very_ common error with strings is to forget one of the quotation marks
 

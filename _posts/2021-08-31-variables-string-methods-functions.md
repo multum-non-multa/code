@@ -1,5 +1,5 @@
 ---
-layout: post
+ylayout: post
 title: "More On Variables and Strings and (Maybe) Functions"
 ---
 
