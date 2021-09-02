@@ -46,7 +46,7 @@ title: "More On Variables and Strings"
 
 ## Variables
 
-    [Variables ...](https://realpython.com/python-variables/)
+[Variables ...](https://realpython.com/python-variables/)
 
 ### Variable Declarations
 
@@ -64,11 +64,11 @@ title: "More On Variables and Strings"
 
 ## Data Types
 
-    [data](https://realpython.com/python-data-types/)
+[data](https://realpython.com/python-data-types/)
 
 ## More Regarding Strings
 
-    [string methods](https://realpython.com/python-strings/)
+[string methods](https://realpython.com/python-strings/)
 
 ### Strings are 'data structures'
 
