@@ -304,7 +304,7 @@ When you enable code intelligence notice a few things ...
 ---
 - Somewhere in the line of code, a red, underscore squiggly line shows that something is not right.  Moreover, the red bar to the right of the frame emphasizes a problem.
 
-- The other thing you'll notice a type of 'drop-down menu' of code possibilities.  Ignore that for now.  That rather busy snippet of code is for helping you when, later on, you write code and you want to see more information on code you are writing. 
+- The other thing you'll notice a type of 'drop-down menu' of code possibilities.  Ignore that for now.  That rather busy snippet of code is for helping you when, later on, you write code and you want to see more information on code you are writing.
 
 If you find this too annoying, simply disable the code intelligence.
 
@@ -460,7 +460,7 @@ But not everything will be accepted by the Python interpreter as a variable name
 ```python
 jumbo = 'elephant'
 Jumbo = 'elephant'
-# these two variables do not refer to the same object in memory
+# these two variables are not the same
 ```
 
 - do not use a Python 'keyword' for a variable name.  A keyword is a reserved in the language for its own purposes, e.g., you should not use `print` because it will confuse the interpreter.
