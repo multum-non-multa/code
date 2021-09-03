@@ -137,13 +137,19 @@ Why?
 
 That `"12"` is a `string` but `age_of_park` is an `integer`.  So what to do?  
 
-Convert the `string` into an `integer`:
+Convert the `string` into an `integer` using another one of Python's built-in functions.  
+
+Here we use the built-in `int()`:
 
 ```python
 age_of_statue_in_park = int(age_of_statue_in_park) # convert string to an integer
 # now you can use it to subtract from age of park
 age_built = age_of_park - age_of_statue_in_park
 ```
+
+`int()` ___takes in___ a `string` that wraps an `integer`, e.g., `int(age_of_statue_in_park)` or `"12"`, and `returns` the `integer`.
+
+
 
 ### Variable Names & Key Words in Python
 
