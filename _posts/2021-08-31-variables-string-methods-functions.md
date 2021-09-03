@@ -263,7 +263,10 @@ What does that mean?
 'c'
 ```
 
-But can also uses slicing with the square brackets operater (see this article [slicing](https://realpython.com/python-strings/#string-slicing))
+But your can also use slicing with the square brackets operater (see this article [slicing](https://realpython.com/python-strings/#string-slicing)) to slice sections.  The syntax is:
+
+
+![test image size](/code/assets/images/variables-08-31/slicing-rails.jpg){:class="img-responsive"}
 
 ```python
 >>> movie_title[2:4]
