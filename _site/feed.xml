@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-03T17:10:17-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h3 id=&quot;under-construction-right-now--come-back-later&quot;&gt;Under construction right now … come back later&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-03T17:23:26-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h3 id=&quot;under-construction-right-now--come-back-later&quot;&gt;Under construction right now … come back later&lt;/h3&gt;
 
 &lt;h2 id=&quot;integers--floats&quot;&gt;Integers &amp;amp; Floats&lt;/h2&gt;
 
@@ -43,9 +43,7 @@
 
 &lt;h3 id=&quot;note&quot;&gt;Note&lt;/h3&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;A very good idea:  when you see some code snippets below, dump it in a repl and play around with it.  It builds a certain type of coding memory.&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;h4 style=&quot;color:red;font-weight:bold&quot;&gt;When you see some code snippets below, dump it in a repl and play around with it.  It builds a certain type of coding memory.&lt;/h4&gt;
 
 &lt;hr /&gt;
 
@@ -282,7 +280,24 @@ yield
 
 &lt;p&gt;Python dedicates an enormous part of its library to manipulation of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; — they are that important because they are that pervasive.&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://docs.python.org/3/library/stdtypes.html#string-methods&quot;&gt;Look at the many string methods&lt;/a&gt; to get some sense.&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">Strings, Print, Input, Variables</title><link href="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Strings, Print, Input, Variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/18/printing-strings</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html">&lt;ul&gt;
+&lt;p&gt;&lt;a href=&quot;https://docs.python.org/3/library/stdtypes.html#string-methods&quot;&gt;Look at the many string methods&lt;/a&gt; to get some sense.&lt;/p&gt;
+
+&lt;p&gt;Some examples of methods follow.&lt;/p&gt;
+
+&lt;p&gt;The syntax, almost universal in programming languages:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/code/assets/images/variables-08-31/dot-operator.jpg&quot; alt=&quot;value dot operator&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;For example, if “the game stalled in the 8th” is the value, the method, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;capitalize()&lt;/code&gt; placed immediately after would render:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;the game stalled in the 8th&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;capitalize&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&apos;The game stalled in the 8th&apos;&lt;/span&gt;
+
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;movie_title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;lower&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&apos;rocky&apos;&lt;/span&gt;
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">Strings, Print, Input, Variables</title><link href="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Strings, Print, Input, Variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/18/printing-strings</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html">&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#1--project&quot;&gt;1.  Project&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#a--goal--generate-a--title--with-two-separate-string-inputs&quot;&gt;a.  Goal: Generate a ‘Title’ with Two Separate String Inputs&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#b--requirements&quot;&gt;b.  Requirements&lt;/a&gt;&lt;/li&gt;

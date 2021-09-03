@@ -34,7 +34,7 @@ title: "Variables, Data Types, and More on Strings"
 
 ### Note
 
-> A very good idea:  when you see some code snippets below, dump it in a repl and play around with it.  It builds a certain type of coding memory.
+<h4 style="color:red;font-weight:bold">When you see some code snippets below, dump it in a repl and play around with it.  It builds a certain type of coding memory.</h4>
 
 ---
 
@@ -280,6 +280,24 @@ Get used to this.  We will be using data structures beyond `strings` and, when c
 Python dedicates an enormous part of its library to manipulation of `strings` --- they are that important because they are that pervasive.
 
 [Look at the many string methods](https://docs.python.org/3/library/stdtypes.html#string-methods) to get some sense.
+
+Some examples of methods follow.
+
+The syntax, almost universal in programming languages:
+
+![value dot operator](/code/assets/images/variables-08-31/dot-operator.jpg)
+
+For example, if "the game stalled in the 8th" is the value, the method, `capitalize()` placed immediately after would render:
+
+```python
+>>> "the game stalled in the 8th".capitalize()
+'The game stalled in the 8th'
+
+>>> movie_title.lower()
+'rocky'
+
+
+```
 
 
 
