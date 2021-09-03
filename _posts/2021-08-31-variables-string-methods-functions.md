@@ -56,7 +56,7 @@ number = 12
 
 ### Variable Assignment
 
-The `=` sign between a variable name on the left and a value on the right is an `operator`.  It acts to __bind__ or ___assign___ the variable name to the value.  Thus: 
+The `=` sign between a variable name on the left and a value on the right is an `operator`.  It acts to __bind__ or ___assign___ the variable name to the value.  Thus:
 
 ```python
 college = "Whatsamatta U"
@@ -74,14 +74,14 @@ If that message (`"Enter the restaurant's ..."`) will be used more than once, us
 
 ```python
 # declare a variable
-get_rest_food = "Enter the restaurant's major food item"  
+get_rest_food = "Enter the restaurant's major food item"
 # do other stuff here . . .
 # sometime later
 food = input(get_rest_food)
 ```
 ### Variable Types in Python
 
-As mentioned in a prior post, Python's primitive or basic data types are:  
+As mentioned in a prior post, Python's primitive or basic data types are:
 
 - `strings`
 - `integers`
@@ -95,7 +95,7 @@ Leaving `None` aside for now, plug the others into a repl and see:
 park_name = "Grant Park"
 print(type(park_name))
 
-age_of_park = 120 
+age_of_park = 120
 print(type(age_of_park))
 
 acreage_of_park = 34.54
@@ -115,18 +115,18 @@ If you run that you'll get:
 <class 'bool'>
 ```
 
-For now ignore the `<class` and `>` parts.  
+For now ignore the `<class` and `>` parts.
 
-More importantly for now: you'll the type of each variable entered.  To what they refer is obvious: `str` => string, `int` => integer, etc.  
+More importantly for now: you'll the type of each variable entered.  To what they refer is obvious: `str` => string, `int` => integer, etc.
 
-That your data has a type is important.  
+That your data has a type is important.
 
-Simply put: with different data types you do different things, you store different values and you perform different operations.  You'll find some built-in functions won't accept certain types of data.  An example of this:
+Simply put: with different data types you do different things, you store different values and you perform different operations.  You'll find some built-in functions won't accept certain types of data.  As as example of, look at this repl:
 
 ```python
 >>> length_of_name = len("Fred")
 >>> length_of_name
-4 
+4
 # value of 4 returned
 # if Fred's age is now entered:
 >>> fred_age = 89
@@ -148,13 +148,13 @@ age_of_statue_in_park = "12"
 
 __Conversion__
 
-But you want to perform some math operation on that age value, e.g., you want to use it to calculate how many years after Grant Park had been established that the statue was erected.  Well, you can't just use the data from above --- `age_of_park` and substract `"12"` from it.  
+But you want to perform some math operation on that age value, e.g., you want to use it to calculate how many years after Grant Park had been established that the statue was erected.  Well, you can't just use the data from above --- `age_of_park` and substract `"12"` from it.
 
 Why?
 
-That `"12"` is a `string` but `age_of_park` is an `integer`.  So what to do?  
+That `"12"` is a `string` but `age_of_park` is an `integer`.  So what to do?
 
-Convert the `string` into an `integer` using another one of Python's built-in functions.  
+Convert the `string` into an `integer` using another one of Python's built-in functions.
 
 Here we use the built-in `int()`:
 
@@ -168,7 +168,7 @@ age_built = age_of_park - age_of_statue_in_park
 
 ### Variable Names & Key Words in Python
 
-One last thing about variable names (at least, for now):  certain words may not be used. These are Pythons keywords or reserved words.  For example, `print` is the name of a built-in function in Python.  You should ___not___ use that for a variable name.  Below you see Python run directly from the command line.  `print` is assigned a value of `4`.  Once that's done, it can now no longer be used as a function --- at least not as long as the program is running.  
+One last thing about variable names (at least, for now):  certain words may not be used. These are Pythons keywords or reserved words.  For example, `print` is the name of a built-in function in Python.  You should ___not___ use that for a variable name.  Below you see Python run directly from the command line.  `print` is assigned a value of `4`.  Once that's done, it can now no longer be used as a function --- at least not as long as the program is running.
 
 ```python
 >>> print = 4
@@ -188,37 +188,37 @@ TypeError: 'int' object is not callable
 Do ___not___ use the following when naming a value:
 
 ```
-and	
-as	
-assert	
-async	
-await	
-break	
-class	
-continue	
-def	
+and
+as
+assert
+async
+await
+break
+class
+continue
+def
 del
-elif	
-else	
-except	
-False	
-finally	
-for	
-from	
-global	
-if	
-import	
-in	
-is	
-lambda	
-None	
-nonlocal	
-not	
-or	
+elif
+else
+except
+False
+finally
+for
+from
+global
+if
+import
+in
+is
+lambda
+None
+nonlocal
+not
+or
 pass
 raise
 return
-True	
+True
 try
 while
 with
@@ -241,17 +241,15 @@ movie_title = "Rocky"
 
 In memory, that is stored in a contiguous series of characters:
 
-```[R][o][c][k][y]```
+`[R][o][c][k][y]`
 
 which are indexed:
 
-```[R][o][c][k][y]```
+![Superscripting](/code/assets/images/variables-08-31/rocky-index.jpg)
 
-index number:
+What does that mean?  First, a `string` is a `data structure` --- it holds data.
 
-`[0][1][2][3][4]`
-
-What does that mean?  First, a `string` is a `data structure` --- it holds data.  Second, you can retrieve these characters by index value using the `[ ]` (square bracket) operator:
+Second, you can retrieve these characters by index value using the `[ ]` (square bracket) operator:
 
 ```python
 
