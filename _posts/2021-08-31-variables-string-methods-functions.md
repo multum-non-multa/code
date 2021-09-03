@@ -164,11 +164,24 @@ age_of_statue_in_park = int(age_of_statue_in_park) # convert string to an intege
 age_built = age_of_park - age_of_statue_in_park
 ```
 
-`int()` ___takes in___ a `string` that wraps an `integer`, e.g., `int(age_of_statue_in_park)` or `"12"`, and `returns` the `integer`.
+`int()` ___takes in___ a `string` that wraps an `integer`, e.g.,
+
+```python
+int(age_of_statue_in_park)
+# or
+int("12")
+
+```
+
+and `returns` the `integer`.
 
 ### Variable Names & Key Words in Python
 
-One last thing about variable names (at least, for now):  certain words may not be used. These are Pythons keywords or reserved words.  For example, `print` is the name of a built-in function in Python.  You should ___not___ use that for a variable name.  Below you see Python run directly from the command line.  `print` is assigned a value of `4`.  Once that's done, it can now no longer be used as a function --- at least not as long as the program is running.
+One last thing about variable names (at least, for now):
+
+__Pythons keywords or reserved words may not be used.__
+
+For example, `print` is the name of a built-in function in Python.  You should ___not___ use that for a variable name.  Below you see Python run directly from the command line.  `print` is assigned a value of `4`.  Once that's done, it can now no longer be used as a function --- at least not as long as the program is running.
 
 ```python
 >>> print = 4
@@ -264,7 +277,6 @@ What does that mean?
 ```
 
 But your can also use slicing with the square brackets operater (see this article [slicing](https://realpython.com/python-strings/#string-slicing)) to slice sections.  The syntax is:
-
 
 ![test image size](/code/assets/images/variables-08-31/slicing-rails.jpg){:class="img-responsive"}
 
