@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-09-03T09:21:02-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">More On Variables and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/31/variables-string-methods-functions.html" rel="alternate" type="text/html" title="More On Variables and Strings" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/31/variables-string-methods-functions</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/31/variables-string-methods-functions.html">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-09-03T10:25:18-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">More On Variables and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/31/variables-string-methods-functions.html" rel="alternate" type="text/html" title="More On Variables and Strings" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/31/variables-string-methods-functions</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/31/variables-string-methods-functions.html">&lt;hr /&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
@@ -51,11 +51,76 @@
 
 &lt;h3 id=&quot;variable-declarations&quot;&gt;Variable Declarations&lt;/h3&gt;
 
+&lt;p&gt;Order is important in a program.  A program reads from top of the page to the bottom.  The Python interpreter cannot anticipate what falls below the line it is reading.  Thus, only &lt;strong&gt;after&lt;/strong&gt; you declare a variable can you use it.  For example:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# this works
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;num&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# this throws a NameError
+&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
 &lt;h3 id=&quot;variable-assignment&quot;&gt;Variable Assignment&lt;/h3&gt;
+
+&lt;p&gt;The &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;=&lt;/code&gt; sign between a variable name on the left and a value on the right is an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;operator&lt;/code&gt;.  It acts to &lt;strong&gt;bind&lt;/strong&gt; or &lt;strong&gt;&lt;em&gt;assign&lt;/em&gt;&lt;/strong&gt; the variable name to the value.  Thus:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;college&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Whatsamatta U&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;variable-use&quot;&gt;Variable Use&lt;/h3&gt;
 
+&lt;p&gt;But one of the reasons you create a variable is ease of use. Not only do you keep track of a value (even if the value itself changes state, e.g., a number increases from 1 to 2), you can use the variable name anywhere you might you the literal.  In order words, take:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;food&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter the restaurant's major food item&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If that message (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;Enter the restaurant's ...&quot;&lt;/code&gt;) will be used more than once, stick that in a variable name:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# declare a variable
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_rest_food&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Enter the restaurant's major food item&quot;&lt;/span&gt;  
+&lt;span class=&quot;c1&quot;&gt;# do other stuff here . . .
+# sometime later
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;food&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;get_rest_food&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 &lt;h3 id=&quot;variable-types-in-python&quot;&gt;Variable Types in Python&lt;/h3&gt;
+
+&lt;p&gt;As mentioned in a prior post, Python’s primitive or basic data types are:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;integers&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;floats&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;booleans&lt;/code&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;None&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Leaving &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;None&lt;/code&gt; aside for now, plug the others into a repl and see:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;park_name&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Grant Park&quot;&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;park_name&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;age_of_park&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;120&lt;/span&gt; 
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;age_of_park&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;acreage_of_park&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;34.54&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;acreage_of_park&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;span class=&quot;n&quot;&gt;is_urban_park&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;
+&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;is_urban_park&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you run that you’ll get:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&amp;lt;class &lt;span class=&quot;s1&quot;&gt;'str'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&amp;lt;class &lt;span class=&quot;s1&quot;&gt;'int'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&amp;lt;class &lt;span class=&quot;s1&quot;&gt;'float'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&amp;lt;class &lt;span class=&quot;s1&quot;&gt;'bool'&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;For now ignore the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;class&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; parts.  More importantly for now: you’ll the type of each variable entered.  To what they refer is obvious: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str&lt;/code&gt; =&amp;gt; string, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt; =&amp;gt; integer, etc.&lt;/p&gt;
 
 &lt;h3 id=&quot;object-references&quot;&gt;Object References&lt;/h3&gt;
 
@@ -758,4 +823,4 @@ Fred
   &lt;li&gt;
     &lt;p&gt;Run it to see print out in the console window.&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Create an account at Replit</summary></entry><entry><title type="html">Template</title><link href="https://multum-non-multa.github.io/code/2020/12/31/TEMPLATE.html" rel="alternate" type="text/html" title="Template" /><published>2020-12-31T00:00:00-06:00</published><updated>2020-12-31T00:00:00-06:00</updated><id>https://multum-non-multa.github.io/code/2020/12/31/TEMPLATE</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2020/12/31/TEMPLATE.html">&lt;h2&gt;…&lt;/h2&gt;</content><author><name>multum-non-multa</name></author><summary type="html">…</summary></entry><entry><title type="html">More Data Types, Numbers, Conversion …</title><link href="https://multum-non-multa.github.io/code/2020/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="More Data Types, Numbers, Conversion …" /><published>2020-09-03T00:00:00-05:00</published><updated>2020-09-03T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2020/09/03/numbers-conversion-etc</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2020/09/03/numbers-conversion-etc.html">&lt;h2 id=&quot;more-on-data-types&quot;&gt;More on Data Types&lt;/h2&gt;</content><author><name>multum-non-multa</name></author><summary type="html">More on Data Types</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Create an account at Replit</summary></entry><entry><title type="html">More Data Types, Numbers, Conversion …</title><link href="https://multum-non-multa.github.io/code/2020/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="More Data Types, Numbers, Conversion …" /><published>2020-09-03T00:00:00-05:00</published><updated>2020-09-03T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2020/09/03/numbers-conversion-etc</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2020/09/03/numbers-conversion-etc.html">&lt;h2 id=&quot;more-on-data-types&quot;&gt;More on Data Types&lt;/h2&gt;</content><author><name>multum-non-multa</name></author><summary type="html">More on Data Types</summary></entry></feed>
