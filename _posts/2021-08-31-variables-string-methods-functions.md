@@ -281,9 +281,9 @@ But your can also use slicing with the square brackets operater (see this articl
 ![test image size](/code/assets/images/variables-08-31/slicing-rails.jpg){:class="img-responsive"}
 
 ```python
->>> movie_title[2:4]
+>>> "Rocky"[2:4]
 'ck'
->>> movie_title[1:3]
+>>> "Rocky"[1:3]
 'oc'
 ```
 
