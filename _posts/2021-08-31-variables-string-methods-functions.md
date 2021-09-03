@@ -307,6 +307,8 @@ For example, if "the game stalled in the 8th" is the value, the method, `capital
 ```python
 >>> "the game stalled in the 8th".capitalize()
 'The game stalled in the 8th'
->>> movie_title.lower()
+>>> "Rocky".lower()
 'rocky'
 ```
+
+Many other methods exist and we'll see them a great deal later.
