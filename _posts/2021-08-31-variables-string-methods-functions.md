@@ -36,6 +36,7 @@ title: "Variables, Data Types, and More on Strings"
 
 > A very good idea:  when you see some code snippets below, dump it in a repl and play around with it.  It builds a certain type of coding memory.
 
+---
 
 ## Variables
 
@@ -231,6 +232,37 @@ Got that?  No worries; you'll be using these keywords soon enough for their prop
 ## More Regarding Strings
 
 ### Strings are 'data structures'
+
+When you create a `string`, the computer stores it as just that, a ___string___ of characters.  Thus:
+
+```python
+movie_title = "Rocky"
+```
+
+In memory, that is stored in a contiguous series of characters:
+
+```[R][o][c][k][y]```
+
+which are indexed:
+
+```[R][o][c][k][y]```
+
+index number:
+
+`[0][1][2][3][4]`
+
+What does that mean?  First, a `string` is a `data structure` --- it holds data.  Second, you can retrieve these characters by index value using the `[ ]` (square bracket) operator:
+
+```python
+
+third_letter = movie_title[2]
+print(third_letter)
+# c
+```
+
+
+
+
 
 
 
