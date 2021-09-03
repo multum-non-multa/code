@@ -68,13 +68,13 @@ college = "Whatsamatta U"
 
 ### Variable Use
 
-But one of the reasons you create a variable is ease of use. Not only do you keep track of a value (even if the value itself changes state, e.g., a number increases from 1 to 2), you can use the variable name anywhere you might you the literal.  In order words, take:
+But one of the reasons you create a variable is ease of use. Not only do you keep track of a value (even if the value itself changes state, e.g., a number increases from 1 to 2), you can use the variable name anywhere you might use the literal.  In other words, take:
 
 ```python
 food = input("Enter the restaurant's major food item")
 ```
 
-If that message (`"Enter the restaurant's ..."`) will be used more than once, stick that in a variable name:
+If that message (`"Enter the restaurant's ..."`) will be used more than once, use a variable name instead:
 
 ```python
 # declare a variable
