@@ -119,11 +119,32 @@ If you run that you'll get:
 <class 'bool'>
 ```
 
-For now ignore the `<class` and `>` parts.  More importantly for now: you'll the type of each variable entered.  To what they refer is obvious: `str` => string, `int` => integer, etc.  
+For now ignore the `<class` and `>` parts.  
 
-That your data has a type is important.  Simply put: with different data types you do different things, you store different values and you perform different operations.
+More importantly for now: you'll the type of each variable entered.  To what they refer is obvious: `str` => string, `int` => integer, etc.  
 
-For example, if you are taking a user's age an input (that may be at the console, but more typically it is through a web browser or retrieving it from a database), that age is often a `string`.  Thus:
+That your data has a type is important.  
+
+Simply put: with different data types you do different things, you store different values and you perform different operations.  You'll find some built-in functions won't accept certain types of data.  An example of this:
+
+```python
+>>> length_of_name = len("Fred")
+>>> length_of_name
+4 
+# value of 4 returned
+# if Fred's age is now entered:
+>>> fred_age = 89
+>>> len(fred_age)
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+    len(fred_age)
+TypeError: object of type 'int' has no len()
+>>>
+```
+
+That error is trying to tell you that the built-in `len()` function does not take an `integer`.  Simply put, numbers don't have length.  The data type matters.
+
+Another example:  if you are taking a user's age an input (that may be at the console, but more typically it is through a web browser or retrieving it from a database), that age is often a `string`.  Thus:
 
 ```python
 age_of_statue_in_park = "12"
@@ -148,8 +169,6 @@ age_built = age_of_park - age_of_statue_in_park
 ```
 
 `int()` ___takes in___ a `string` that wraps an `integer`, e.g., `int(age_of_statue_in_park)` or `"12"`, and `returns` the `integer`.
-
-
 
 ### Variable Names & Key Words in Python
 
