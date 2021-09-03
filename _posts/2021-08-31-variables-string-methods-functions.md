@@ -34,7 +34,7 @@ title: "Variables, Data Types, and More on Strings"
 
 ### Note
 
-<h4 style="color:red;font-weight:bold">When you see some code snippets below, dump it in a repl and play around with it.  It builds a certain type of coding memory.</h4>
+<h4 style="color:red;font-weight:bold">When you see some a code snippet below, dump it in a repl and play around with it.  It builds a certain type of coding memory.</h4>
 
 ---
 
