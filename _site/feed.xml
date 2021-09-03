@@ -1,4 +1,14 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-09-03T10:25:18-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">More On Variables and Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/31/variables-string-methods-functions.html" rel="alternate" type="text/html" title="More On Variables and Strings" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/31/variables-string-methods-functions</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/31/variables-string-methods-functions.html">&lt;hr /&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="https://multum-non-multa.github.io/code/feed.xml" rel="self" type="application/atom+xml" /><link href="https://multum-non-multa.github.io/code/" rel="alternate" type="text/html" /><updated>2021-09-03T11:49:21-05:00</updated><id>https://multum-non-multa.github.io/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Numbers and Booleans</title><link href="https://multum-non-multa.github.io/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/09/03/numbers-conversion-etc.html">&lt;h3 id=&quot;under-construction-right-now--come-back-later&quot;&gt;Under construction right now … come back later&lt;/h3&gt;
+
+&lt;h2 id=&quot;integers--floats&quot;&gt;Integers &amp;amp; Floats&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;booleans&quot;&gt;Booleans&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;aside--complex-numbers&quot;&gt;Aside:  Complex Numbers&lt;/h2&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Under construction right now … come back later</summary></entry><entry><title type="html">Variables, Data Types, and More on Strings</title><link href="https://multum-non-multa.github.io/code/2021/08/31/variables-string-methods-functions.html" rel="alternate" type="text/html" title="Variables, Data Types, and More on Strings" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2021/08/31/variables-string-methods-functions</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2021/08/31/variables-string-methods-functions.html">&lt;hr /&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
@@ -15,10 +25,6 @@
     &lt;p&gt;Variable Use&lt;/p&gt;
 
     &lt;p&gt;Variable Types in Python&lt;/p&gt;
-
-    &lt;p&gt;Object References&lt;/p&gt;
-
-    &lt;p&gt;Object Identity&lt;/p&gt;
 
     &lt;p&gt;Variable Names &amp;amp; Key Words in Python&lt;/p&gt;
   &lt;/li&gt;
@@ -122,15 +128,94 @@
 
 &lt;p&gt;For now ignore the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;lt;class&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&amp;gt;&lt;/code&gt; parts.  More importantly for now: you’ll the type of each variable entered.  To what they refer is obvious: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;str&lt;/code&gt; =&amp;gt; string, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt; =&amp;gt; integer, etc.&lt;/p&gt;
 
-&lt;h3 id=&quot;object-references&quot;&gt;Object References&lt;/h3&gt;
+&lt;p&gt;That your data has a type is important.  Simply put: with different data types you do different things, you store different values and you perform different operations.&lt;/p&gt;
 
-&lt;h3 id=&quot;object-identity&quot;&gt;Object Identity&lt;/h3&gt;
+&lt;p&gt;For example, if you are taking a user’s age an input (that may be at the console, but more typically it is through a web browser or retrieving it from a database), that age is often a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt;.  Thus:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;age_of_statue_in_park&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;12&quot;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Conversion&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;But you want to perform some math operation on that age value, e.g., you want to use it to calculate how many years after Grant Park had been established that the statue was erected.  Well, you can’t just use the data from above — &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;age_of_park&lt;/code&gt; and substract &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;12&quot;&lt;/code&gt; from it.&lt;/p&gt;
+
+&lt;p&gt;Why?&lt;/p&gt;
+
+&lt;p&gt;That &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;&quot;12&quot;&lt;/code&gt; is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; but &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;age_of_park&lt;/code&gt; is an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;integer&lt;/code&gt;.  So what to do?&lt;/p&gt;
+
+&lt;p&gt;Convert the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; into an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;integer&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;age_of_statue_in_park&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;age_of_statue_in_park&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# convert string to an integer
+# now you can use it to subtract from age of park
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;age_built&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age_of_park&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;age_of_statue_in_park&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;h3 id=&quot;variable-names--key-words-in-python&quot;&gt;Variable Names &amp;amp; Key Words in Python&lt;/h3&gt;
+
+&lt;p&gt;One last thing about variable names (at least, for now):  certain words may not be used. These are Pythons keywords or reserved words.  For example, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print&lt;/code&gt; is the name of a built-in function in Python.  You should &lt;strong&gt;&lt;em&gt;not&lt;/em&gt;&lt;/strong&gt; use that for a variable name.  Below you see Python run directly from the command line.  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;print&lt;/code&gt; is assigned a value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt;.  Once that’s done, it can now no longer be used as a function — at least not as long as the program is running.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'some string here'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Traceback&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;most&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;recent&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;call&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;last&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;n&quot;&gt;File&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;&amp;lt;input&amp;gt;&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;line&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;module&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;'some string here'&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;nb&quot;&gt;TypeError&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;'int'&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;object&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;is&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;not&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;callable&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;keywords-to-avoid-using-for-your-variables-names&quot;&gt;Keywords to Avoid Using for Your Variables’ Names&lt;/h3&gt;
+
+&lt;p&gt;Do &lt;strong&gt;&lt;em&gt;not&lt;/em&gt;&lt;/strong&gt; use the following when naming a value:&lt;/p&gt;
+
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;and	
+as	
+assert	
+async	
+await	
+break	
+class	
+continue	
+def	
+del
+elif	
+else	
+except	
+False	
+finally	
+for	
+from	
+global	
+if	
+import	
+in	
+is	
+lambda	
+None	
+nonlocal	
+not	
+or	
+pass
+raise
+return
+True	
+try
+while
+with
+yield
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Got that?  No worries; you’ll be using these keywords soon enough for their proper purposes.&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;data-types&quot;&gt;Data Types&lt;/h2&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://realpython.com/python-data-types/&quot;&gt;data&lt;/a&gt;&lt;/p&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;more-regarding-strings&quot;&gt;More Regarding Strings&lt;/h2&gt;
 
@@ -823,4 +908,4 @@ Fred
   &lt;li&gt;
     &lt;p&gt;Run it to see print out in the console window.&lt;/p&gt;
   &lt;/li&gt;
-&lt;/ol&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Create an account at Replit</summary></entry><entry><title type="html">More Data Types, Numbers, Conversion …</title><link href="https://multum-non-multa.github.io/code/2020/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="More Data Types, Numbers, Conversion …" /><published>2020-09-03T00:00:00-05:00</published><updated>2020-09-03T00:00:00-05:00</updated><id>https://multum-non-multa.github.io/code/2020/09/03/numbers-conversion-etc</id><content type="html" xml:base="https://multum-non-multa.github.io/code/2020/09/03/numbers-conversion-etc.html">&lt;h2 id=&quot;more-on-data-types&quot;&gt;More on Data Types&lt;/h2&gt;</content><author><name>multum-non-multa</name></author><summary type="html">More on Data Types</summary></entry></feed>
+&lt;/ol&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Create an account at Replit</summary></entry></feed>

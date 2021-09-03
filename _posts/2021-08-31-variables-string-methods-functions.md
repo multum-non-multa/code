@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "More On Variables and Strings"
+title: "Variables, Data Types, and More on Strings"
 ---
 
 
@@ -19,10 +19,6 @@ title: "More On Variables and Strings"
     Variable Use
 
     Variable Types in Python
-
-    Object References
-
-    Object Identity
 
     Variable Names & Key Words in Python
 
@@ -123,19 +119,100 @@ If you run that you'll get:
 <class 'bool'>
 ```
 
-For now ignore the `<class` and `>` parts.  More importantly for now: you'll the type of each variable entered.  To what they refer is obvious: `str` => string, `int` => integer, etc.
+For now ignore the `<class` and `>` parts.  More importantly for now: you'll the type of each variable entered.  To what they refer is obvious: `str` => string, `int` => integer, etc.  
 
+That your data has a type is important.  Simply put: with different data types you do different things, you store different values and you perform different operations.
 
+For example, if you are taking a user's age an input (that may be at the console, but more typically it is through a web browser or retrieving it from a database), that age is often a `string`.  Thus:
 
-### Object References
+```python
+age_of_statue_in_park = "12"
+```
 
-### Object Identity
+__Conversion__
+
+But you want to perform some math operation on that age value, e.g., you want to use it to calculate how many years after Grant Park had been established that the statue was erected.  Well, you can't just use the data from above --- `age_of_park` and substract `"12"` from it.  
+
+Why?
+
+That `"12"` is a `string` but `age_of_park` is an `integer`.  So what to do?  
+
+Convert the `string` into an `integer`:
+
+```python
+age_of_statue_in_park = int(age_of_statue_in_park) # convert string to an integer
+# now you can use it to subtract from age of park
+age_built = age_of_park - age_of_statue_in_park
+```
 
 ### Variable Names & Key Words in Python
+
+One last thing about variable names (at least, for now):  certain words may not be used. These are Pythons keywords or reserved words.  For example, `print` is the name of a built-in function in Python.  You should ___not___ use that for a variable name.  Below you see Python run directly from the command line.  `print` is assigned a value of `4`.  Once that's done, it can now no longer be used as a function --- at least not as long as the program is running.  
+
+```python
+>>> print = 4
+>>> print
+4
+>>> print('some string here')
+Traceback (most recent call last):
+  File "<input>", line 1, in <module>
+    print('some string here')
+TypeError: 'int' object is not callable
+>>>
+
+```
+
+### Keywords to Avoid Using for Your Variables' Names
+
+Do ___not___ use the following when naming a value:
+
+```
+and	
+as	
+assert	
+async	
+await	
+break	
+class	
+continue	
+def	
+del
+elif	
+else	
+except	
+False	
+finally	
+for	
+from	
+global	
+if	
+import	
+in	
+is	
+lambda	
+None	
+nonlocal	
+not	
+or	
+pass
+raise
+return
+True	
+try
+while
+with
+yield
+```
+
+Got that?  No worries; you'll be using these keywords soon enough for their proper purposes.
+
+---
 
 ## Data Types
 
 [data](https://realpython.com/python-data-types/)
+
+---
 
 ## More Regarding Strings
 
@@ -148,9 +225,5 @@ For now ignore the `<class` and `>` parts.  More importantly for now: you'll the
 #### Slicing
 
 #### Manipulations
-
-
-
-
 
 
