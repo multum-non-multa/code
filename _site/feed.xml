@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-03T16:46:53-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h3 id=&quot;under-construction-right-now--come-back-later&quot;&gt;Under construction right now … come back later&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-03T17:10:17-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h3 id=&quot;under-construction-right-now--come-back-later&quot;&gt;Under construction right now … come back later&lt;/h3&gt;
 
 &lt;h2 id=&quot;integers--floats&quot;&gt;Integers &amp;amp; Floats&lt;/h2&gt;
 
@@ -248,21 +248,41 @@ yield
 
 &lt;p&gt;&lt;img src=&quot;/code/assets/images/variables-08-31/rocky-index.jpg&quot; alt=&quot;Superscripting&quot; /&gt;&lt;/p&gt;
 
-&lt;p&gt;What does that mean?  First, a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data structure&lt;/code&gt; — it holds data.&lt;/p&gt;
-
-&lt;p&gt;Second, you can retrieve these characters by index value using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; (square bracket) operator:&lt;/p&gt;
-
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-&lt;span class=&quot;n&quot;&gt;third_letter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;movie_title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;third_letter&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-&lt;span class=&quot;c1&quot;&gt;# c
-&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
 &lt;h3 id=&quot;common-methods-and-operations-on-strings&quot;&gt;Common Methods and Operations on Strings&lt;/h3&gt;
 
 &lt;h4 id=&quot;slicing&quot;&gt;Slicing&lt;/h4&gt;
 
-&lt;h4 id=&quot;manipulations&quot;&gt;Manipulations&lt;/h4&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">Strings, Print, Input, Variables</title><link href="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Strings, Print, Input, Variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/18/printing-strings</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html">&lt;ul&gt;
+&lt;p&gt;What does that mean?&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;First, a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data structure&lt;/code&gt; — it holds data.&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Second, you can retrieve these characters by index value using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; (square bracket) operator:&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;third_letter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;movie_title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;third_letter&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&apos;c&apos;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;But can also uses slicing with the square brackets operater (see this article &lt;a href=&quot;https://realpython.com/python-strings/#string-slicing&quot;&gt;slicing&lt;/a&gt;)&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;movie_title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&apos;ck&apos;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;movie_title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&apos;oc&apos;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Get used to this.  We will be using data structures beyond &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; and, when contain a sequence of items, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; operator is often used.&lt;/p&gt;
+
+&lt;h4 id=&quot;string-methods&quot;&gt;String Methods&lt;/h4&gt;
+
+&lt;p&gt;Python dedicates an enormous part of its library to manipulation of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; — they are that important because they are that pervasive.&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://docs.python.org/3/library/stdtypes.html#string-methods&quot;&gt;Look at the many string methods&lt;/a&gt; to get some sense.&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">Strings, Print, Input, Variables</title><link href="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Strings, Print, Input, Variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/18/printing-strings</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html">&lt;ul&gt;
   &lt;li&gt;&lt;a href=&quot;#1--project&quot;&gt;1.  Project&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#a--goal--generate-a--title--with-two-separate-string-inputs&quot;&gt;a.  Goal: Generate a ‘Title’ with Two Separate String Inputs&lt;/a&gt;&lt;/li&gt;
   &lt;li&gt;&lt;a href=&quot;#b--requirements&quot;&gt;b.  Requirements&lt;/a&gt;&lt;/li&gt;

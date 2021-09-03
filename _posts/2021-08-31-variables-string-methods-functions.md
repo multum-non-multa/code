@@ -247,27 +247,43 @@ which are indexed:
 
 ![Superscripting](/code/assets/images/variables-08-31/rocky-index.jpg)
 
-What does that mean?  First, a `string` is a `data structure` --- it holds data.
-
-Second, you can retrieve these characters by index value using the `[ ]` (square bracket) operator:
-
-```python
-
-third_letter = movie_title[2]
-print(third_letter)
-# c
-```
-
-
-
-
-
-
-
 ### Common Methods and Operations on Strings
 
 #### Slicing
 
-#### Manipulations
+What does that mean?
+
+- First, a `string` is a `data structure` --- it holds data.
+
+- Second, you can retrieve these characters by index value using the `[ ]` (square bracket) operator:
+
+```python
+>>> third_letter = movie_title[2]
+>>> third_letter
+'c'
+```
+
+But can also uses slicing with the square brackets operater (see this article [slicing](https://realpython.com/python-strings/#string-slicing))
+
+```python
+>>> movie_title[2:4]
+'ck'
+>>> movie_title[1:3]
+'oc'
+```
+
+Get used to this.  We will be using data structures beyond `strings` and, when contain a sequence of items, the `[ ]` operator is often used.
+
+
+#### String Methods
+
+Python dedicates an enormous part of its library to manipulation of `strings` --- they are that important because they are that pervasive.
+
+[Look at the many string methods](https://docs.python.org/3/library/stdtypes.html#string-methods) to get some sense.
+
+
+
+
+
 
 
