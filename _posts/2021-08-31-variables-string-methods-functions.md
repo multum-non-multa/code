@@ -10,8 +10,6 @@ title: "Variables, Data Types, and More on Strings"
 
 1. Variables
 
-    [Variables ...](https://realpython.com/python-variables/)
-
     Variable Declarations
 
     Variable Assignment
@@ -22,27 +20,24 @@ title: "Variables, Data Types, and More on Strings"
 
     Variable Names & Key Words in Python
 
-2. Data Types
-
-    [data](https://realpython.com/python-data-types/)
-
-3. More Regarding Strings
-
-    [string methods](https://realpython.com/python-strings/)
+2. More Regarding Strings
 
     a. Strings are 'data structures'
 
     b. Common Methods and Operations on Strings
 
-        i. Slicing
+      i. Slicing
 
-        ii.  Manipulations
+      ii.  Manipulations
 
 ---
 
-## Variables
+### Note
 
-[Variables ...](https://realpython.com/python-variables/)
+> A very good idea:  when you see some code snippets below, dump it in a repl and play around with it.  It builds a certain type of coding memory.
+
+
+## Variables
 
 ### Variable Declarations
 
@@ -233,17 +228,11 @@ Got that?  No worries; you'll be using these keywords soon enough for their prop
 
 ---
 
-## Data Types
-
-[data](https://realpython.com/python-data-types/)
-
----
-
 ## More Regarding Strings
 
-[string methods](https://realpython.com/python-strings/)
-
 ### Strings are 'data structures'
+
+
 
 ### Common Methods and Operations on Strings
 

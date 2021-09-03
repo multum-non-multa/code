@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-03T15:28:45-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h3 id=&quot;under-construction-right-now--come-back-later&quot;&gt;Under construction right now … come back later&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-03T15:32:34-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h3 id=&quot;under-construction-right-now--come-back-later&quot;&gt;Under construction right now … come back later&lt;/h3&gt;
 
 &lt;h2 id=&quot;integers--floats&quot;&gt;Integers &amp;amp; Floats&lt;/h2&gt;
 
@@ -16,8 +16,6 @@
   &lt;li&gt;
     &lt;p&gt;Variables&lt;/p&gt;
 
-    &lt;p&gt;&lt;a href=&quot;https://realpython.com/python-variables/&quot;&gt;Variables …&lt;/a&gt;&lt;/p&gt;
-
     &lt;p&gt;Variable Declarations&lt;/p&gt;
 
     &lt;p&gt;Variable Assignment&lt;/p&gt;
@@ -29,31 +27,27 @@
     &lt;p&gt;Variable Names &amp;amp; Key Words in Python&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;Data Types&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;https://realpython.com/python-data-types/&quot;&gt;data&lt;/a&gt;&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
     &lt;p&gt;More Regarding Strings&lt;/p&gt;
-
-    &lt;p&gt;&lt;a href=&quot;https://realpython.com/python-strings/&quot;&gt;string methods&lt;/a&gt;&lt;/p&gt;
 
     &lt;p&gt;a. Strings are ‘data structures’&lt;/p&gt;
 
     &lt;p&gt;b. Common Methods and Operations on Strings&lt;/p&gt;
 
-    &lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; i. Slicing
+    &lt;p&gt;i. Slicing&lt;/p&gt;
 
- ii.  Manipulations
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+    &lt;p&gt;ii.  Manipulations&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;variables&quot;&gt;Variables&lt;/h2&gt;
+&lt;h3 id=&quot;note&quot;&gt;Note&lt;/h3&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://realpython.com/python-variables/&quot;&gt;Variables …&lt;/a&gt;&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;A very good idea:  when you see some code snippets below, dump it in a repl and play around with it.  It builds a certain type of coding memory.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;h2 id=&quot;variables&quot;&gt;Variables&lt;/h2&gt;
 
 &lt;h3 id=&quot;variable-declarations&quot;&gt;Variable Declarations&lt;/h3&gt;
 
@@ -235,15 +229,7 @@ yield
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;data-types&quot;&gt;Data Types&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://realpython.com/python-data-types/&quot;&gt;data&lt;/a&gt;&lt;/p&gt;
-
-&lt;hr /&gt;
-
 &lt;h2 id=&quot;more-regarding-strings&quot;&gt;More Regarding Strings&lt;/h2&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://realpython.com/python-strings/&quot;&gt;string methods&lt;/a&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;strings-are-data-structures&quot;&gt;Strings are ‘data structures’&lt;/h3&gt;
 
