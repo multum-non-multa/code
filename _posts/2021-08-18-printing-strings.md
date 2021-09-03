@@ -1,6 +1,6 @@
 ---
 layout: post
-title: strings, printing, getting input, and variables
+title: Strings, Print, Input, Variables
 ---
 
  * [1.  Project](#1--project)
