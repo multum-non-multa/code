@@ -328,4 +328,18 @@ For example, if "the game stalled in the 8th" is the value, the method, `capital
 'rocky'
 ```
 
+In addition, there's the `len()` built-in method.
+
+`len()` gives the length of the `string` (among other types of data).
+
+```python
+tree_type = "oak"
+print(len(tree_type))
+```
+
+```bash
+# prints out
+3
+```
+
 Many other methods exist and we'll see them a great deal later.
