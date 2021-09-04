@@ -492,7 +492,7 @@ More conventions are to follow, but that's sufficient for now.
 
 ---
 
-A formatted string literal or f-string is a string literal that is prefixed with 'f' or 'F'.
+A [formatted string literal](#f-strings) or f-string is a string literal that is prefixed with 'f' or 'F'.
 
 ```python
 first_name = 'Fred'
