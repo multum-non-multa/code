@@ -413,14 +413,19 @@ Fred
 
 #### a. Variables in General
 
-Program data must be stored in memory if for no other reason than to process it.  However, most such data must be recalled for additional processing.  Hence the need to use names or variable names or, as they are more generally called, 'identifiers' for an object or data value.
+Program data must be stored in memory if for no other reason than to process it.
 
-For example, above the string literal, 'Hello, World' is used.  That very simple example, however, may be used in code in which some message must be passed to a user every time he logs in.  So, let's say the user is one Fred and the string should be 'Welcome back, Fred.'
+However, most such data must be recalled for additional processing.
+
+Hence the need to use names or variable names or, as they are more generally called, _identifiers_ for an object or data value.
+
+For example, above the string literal, 'Hello, World' is used.
+
+That very simple example, however, may be used in code in which some message must be passed to a user every time he logs in.  So, let's say the user is one Fred and the string should be 'Welcome back, Fred.'
 
 Somewhere in the program that produces that welcome screen on login a variable, or identifier, must be used.  Hence, the program might read:
 
 ```python
-
 # upon first login
 first_name = input('Please enter your first name? ')
 # store that variable first_name in a database of users
@@ -494,26 +499,16 @@ first_name = 'Fred'
 # print message using f-string
 print(f"Hello, {first_name}")
 # that is, begin the string with 'f' or 'F', insert variable in curly braces in string
-
-
 ```
 
 ---
 
-### 12. Variable Naming
+### 12. Variable Naming Practice
 
 ---
 
----
-
-### 13. Variable Naming Quiz
+### 13. Title Generator Project
 
 ---
-
-### 14. Title Generator
-
----
-
-
 
 <small><i><a href='http://ecotrust-canada.github.io/markdown-toc/'>Table of contents generated with markdown-toc</a></i></small>

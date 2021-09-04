@@ -42,17 +42,30 @@ title: "Variables, Data Types, and More on Strings"
 
 ### Variable Declarations
 
-Order is important in a program.  A program reads from top of the page to the bottom.  The Python interpreter cannot anticipate what falls below the line it is reading.  Thus, only __after__ you declare a variable can you use it.  For example:
+- Order is important in a program.
+
+- A program reads from top of the page to the bottom.
+
+- The Python interpreter __cannot__ anticipate what falls below the line it is reading.
+
+- Thus, only __after__ you declare a variable can you use it.  For example:
 
 ```python
-# this works
-num = 9
-print(num)
-
-# this throws a NameError
-print(number)
-number = 12
+1 # this works
+2 num = 9
+3 print(num)
+4
+5 # this throws a NameError
+6 print(number)
+7 number = 12
 ```
+
+```python
+File "main.py", line 6, in <module>
+    print(number)
+NameError: name 'number' is not defined
+```
+
 
 ### Variable Assignment
 
