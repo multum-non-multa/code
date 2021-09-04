@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-04T12:20:06-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h3 id=&quot;under-construction-right-now--come-back-later&quot;&gt;Under construction right now … come back later&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-04T12:33:01-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h3 id=&quot;under-construction-right-now--come-back-later&quot;&gt;Under construction right now … come back later&lt;/h3&gt;
 
 &lt;h2 id=&quot;integers--floats&quot;&gt;Integers &amp;amp; Floats&lt;/h2&gt;
 
@@ -332,49 +332,7 @@ yield
 &lt;span class=&quot;s&quot;&gt;&apos;rocky&apos;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Many other methods exist and we’ll see them a great deal later.&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">Strings, Print, Input, Variables</title><link href="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Strings, Print, Input, Variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/18/printing-strings</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html">&lt;ul&gt;
-  &lt;li&gt;&lt;a href=&quot;#1--project&quot;&gt;1.  Project&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#a--goal--generate-a--title--with-two-separate-string-inputs&quot;&gt;a.  Goal: Generate a ‘Title’ with Two Separate String Inputs&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#b--requirements&quot;&gt;b.  Requirements&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#2-printing-to-the-console-in-python&quot;&gt;2. Printing to the Console in Python&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#3-string-manipulation&quot;&gt;3. String Manipulation&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#a-string-is-a--data-type-&quot;&gt;a. String is a ‘data type’&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#b-error-messages&quot;&gt;b. Error Messages&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#c--string--data-type-and-comments&quot;&gt;c. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; data type and comments&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#d--string--concatenation&quot;&gt;d. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; concatenation&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#4-indentation---spacing-python-code&quot;&gt;4. Indentation &amp;amp; Spacing Python Code&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#5-code-intelligence&quot;&gt;5. Code Intelligence&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#6-practice-debugging-errors&quot;&gt;6. Practice Debugging Errors&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#7-the-python--input--function&quot;&gt;7. The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; Function&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#a-model-for-a-program--ipo&quot;&gt;a. Model for a Program: I.P.O.&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#b--input---&quot;&gt;b. &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input()&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#8-practice-using--input-&quot;&gt;8. Practice Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#9-variables&quot;&gt;9. Variables&lt;/a&gt;
-    &lt;ul&gt;
-      &lt;li&gt;&lt;a href=&quot;#a-variables-in-general&quot;&gt;a. Variables in General&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#b-variable-naming-syntax&quot;&gt;b. Variable-Naming Syntax&lt;/a&gt;&lt;/li&gt;
-      &lt;li&gt;&lt;a href=&quot;#c-rules-on-variable-names&quot;&gt;c. Rules on Variable Names&lt;/a&gt;
-        &lt;ul&gt;
-          &lt;li&gt;&lt;a href=&quot;#-i--python-variable-naming-rules&quot;&gt;(i) Python Variable-Naming Rules&lt;/a&gt;&lt;/li&gt;
-          &lt;li&gt;&lt;a href=&quot;#-ii--python-variable-naming-conventions&quot;&gt;(ii) Python Variable-Naming Conventions&lt;/a&gt;&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#10-practice-with-variables&quot;&gt;10. Practice with Variables&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#11-formatted-string-literals&quot;&gt;11. Formatted String Literals&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#12-variable-naming&quot;&gt;12. Variable Naming&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#13-variable-naming-quiz&quot;&gt;13. Variable Naming Quiz&lt;/a&gt;&lt;/li&gt;
-  &lt;li&gt;&lt;a href=&quot;#14-title-generator&quot;&gt;14. Title Generator&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;hr /&gt;
+&lt;p&gt;Many other methods exist and we’ll see them a great deal later.&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">Strings, Print, Input, Variables</title><link href="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Strings, Print, Input, Variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/18/printing-strings</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html">&lt;hr /&gt;
 
 &lt;h2 id=&quot;1--project&quot;&gt;1.  Project&lt;/h2&gt;
 
@@ -889,7 +847,7 @@ Fred
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;11-formatted-string-literals&quot;&gt;11. Formatted String Literals&lt;/h3&gt;
+&lt;h3 id=&quot;11-f-strings&quot;&gt;11. f-Strings&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -901,6 +859,27 @@ Fred
 &lt;span class=&quot;c1&quot;&gt;# that is, begin the string with &apos;f&apos; or &apos;F&apos;, insert variable in curly braces in string
 &lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
+&lt;p&gt;Some useful things about &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f-strings&lt;/code&gt;:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;If you’ve declared your data as variables, you need not concatenate &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ints&lt;/code&gt; or the other data types and perform type conversion on them.  E.g., no need to do:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Python&quot;&gt;print(&quot;McDonalds is &quot; + str(65) + &quot; years old.&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;. . . instead you can&lt;/p&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Python&quot;&gt;# assuming somewhere you&apos;ve assigned: yrs = 65
+print(f&quot;McDonalds is {yrs} years old.&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;Moreover, you can embed expressions in the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;{}&lt;/code&gt; brackets.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code class=&quot;language-Python&quot;&gt;print(f&quot;McDonalds is {yrs + 1} years old.&quot;)
+&lt;/code&gt;&lt;/pre&gt;
+
 &lt;hr /&gt;
 
 &lt;h3 id=&quot;12-variable-naming-practice&quot;&gt;12. Variable Naming Practice&lt;/h3&gt;
@@ -911,7 +890,7 @@ Fred
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">1. Project a. Goal: Generate a ‘Title’ with Two Separate String Inputs b. Requirements 2. Printing to the Console in Python 3. String Manipulation a. String is a ‘data type’ b. Error Messages c. string data type and comments d. string concatenation 4. Indentation &amp;amp; Spacing Python Code 5. Code Intelligence 6. Practice Debugging Errors 7. The Python input Function a. Model for a Program: I.P.O. b. input() 8. Practice Using input 9. Variables a. Variables in General b. Variable-Naming Syntax c. Rules on Variable Names (i) Python Variable-Naming Rules (ii) Python Variable-Naming Conventions 10. Practice with Variables 11. Formatted String Literals 12. Variable Naming 13. Variable Naming Quiz 14. Title Generator</summary></entry><entry><title type="html">Tour of a Repl’s Interface</title><link href="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html" rel="alternate" type="text/html" title="Tour of a Repl’s Interface" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/17/tour-of-repl</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html">&lt;h3 id=&quot;after-creating-a-repl-in-python-&quot;&gt;After creating a repl in Python …&lt;/h3&gt;
+&lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">Tour of a Repl’s Interface</title><link href="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html" rel="alternate" type="text/html" title="Tour of a Repl’s Interface" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/17/tour-of-repl</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html">&lt;h3 id=&quot;after-creating-a-repl-in-python-&quot;&gt;After creating a repl in Python …&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;/code/assets/images/repl-001.jpg&quot; alt=&quot;Create a repl&quot; /&gt;&lt;/p&gt;
 

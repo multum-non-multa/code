@@ -3,35 +3,6 @@ layout: post
 title: Strings, Print, Input, Variables
 ---
 
- * [1.  Project](#1--project)
-  * [a.  Goal: Generate a 'Title' with Two Separate String Inputs](#a--goal--generate-a--title--with-two-separate-string-inputs)
-  * [b.  Requirements](#b--requirements)
-  * [2. Printing to the Console in Python](#2-printing-to-the-console-in-python)
-  * [3. String Manipulation](#3-string-manipulation)
-    + [a. String is a 'data type'](#a-string-is-a--data-type-)
-    + [b. Error Messages](#b-error-messages)
-    + [c. `string` data type and comments](#c--string--data-type-and-comments)
-    + [d. `string` concatenation](#d--string--concatenation)
-  * [4. Indentation & Spacing Python Code](#4-indentation---spacing-python-code)
-  * [5. Code Intelligence](#5-code-intelligence)
-  * [6. Practice Debugging Errors](#6-practice-debugging-errors)
-  * [7. The Python `input` Function](#7-the-python--input--function)
-    + [a. Model for a Program: I.P.O.](#a-model-for-a-program--ipo)
-    + [b. `input()`](#b--input---)
-  * [8. Practice Using `input`](#8-practice-using--input-)
-  * [9. Variables](#9-variables)
-    + [a. Variables in General](#a-variables-in-general)
-    + [b. Variable-Naming Syntax](#b-variable-naming-syntax)
-    + [c. Rules on Variable Names](#c-rules-on-variable-names)
-      - [(i) Python Variable-Naming Rules](#-i--python-variable-naming-rules)
-      - [(ii) Python Variable-Naming Conventions](#-ii--python-variable-naming-conventions)
-  * [10. Practice with Variables](#10-practice-with-variables)
-  * [11. Formatted String Literals](#11-formatted-string-literals)
-  * [12. Variable Naming](#12-variable-naming)
-  * [13. Variable Naming Quiz](#13-variable-naming-quiz)
-  * [14. Title Generator](#14-title-generator)
-
-
 ---
 
 ## 1.  Project
@@ -488,7 +459,7 @@ More conventions are to follow, but that's sufficient for now.
 
 ---
 
-### 11. Formatted String Literals
+### 11. f-Strings
 
 ---
 
@@ -499,6 +470,26 @@ first_name = 'Fred'
 # print message using f-string
 print(f"Hello, {first_name}")
 # that is, begin the string with 'f' or 'F', insert variable in curly braces in string
+```
+
+Some useful things about `f-strings`:
+
+- If you've declared your data as variables, you need not concatenate `strings` or `ints` or the other data types and perform type conversion on them.  E.g., no need to do:
+
+```Python
+print("McDonalds is " + str(65) + " years old.")
+```
+ . . . instead you can
+
+```Python
+# assuming somewhere you've assigned: yrs = 65
+print(f"McDonalds is {yrs} years old.")
+```
+
+- Moreover, you can embed expressions in the `{}` brackets.
+
+```Python
+print(f"McDonalds is {yrs + 1} years old.")
 ```
 
 ---
