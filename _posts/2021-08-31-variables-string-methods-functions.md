@@ -276,7 +276,7 @@ What does that mean?
 'c'
 ```
 
-But your can also use slicing with the square brackets operater (see this article [slicing](https://realpython.com/python-strings/#string-slicing)) to slice sections.  The syntax is:
+But you can also use slicing with the square brackets operater (see this article [slicing](https://realpython.com/python-strings/#string-slicing)) to slice sections.  The syntax is:
 
 ![test image size](/code/assets/images/variables-08-31/slicing-rails.jpg){:class="img-responsive"}
 
@@ -308,6 +308,10 @@ For example, if "the game stalled in the 8th" is the value, the method, `capital
 >>> "the game stalled in the 8th".capitalize()
 'The game stalled in the 8th'
 >>> "Rocky".lower()
+'rocky'
+# or with a variable
+>>> boxer = "Rocky"
+>>> boxer.lower()
 'rocky'
 ```
 
