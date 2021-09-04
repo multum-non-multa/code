@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-04T12:33:01-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h3 id=&quot;under-construction-right-now--come-back-later&quot;&gt;Under construction right now … come back later&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-04T12:40:17-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h3 id=&quot;under-construction-right-now--come-back-later&quot;&gt;Under construction right now … come back later&lt;/h3&gt;
 
 &lt;h2 id=&quot;integers--floats&quot;&gt;Integers &amp;amp; Floats&lt;/h2&gt;
 
@@ -332,7 +332,62 @@ yield
 &lt;span class=&quot;s&quot;&gt;&apos;rocky&apos;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Many other methods exist and we’ll see them a great deal later.&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">Strings, Print, Input, Variables</title><link href="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Strings, Print, Input, Variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/18/printing-strings</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html">&lt;hr /&gt;
+&lt;p&gt;Many other methods exist and we’ll see them a great deal later.&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">Strings, Print, Input, Variables</title><link href="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Strings, Print, Input, Variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/18/printing-strings</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html">&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Contents
+
+1. Project
+
+  a.  Goal: Generate a &apos;Title&apos; with Two Separate String Inputs
+
+  b.  Requirements
+
+2. Printing to the Console in Python
+
+3. String Manipulation
+
+  a. String is a &apos;data type&apos;
+
+  b. Error Messages
+
+  c. `string` data type and comments
+
+  d. `string` concatenation
+
+4. Indentation &amp;amp; Spacing Python Code
+
+5. Code Intelligence
+
+6. Practice Debugging Errors
+
+7. The Python `input` Function
+
+  a. Model for a Program: I.P.O.
+
+  b. `input()`
+
+8. Practice Using `input`
+
+9. Variables
+
+  a. Variables in General
+
+  b. Variable-Naming Syntax
+
+  c. Rules on Variable Names
+
+  (i) Python Variable-Naming Rules
+
+  (ii) Python Variable-Naming Conventions
+
+10. Practice with Variables
+
+11. f-Strings
+
+12. Variable Naming Practice
+
+13. Title Generator Project
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
 
 &lt;h2 id=&quot;1--project&quot;&gt;1.  Project&lt;/h2&gt;
 
@@ -890,7 +945,7 @@ print(f&quot;McDonalds is {yrs} years old.&quot;)
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">Tour of a Repl’s Interface</title><link href="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html" rel="alternate" type="text/html" title="Tour of a Repl’s Interface" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/17/tour-of-repl</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html">&lt;h3 id=&quot;after-creating-a-repl-in-python-&quot;&gt;After creating a repl in Python …&lt;/h3&gt;
+&lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">``` Contents</summary></entry><entry><title type="html">Tour of a Repl’s Interface</title><link href="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html" rel="alternate" type="text/html" title="Tour of a Repl’s Interface" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/17/tour-of-repl</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html">&lt;h3 id=&quot;after-creating-a-repl-in-python-&quot;&gt;After creating a repl in Python …&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;/code/assets/images/repl-001.jpg&quot; alt=&quot;Create a repl&quot; /&gt;&lt;/p&gt;
 

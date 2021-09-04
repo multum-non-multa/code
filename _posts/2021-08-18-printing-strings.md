@@ -3,6 +3,63 @@ layout: post
 title: Strings, Print, Input, Variables
 ---
 
+```
+Contents
+
+1. Project
+
+  a.  Goal: Generate a 'Title' with Two Separate String Inputs
+
+  b.  Requirements
+
+2. Printing to the Console in Python
+
+3. String Manipulation
+
+  a. String is a 'data type'
+
+  b. Error Messages
+
+  c. `string` data type and comments
+
+  d. `string` concatenation
+
+4. Indentation & Spacing Python Code
+
+5. Code Intelligence
+
+6. Practice Debugging Errors
+
+7. The Python `input` Function
+
+  a. Model for a Program: I.P.O.
+
+  b. `input()`
+
+8. Practice Using `input`
+
+9. Variables
+
+  a. Variables in General
+
+  b. Variable-Naming Syntax
+
+  c. Rules on Variable Names
+
+  (i) Python Variable-Naming Rules
+
+  (ii) Python Variable-Naming Conventions
+
+10. Practice with Variables
+
+11. f-Strings
+
+12. Variable Naming Practice
+
+13. Title Generator Project
+```
+
+
 ---
 
 ## 1.  Project
