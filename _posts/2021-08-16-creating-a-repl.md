@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Creating a repl"
+title: "[1] Creating a repl"
 ---
 
 1. Create an account at [Replit](https://replit.com)

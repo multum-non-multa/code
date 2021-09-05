@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Variables, Data Types, and More on Strings"
+title: "[4] Variables, Data Types, and More on Strings"
 ---
 
 

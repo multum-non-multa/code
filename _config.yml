@@ -7,13 +7,20 @@ url: https://multum-non-multa.github.io
 baseurl: /code
 # relative_url: <== not sure this is proper config yaml
 
-
 author: multum-non-multa
   # name: "multum-non-multa"
   # email: nomailtaken@email.com
 description: > # this means to ignore newlines until "show_excerpts:"
 
 show_excerpts: false # set to true to show excerpts on the homepage
+
+
+# pages in nav bar
+# header_pages:
+#   - about
+#   - resources
+
+
 
 # Minima date format
 # refer to https://shopify.github.io/liquid/filters/date/ if you want to customize this

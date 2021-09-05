@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Tour of a Repl's Interface"
+title: "[2] Tour of a Repl's Interface"
 ---
 
 ### After creating a repl in Python ...

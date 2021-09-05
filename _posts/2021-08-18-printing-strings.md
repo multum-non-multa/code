@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Strings, Print, Input, Variables
+title: "[3] Strings, Print, Input, Variables"
 ---
 
 ```

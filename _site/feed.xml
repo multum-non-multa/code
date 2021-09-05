@@ -1,6 +1,61 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-04T14:47:39-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h3 id=&quot;under-construction-right-now--come-back-later&quot;&gt;Under construction right now … come back later&lt;/h3&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-05T09:57:47-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[5] Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="[5] Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h2 id=&quot;a-note-before-we-start&quot;&gt;A Note Before We Start&lt;/h2&gt;
 
-&lt;h2 id=&quot;integers--floats&quot;&gt;Integers &amp;amp; Floats&lt;/h2&gt;
+&lt;h2 id=&quot;math-operations&quot;&gt;Math Operations&lt;/h2&gt;
+
+&lt;p&gt;Python has 7 arithmetic operators:&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; for addition&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; for subtraction&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt; for multiplication&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; for division&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;//&lt;/code&gt; for floor division&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;**&lt;/code&gt; for exponentation&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt; =&amp;gt; modulus&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h3 id=&quot;uses-of-&quot;&gt;Uses of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt;&lt;/h3&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;find even numbers&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;divisible by x&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;hr /&gt;
 
@@ -8,7 +63,7 @@
 
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;aside--complex-numbers&quot;&gt;Aside:  Complex Numbers&lt;/h2&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Under construction right now … come back later</summary></entry><entry><title type="html">Variables, Data Types, and More on Strings</title><link href="http://0.0.0.0:4000/code/2021/08/31/variables-string-methods-functions.html" rel="alternate" type="text/html" title="Variables, Data Types, and More on Strings" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/31/variables-string-methods-functions</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/31/variables-string-methods-functions.html">&lt;hr /&gt;
+&lt;h2 id=&quot;aside--complex-numbers&quot;&gt;Aside:  Complex Numbers&lt;/h2&gt;</content><author><name>multum-non-multa</name></author><summary type="html">A Note Before We Start</summary></entry><entry><title type="html">[6] Making Use of repls in Repl and on Your Own Machine</title><link href="http://0.0.0.0:4000/code/2021/09/03/using-work-bench-freatures.html" rel="alternate" type="text/html" title="[6] Making Use of repls in Repl and on Your Own Machine" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/using-work-bench-freatures</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/using-work-bench-freatures.html">&lt;h2 id=&quot;what-is-a-repl&quot;&gt;What is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;repl&lt;/code&gt;?&lt;/h2&gt;</content><author><name>multum-non-multa</name></author><summary type="html">What is a repl?</summary></entry><entry><title type="html">[4] Variables, Data Types, and More on Strings</title><link href="http://0.0.0.0:4000/code/2021/08/31/variables-string-methods-functions.html" rel="alternate" type="text/html" title="[4] Variables, Data Types, and More on Strings" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/31/variables-string-methods-functions</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/31/variables-string-methods-functions.html">&lt;hr /&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
@@ -344,7 +399,7 @@ yield
 3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Many other methods exist and we’ll see them a great deal later.&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">Strings, Print, Input, Variables</title><link href="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="Strings, Print, Input, Variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/18/printing-strings</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html">&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Contents
+&lt;p&gt;Many other methods exist and we’ll see them a great deal later.&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">[3] Strings, Print, Input, Variables</title><link href="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="[3] Strings, Print, Input, Variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/18/printing-strings</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html">&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Contents
 
 1. Project
 
@@ -957,7 +1012,7 @@ print(f&quot;McDonalds is {yrs} years old.&quot;)
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">``` Contents</summary></entry><entry><title type="html">Tour of a Repl’s Interface</title><link href="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html" rel="alternate" type="text/html" title="Tour of a Repl’s Interface" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/17/tour-of-repl</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html">&lt;h3 id=&quot;after-creating-a-repl-in-python-&quot;&gt;After creating a repl in Python …&lt;/h3&gt;
+&lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">``` Contents</summary></entry><entry><title type="html">[2] Tour of a Repl’s Interface</title><link href="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html" rel="alternate" type="text/html" title="[2] Tour of a Repl’s Interface" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/17/tour-of-repl</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html">&lt;h3 id=&quot;after-creating-a-repl-in-python-&quot;&gt;After creating a repl in Python …&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;/code/assets/images/repl-001.jpg&quot; alt=&quot;Create a repl&quot; /&gt;&lt;/p&gt;
 
@@ -1027,7 +1082,7 @@ print(f&quot;McDonalds is {yrs} years old.&quot;)
 
 &lt;blockquote&gt;
   &lt;p&gt;Play with the top three — &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Layout&lt;/code&gt;, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Theme&lt;/code&gt;, and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Font size&lt;/code&gt;.  The others leave for now.&lt;/p&gt;
-&lt;/blockquote&gt;</content><author><name>multum-non-multa</name></author><summary type="html">After creating a repl in Python …</summary></entry><entry><title type="html">Creating a repl</title><link href="http://0.0.0.0:4000/code/2021/08/16/creating-a-repl.html" rel="alternate" type="text/html" title="Creating a repl" /><published>2021-08-16T00:00:00-05:00</published><updated>2021-08-16T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/16/creating-a-repl</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/16/creating-a-repl.html">&lt;ol&gt;
+&lt;/blockquote&gt;</content><author><name>multum-non-multa</name></author><summary type="html">After creating a repl in Python …</summary></entry><entry><title type="html">[1] Creating a repl</title><link href="http://0.0.0.0:4000/code/2021/08/16/creating-a-repl.html" rel="alternate" type="text/html" title="[1] Creating a repl" /><published>2021-08-16T00:00:00-05:00</published><updated>2021-08-16T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/16/creating-a-repl</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/16/creating-a-repl.html">&lt;ol&gt;
   &lt;li&gt;
     &lt;p&gt;Create an account at &lt;a href=&quot;https://replit.com&quot;&gt;Replit&lt;/a&gt;&lt;/p&gt;
   &lt;/li&gt;
