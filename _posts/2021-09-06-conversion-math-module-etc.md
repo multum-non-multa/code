@@ -1,10 +1,35 @@
 ---
 layout: post
-title: "[7] Data Type Conversions, More Built-in Functions, Math +"
+title: "[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project"
 ---
 
+- Project: Diners' Calculator
 
-## Consequences of a Data Type
+- Data Types Revisited
+
+- Type Conversion
+
+- `f-strings` Redux
+
+- Math Methods & Functions
+
+  - Built-ins
+
+  - Intro to Custom (i.e., __Your Own__) Functions
+
+  - Math Module & Imports
+
+---
+
+## Diner's Calculator Project
+
+---
+
+<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe src="https://www.loom.com/embed/3054c971777345a0a0181e3fd1ce6a51" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>
+
+---
+
+## Data Types Revisited
 
 Now that we've cover the primitive data types, let's go a bit further with some of the things mentioned in an earlier post - _see_ [Variable Types in Python](http://localhost:4000/code/2021/08/31/variables-string-methods-functions.html).
 
@@ -17,10 +42,11 @@ As mentioned, we may or may not be able to use a Python built-in function with t
 emphasize - start counting from 0
 standard
 
-'subscripting'
 ---
 
-## Numbers
+## Type Conversion
+
+
 
 Integers
 
@@ -38,12 +64,14 @@ Floats
 When you take in an input(), returns a string
 
 
+---
 
-## Booleans
-
-see prior post
+## `f-strings` Redux
 
 ---
+
+
+
 
 ## How Functions Work
 

@@ -1,4 +1,44 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-06T14:03:33-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;h2 id=&quot;consequences-of-a-data-type&quot;&gt;Consequences of a Data Type&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-06T15:07:00-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;Project: Diners’ Calculator&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Data Types Revisited&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Type Conversion&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f-strings&lt;/code&gt; Redux&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Math Methods &amp;amp; Functions&lt;/p&gt;
+
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Built-ins&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Intro to Custom (i.e., &lt;strong&gt;Your Own&lt;/strong&gt;) Functions&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Math Module &amp;amp; Imports&lt;/p&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;diners-calculator-project&quot;&gt;Diner’s Calculator Project&lt;/h2&gt;
+
+&lt;hr /&gt;
+
+&lt;div style=&quot;position: relative; padding-bottom: 56.25%; height: 0;&quot;&gt;&lt;iframe src=&quot;https://www.loom.com/embed/3054c971777345a0a0181e3fd1ce6a51&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot; style=&quot;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;data-types-revisited&quot;&gt;Data Types Revisited&lt;/h2&gt;
 
 &lt;p&gt;Now that we’ve cover the primitive data types, let’s go a bit further with some of the things mentioned in an earlier post - &lt;em&gt;see&lt;/em&gt; &lt;a href=&quot;http://localhost:4000/code/2021/08/31/variables-string-methods-functions.html&quot;&gt;Variable Types in Python&lt;/a&gt;.&lt;/p&gt;
 
@@ -16,9 +56,9 @@
 &lt;p&gt;emphasize - start counting from 0
 standard&lt;/p&gt;
 
-&lt;h2 id=&quot;subscripting&quot;&gt;‘subscripting’&lt;/h2&gt;
+&lt;hr /&gt;
 
-&lt;h2 id=&quot;numbers&quot;&gt;Numbers&lt;/h2&gt;
+&lt;h2 id=&quot;type-conversion&quot;&gt;Type Conversion&lt;/h2&gt;
 
 &lt;p&gt;Integers&lt;/p&gt;
 
@@ -45,9 +85,9 @@ others
 
 &lt;p&gt;When you take in an input(), returns a string&lt;/p&gt;
 
-&lt;h2 id=&quot;booleans&quot;&gt;Booleans&lt;/h2&gt;
+&lt;hr /&gt;
 
-&lt;p&gt;see prior post&lt;/p&gt;
+&lt;h2 id=&quot;f-strings-redux&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f-strings&lt;/code&gt; Redux&lt;/h2&gt;
 
 &lt;hr /&gt;
 
@@ -335,7 +375,7 @@ Before checking the solution, try copy-pasting your code into this repl:&lt;/p&g
 &lt;p&gt;This repl includes my testing code that will check if your code meets this assignment’s objectives.&lt;/p&gt;
 
 &lt;p&gt;Solution
-https://repl.it/@appbrewery/day-2-3-solution&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Consequences of a Data Type</summary></entry><entry><title type="html">[6] Video on Replit Features: (a) Python Shell and (b) Run Button</title><link href="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html" rel="alternate" type="text/html" title="[6] Video on Replit Features: (a) Python Shell and (b) Run Button" /><published>2021-09-04T00:00:00-05:00</published><updated>2021-09-04T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html">&lt;h2 id=&quot;using-the-python-shell-in-replit&quot;&gt;Using the Python Shell in Replit&lt;/h2&gt;
+https://repl.it/@appbrewery/day-2-3-solution&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Project: Diners’ Calculator</summary></entry><entry><title type="html">[6] Video on Replit Features: (a) Python Shell and (b) Run Button</title><link href="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html" rel="alternate" type="text/html" title="[6] Video on Replit Features: (a) Python Shell and (b) Run Button" /><published>2021-09-04T00:00:00-05:00</published><updated>2021-09-04T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html">&lt;h2 id=&quot;using-the-python-shell-in-replit&quot;&gt;Using the Python Shell in Replit&lt;/h2&gt;
 
 &lt;div style=&quot;position: relative; padding-bottom: 56.25%; height: 0;&quot;&gt;&lt;iframe src=&quot;https://www.loom.com/embed/cd2c6d9aeaf9492f838104eea47d47da&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot; style=&quot;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
