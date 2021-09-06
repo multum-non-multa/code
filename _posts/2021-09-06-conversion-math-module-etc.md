@@ -3,130 +3,16 @@ layout: post
 title: "[7] Data Type Conversions, More Built-in Functions, Math +"
 ---
 
-```
 
+## Consequences of a Data Type
 
+Now that we've cover the primitive data types, let's go a bit further with some of the things mentioned in an earlier post - _see_ [Variable Types in Python](http://localhost:4000/code/2021/08/31/variables-string-methods-functions.html).
 
-under construction
+As mentioned, we may or may not be able to use a Python built-in function with the data.  For example, you can't use
 
+- the `len()` function on a number, but only a sequence like a `string`
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-```
-
-## Data Types
-
-len() give number
-
-what if put a number
-error len(2)
-"type" error
-
-type int
-
-once again data types
-
-for proj:
-strings
-integers
-floats
-booleans
-
-string review
-string slicing
-"hello" [give link to /code/page]
-"hello"[0]
+- the `[ ]` subscripting operators on a number, but, once again, only a sequence like a `string`
 
 emphasize - start counting from 0
 standard

@@ -1,126 +1,17 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-06T12:01:35-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
-
-
-under construction
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-
-&lt;h2 id=&quot;data-types&quot;&gt;Data Types&lt;/h2&gt;
-
-&lt;p&gt;len() give number&lt;/p&gt;
-
-&lt;p&gt;what if put a number
-error len(2)
-“type” error&lt;/p&gt;
-
-&lt;p&gt;type int&lt;/p&gt;
-
-&lt;p&gt;once again data types&lt;/p&gt;
-
-&lt;p&gt;for proj:
-strings
-integers
-floats
-booleans&lt;/p&gt;
-
-&lt;p&gt;string review
-string slicing
-“hello” [give link to /code/page]
-“hello”[0]&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-06T13:45:09-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;h2 id=&quot;consequences-of-a-data-type&quot;&gt;Consequences of a Data Type&lt;/h2&gt;
+
+&lt;p&gt;Now that we’ve cover the primitive data types, let’s go a bit further with some of the things mentioned in an earlier post - &lt;em&gt;see&lt;/em&gt; &lt;a href=&quot;http://localhost:4000/code/2021/08/31/variables-string-methods-functions.html&quot;&gt;Variable Types in Python&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;As mentioned, we may or may not be able to use a Python built-in function with the data.  For example, you can’t use&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;p&gt;the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;len()&lt;/code&gt; function on a number, but only a sequence like a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; subscripting operators on a number, but, once again, only a sequence like a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
 
 &lt;p&gt;emphasize - start counting from 0
 standard&lt;/p&gt;
@@ -443,7 +334,7 @@ Before checking the solution, try copy-pasting your code into this repl:&lt;/p&g
 &lt;p&gt;This repl includes my testing code that will check if your code meets this assignment’s objectives.&lt;/p&gt;
 
 &lt;p&gt;Solution
-https://repl.it/@appbrewery/day-2-3-solution&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">```</summary></entry><entry><title type="html">[6] Video on Replit Features: (a) Python Shell and (b) Run Button</title><link href="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html" rel="alternate" type="text/html" title="[6] Video on Replit Features: (a) Python Shell and (b) Run Button" /><published>2021-09-04T00:00:00-05:00</published><updated>2021-09-04T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html">&lt;h2 id=&quot;using-the-python-shell-in-replit&quot;&gt;Using the Python Shell in Replit&lt;/h2&gt;
+https://repl.it/@appbrewery/day-2-3-solution&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Consequences of a Data Type</summary></entry><entry><title type="html">[6] Video on Replit Features: (a) Python Shell and (b) Run Button</title><link href="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html" rel="alternate" type="text/html" title="[6] Video on Replit Features: (a) Python Shell and (b) Run Button" /><published>2021-09-04T00:00:00-05:00</published><updated>2021-09-04T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html">&lt;h2 id=&quot;using-the-python-shell-in-replit&quot;&gt;Using the Python Shell in Replit&lt;/h2&gt;
 
 &lt;div style=&quot;position: relative; padding-bottom: 56.25%; height: 0;&quot;&gt;&lt;iframe src=&quot;https://www.loom.com/embed/cd2c6d9aeaf9492f838104eea47d47da&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot; style=&quot;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
@@ -901,42 +792,42 @@ yield
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;movie_title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Rocky&quot;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;In memory, that is stored in a contiguous series of characters:&lt;/p&gt;
+&lt;p&gt;is stored in memory as a contiguous series of characters:&lt;/p&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[R][o][c][k][y]&lt;/code&gt;&lt;/p&gt;
 
-&lt;p&gt;which are indexed:&lt;/p&gt;
+&lt;p&gt;which are indexed, &lt;strong&gt;&lt;em&gt;beginning at 0&lt;/em&gt;&lt;/strong&gt; and moving &lt;strong&gt;left to right&lt;/strong&gt;:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/code/assets/images/variables-08-31/rocky-index.jpg&quot; alt=&quot;Superscripting&quot; /&gt;&lt;/p&gt;
 
 &lt;h3 id=&quot;common-methods-and-operations-on-strings&quot;&gt;Common Methods and Operations on Strings&lt;/h3&gt;
 
-&lt;h4 id=&quot;slicing&quot;&gt;Slicing&lt;/h4&gt;
+&lt;h4 id=&quot;what-is-slicing&quot;&gt;What is &lt;strong&gt;Slicing&lt;/strong&gt;?&lt;/h4&gt;
 
-&lt;p&gt;What does that mean?&lt;/p&gt;
+&lt;p&gt;Because a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data structure&lt;/code&gt; holding a &lt;em&gt;sequence&lt;/em&gt; of characters, you can retrieve these characters by index value using integers and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; operators.&lt;/p&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;p&gt;First, a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data structure&lt;/code&gt; — it holds data.&lt;/p&gt;
-  &lt;/li&gt;
-  &lt;li&gt;
-    &lt;p&gt;Second, you can retrieve these characters by index value using the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; (square bracket) operator:&lt;/p&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;&lt;strong&gt;&lt;em&gt;Note&lt;/em&gt;&lt;/strong&gt; : Those integer index values begin with &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;0&lt;/code&gt; and are read from left to right.&lt;/p&gt;
+&lt;/blockquote&gt;
 
-&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;third_letter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;movie_title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
-&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;third_letter&lt;/span&gt;
-&lt;span class=&quot;s&quot;&gt;&apos;c&apos;&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Then you can use more sophisticaled slicing with the square brackets operater and a colon-separated set of integers (&lt;a href=&quot;https://realpython.com/python-strings/#string-slicing&quot;&gt;see this article&lt;/a&gt;) to slice sections.&lt;/p&gt;
 
-&lt;p&gt;But you can also use slicing with the square brackets operater (see this article &lt;a href=&quot;https://realpython.com/python-strings/#string-slicing&quot;&gt;slicing&lt;/a&gt;) to slice sections.  The syntax is:&lt;/p&gt;
+&lt;p&gt;Let’s say you wanted the &lt;strong&gt;&lt;em&gt;second&lt;/em&gt;&lt;/strong&gt; character (index value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt;) through the &lt;strong&gt;&lt;em&gt;fourth&lt;/em&gt;&lt;/strong&gt; character (index value of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3&lt;/code&gt;), then the syntax is:&lt;/p&gt;
 
 &lt;p&gt;&lt;img src=&quot;/code/assets/images/variables-08-31/slicing-rails.jpg&quot; alt=&quot;test image size&quot; class=&quot;img-responsive&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That is, in &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[1:4]&lt;/code&gt;, you read from index value &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;1&lt;/code&gt; up to an including index value &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3&lt;/code&gt; — because even though you say &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4&lt;/code&gt;, you exclude that from the values returned.&lt;/p&gt;
+
+&lt;p&gt;Or:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Rocky&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;&apos;ck&apos;&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Rocky&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt;
 &lt;span class=&quot;s&quot;&gt;&apos;oc&apos;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;movie_title&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Rocky&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;third_letter&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;movie_title&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# or get just one character
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;third_letter&lt;/span&gt;
+&lt;span class=&quot;s&quot;&gt;&apos;c&apos;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;p&gt;Get used to this.  We will be using data structures beyond &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; and, when contain a sequence of items, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; operator is often used.&lt;/p&gt;

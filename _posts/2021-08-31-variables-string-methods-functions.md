@@ -265,39 +265,41 @@ When you create a `string`, the computer stores it as just that, a ___string___ 
 movie_title = "Rocky"
 ```
 
-In memory, that is stored in a contiguous series of characters:
+is stored in memory as a contiguous series of characters:
 
 `[R][o][c][k][y]`
 
-which are indexed:
+which are indexed, ___beginning at 0___ and moving __left to right__:
 
 ![Superscripting](/code/assets/images/variables-08-31/rocky-index.jpg)
 
 ### Common Methods and Operations on Strings
 
-#### Slicing
+#### What is __Slicing__?
 
-What does that mean?
+Because a `string` is a `data structure` holding a _sequence_ of characters, you can retrieve these characters by index value using integers and the `[ ]` operators.
 
-- First, a `string` is a `data structure` --- it holds data.
+> ___Note___ : Those integer index values begin with `0` and are read from left to right.
 
-- Second, you can retrieve these characters by index value using the `[ ]` (square bracket) operator:
+Then you can use more sophisticaled slicing with the square brackets operater and a colon-separated set of integers ([see this article](https://realpython.com/python-strings/#string-slicing)) to slice sections.
 
-```python
->>> third_letter = movie_title[2]
->>> third_letter
-'c'
-```
-
-But you can also use slicing with the square brackets operater (see this article [slicing](https://realpython.com/python-strings/#string-slicing)) to slice sections.  The syntax is:
+Let's say you wanted the ___second___ character (index value of `1`) through the ___fourth___ character (index value of `3`), then the syntax is:
 
 ![test image size](/code/assets/images/variables-08-31/slicing-rails.jpg){:class="img-responsive"}
+
+That is, in `[1:4]`, you read from index value `1` up to an including index value `3` --- because even though you say `4`, you exclude that from the values returned.
+
+Or:
 
 ```python
 >>> "Rocky"[2:4]
 'ck'
 >>> "Rocky"[1:3]
 'oc'
+>>> movie_title = "Rocky"
+>>> third_letter = movie_title[2] # or get just one character
+>>> third_letter
+'c'
 ```
 
 Get used to this.  We will be using data structures beyond `strings` and, when contain a sequence of items, the `[ ]` operator is often used.
