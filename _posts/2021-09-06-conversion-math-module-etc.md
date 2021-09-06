@@ -1,3 +1,110 @@
+---
+layout: post
+title: "[7] Data Type Conversions, More Built-in Functions, Math +"
+---
+
+```
+
+
+
+under construction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+
 ## Data Types
 
 len() give number
@@ -48,12 +155,7 @@ When you take in an input(), returns a string
 
 ## Booleans
 
-True
-False
-
-more later ... but considered part of the Python math-related types
-
-Aside:  Python also features a `complex` number type.  2 + 1j
+see prior post
 
 ---
 
@@ -117,7 +219,7 @@ More math
 %
 
 --
-order of operations
+<!-- order of operations
 essentially same as algebra
 'PEMDAS'
 from L => R
@@ -129,7 +231,7 @@ left to right
 ===
 * multiplication & / division
 ===
-+ addition & - substraction
++ addition & - substraction -->
 
 homework
 using ** and +

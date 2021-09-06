@@ -1,72 +1,647 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-05T16:50:17-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[5] Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="[5] Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h2 id=&quot;a-note-before-we-start&quot;&gt;A Note Before We Start&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-06T11:58:56-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 
-&lt;h2 id=&quot;math-operations&quot;&gt;Math Operations&lt;/h2&gt;
+
+under construction
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;h2 id=&quot;data-types&quot;&gt;Data Types&lt;/h2&gt;
+
+&lt;p&gt;len() give number&lt;/p&gt;
+
+&lt;p&gt;what if put a number
+error len(2)
+“type” error&lt;/p&gt;
+
+&lt;p&gt;type int&lt;/p&gt;
+
+&lt;p&gt;once again data types&lt;/p&gt;
+
+&lt;p&gt;for proj:
+strings
+integers
+floats
+booleans&lt;/p&gt;
+
+&lt;p&gt;string review
+string slicing
+“hello” [give link to /code/page]
+“hello”[0]&lt;/p&gt;
+
+&lt;p&gt;emphasize - start counting from 0
+standard&lt;/p&gt;
+
+&lt;h2 id=&quot;subscripting&quot;&gt;‘subscripting’&lt;/h2&gt;
+
+&lt;h2 id=&quot;numbers&quot;&gt;Numbers&lt;/h2&gt;
+
+&lt;p&gt;Integers&lt;/p&gt;
+
+&lt;p&gt;“123” != 123&lt;/p&gt;
+
+&lt;p&gt;123&lt;/p&gt;
+
+&lt;p&gt;arithmetic operators&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;ul&gt;
+          &lt;li&gt;/
+others
+// ** %&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;Floats&lt;/p&gt;
+
+&lt;p&gt;When you take in an input(), returns a string&lt;/p&gt;
+
+&lt;h2 id=&quot;booleans&quot;&gt;Booleans&lt;/h2&gt;
+
+&lt;p&gt;see prior post&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;how-functions-work&quot;&gt;How Functions Work&lt;/h2&gt;
+
+&lt;p&gt;–&amp;gt; input –&amp;gt; [… process …] -&amp;gt; output&lt;/p&gt;
+
+&lt;p&gt;e.g. shake maker&lt;/p&gt;
+
+&lt;p&gt;recipe in =&amp;gt; … =&amp;gt; shake out&lt;/p&gt;
+
+&lt;p&gt;many times a function depends on a certain type of input&lt;/p&gt;
+
+&lt;p&gt;e.g., len() takes a sequence type, e.g., string, but NOT a number&lt;/p&gt;
+
+&lt;p&gt;and functions often return a certain type&lt;/p&gt;
+
+&lt;p&gt;input() returns a string&lt;/p&gt;
+
+&lt;p&gt;how to determine — the type() function
+returns the type&lt;/p&gt;
+
+&lt;p&gt;print(type(input(“What is your name?” )))
+print(type(len(input(“What is your name?” ))))&lt;/p&gt;
+
+&lt;p&gt;type conversion (aka ‘casting’) required if
+type == string but need integer or float&lt;/p&gt;
+
+&lt;p&gt;int()
+float()&lt;/p&gt;
+
+&lt;p&gt;if len() =&amp;gt; integer
+str(len())
+then can concatenate&lt;/p&gt;
+
+&lt;p&gt;exercise / challenge&lt;/p&gt;
+
+&lt;p&gt;given a random 2-digit number
+from input()
+print the sum of the two digits as a type of float
+e.g.&lt;/p&gt;
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Type a two-digit number: 43
+7.0
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;involves
+type checking
+string subscripting
+conversion
+arithmetic operations&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;More math&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;= * /&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;** exponent&lt;/p&gt;
+
+&lt;p&gt;%&lt;/p&gt;
+
+&lt;p&gt;–
+&amp;lt;!– order of operations
+essentially same as algebra
+‘PEMDAS’
+from L =&amp;gt; R
+left to right
+===
+() parentheses &amp;lt;==
+===
+** exponents
+===&lt;/p&gt;
+&lt;ul&gt;
+  &lt;li&gt;
+    &lt;h1 id=&quot;multiplication---division&quot;&gt;multiplication &amp;amp; / division&lt;/h1&gt;
+  &lt;/li&gt;
+  &lt;li&gt;addition &amp;amp; - substraction –&amp;gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;homework
+using ** and +
+produce the value 9
+1 1 1 3&lt;/p&gt;
+
+&lt;p&gt;–&lt;/p&gt;
+
+&lt;p&gt;now introduce math module&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;compare ** with math.pow()&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;** returns integer
+pow returns float&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;import math
+math.pow(4,5)
+1024.0
+4**5
+1024&lt;/p&gt;
+
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;other modules in math&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;…&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;also see random module&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;cover operations for bmi calc (without mentioning bmi challenge)&lt;/p&gt;
+
+&lt;p&gt;bmi calculator
+height = input(“Enter the height in inches “)
+weight = input(“Enter the weight in pounts “)&lt;/p&gt;
+
+&lt;p&gt;bmi = weight / height**2&lt;/p&gt;
+
+&lt;p&gt;note:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;int(34.967)
+34
+math.ceil(34.967)
+35
+math.floor(34.967)
+34&lt;/p&gt;
+
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;math rounding
+e.g.
+print(8 / 3)
+2.66666666666666
+int()
+not great
+rather use built-in round()&lt;/p&gt;
+
+&lt;p&gt;round((8/3))
+options in round()
+round((8/3), 3)&lt;/p&gt;
+
+&lt;p&gt;or use floor division&lt;/p&gt;
+
+&lt;p&gt;8 // 3
+same as math.floor(8/3)&lt;/p&gt;
+
+&lt;p&gt;Beware the inexactitude of floating point numbers.
+Note what happens here:&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;100 * 1.12
+112.00000000000001&lt;/p&gt;
+
+      &lt;p&gt;https://docs.python.org/3/tutorial/floatingpoint.html&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;So it’s a good idea to choose a rounding so as not to factor in that inexactitude.
+Not an issue now, but we’ll return to it when we do comparison operators and conditional statements.&lt;/p&gt;
+
+&lt;hr /&gt;
+&lt;p&gt;shorthand arithmetic operations&lt;/p&gt;
+
+&lt;p&gt;increment&lt;/p&gt;
+
+&lt;p&gt;score = 0
+could do
+score = score + 1
+or use shorthand
+score += 1&lt;/p&gt;
+
+&lt;p&gt;halving&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;volume = 85.0
+volume /= 2
+volume
+42.5
+volume /= 2
+volume
+21.25&lt;/p&gt;
+
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;exponential growth&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;gain = 2
+gain **= 2
+gain
+4
+gain **= 2
+gain
+16&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;revisit f-strings
+[provide link to that page]&lt;/p&gt;
+
+&lt;p&gt;can do a lot but not sure can use shorthand:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;h = 12.33
+m = False
+msg = f”When you reach {h} then go to {h + 100} and return {m}”
+msg
+‘When you reach 12.33 then go to 112.33 and return False’
+msg = f”When you reach {h} then go to {h += 233} and return {m}”
+  File “&lt;input /&gt;”, line 1
+    (h +)
+        ^&lt;/p&gt;
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;alternative: lambda functions
+ msg = f”When you reach {h} then go to {(lambda x: x + 1)(h)} and return {m}”&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;blockquote&gt;
+    &lt;blockquote&gt;
+      &lt;p&gt;msg
+‘When you reach 12.33 then go to 13.33 and return False’&lt;/p&gt;
+
+    &lt;/blockquote&gt;
+  &lt;/blockquote&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;challenge / homework
+Your Life in Weeks
+Instructions&lt;/p&gt;
+
+&lt;p&gt;Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.&lt;/p&gt;
+
+&lt;p&gt;It will take your current age as the input and output a message with our time left in this format:&lt;/p&gt;
+
+&lt;p&gt;You have x days, y weeks, and z months left.&lt;/p&gt;
+
+&lt;p&gt;Where x, y and z are replaced with the actual calculated numbers.&lt;/p&gt;
+
+&lt;p&gt;Warning your output should match the Example Output format exactly, even the positions of the commas and full stops.&lt;/p&gt;
+
+&lt;p&gt;Example Input
+56
+Example Output
+You have 12410 days, 1768 weeks, and 408 months left.
+e.g. When you hit run, this is what should happen:&lt;/p&gt;
+
+&lt;p&gt;https://cdn.fs.teachablecdn.com/RjqBViZQpyVTv7XY6cfA&lt;/p&gt;
+
+&lt;p&gt;Hint
+There are 365 days in a year, 52 weeks in a year and 12 months in a year.
+Try copying the example output into your code and replace the relevant parts so that the sentence is formated the same way.
+Test Your Code
+Before checking the solution, try copy-pasting your code into this repl:&lt;/p&gt;
+
+&lt;p&gt;https://repl.it/@appbrewery/day-2-3-test-your-code&lt;/p&gt;
+
+&lt;p&gt;This repl includes my testing code that will check if your code meets this assignment’s objectives.&lt;/p&gt;
+
+&lt;p&gt;Solution
+https://repl.it/@appbrewery/day-2-3-solution&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">```</summary></entry><entry><title type="html">[6] Video on Replit Features: (a) Python Shell and (b) Run Button</title><link href="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html" rel="alternate" type="text/html" title="[6] Video on Replit Features: (a) Python Shell and (b) Run Button" /><published>2021-09-04T00:00:00-05:00</published><updated>2021-09-04T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html">&lt;h2 id=&quot;using-the-python-shell-in-replit&quot;&gt;Using the Python Shell in Replit&lt;/h2&gt;
+
+&lt;div style=&quot;position: relative; padding-bottom: 56.25%; height: 0;&quot;&gt;&lt;iframe src=&quot;https://www.loom.com/embed/cd2c6d9aeaf9492f838104eea47d47da&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot; style=&quot;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;The acronym ‘repl’ stands for  the ‘read-evaluate-print loop’.  The interpreter reads the input, evaluates it, and prints a return value to the console.&lt;/p&gt;
+
+&lt;p&gt;Make use of it for small snippets of code without having to keep running a program in a file.  It’s helpful for testing out Python features quickly.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;city&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;s&quot;&gt;&quot;Des Moines&quot;&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;city&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;Des&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;Moines&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# returns the value
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# difference between / and // ?
+&lt;/span&gt;&lt;span class=&quot;mf&quot;&gt;0.75&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Using the Python Shell in Replit</summary></entry><entry><title type="html">[5] Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="[5] Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h2 id=&quot;number-types-in-python&quot;&gt;Number Types in Python&lt;/h2&gt;
+
+&lt;p&gt;Python has two types of real numbers:  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;integers&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;floats&lt;/code&gt;.  (See &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Complex Numbers&lt;/code&gt; below.)&lt;/p&gt;
+
+&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Integers&lt;/code&gt; are simply the whole numbers, whether &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;signed&lt;/code&gt; (i.e., positive and negative).  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;Floats&lt;/code&gt; are simply those with a level of decimal precision, e.g., &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3.14159&lt;/code&gt;.&lt;/p&gt;
+
+&lt;h2 id=&quot;basic-arithmetic-operations&quot;&gt;Basic Arithmetic Operations&lt;/h2&gt;
 
 &lt;p&gt;Python has 7 arithmetic operators:&lt;/p&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; for addition&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Addition&lt;/em&gt;&lt;/strong&gt;  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
 &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt; for subtraction&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Subtraction&lt;/em&gt;&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt; for multiplication&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Multiplication&lt;/em&gt;&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
 &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; for division&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Division&lt;/em&gt;&lt;/strong&gt;  &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;returns a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
 &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;blockquote&gt;
-  &lt;p&gt;Note: returns a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; type&lt;/p&gt;
-&lt;/blockquote&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;//&lt;/code&gt; for floor division&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Floor Division&lt;/em&gt;&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;//&lt;/code&gt;&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;returns a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;//&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
 &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;**&lt;/code&gt; for exponentation&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Exponentation&lt;/em&gt;&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;**&lt;/code&gt;&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;**&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
 &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt; =&amp;gt; modulus&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;&lt;em&gt;Modulus&lt;/em&gt;&lt;/strong&gt; &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt; (where &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt; is the &lt;strong&gt;modulo&lt;/strong&gt; operator)&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;%&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
 &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;h3 id=&quot;uses-of-&quot;&gt;Uses of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;%&lt;/code&gt;&lt;/h3&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;the modulo operation returns the remainder … of a division, after one number is divided by another …  &lt;a href=&quot;https://en.wikipedia.org/wiki/Modulo_operation&quot;&gt;Wikipedia&lt;/a&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Try it out.&lt;/p&gt;
+
+&lt;p&gt;In a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;main.py&lt;/code&gt; file on Replit, code the following (without worrying about exactly what the code means):&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;for&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt; &lt;span class=&quot;ow&quot;&gt;in&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;range&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;37&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+    &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;sa&quot;&gt;f&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;{&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;si&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;%12 =&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;i&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;If you run this, you’ll see:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;13&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;14&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;15&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;17&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;18&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;19&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;20&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;21&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;22&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;23&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;24&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;25&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;27&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;28&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;29&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;5&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;30&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;31&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;32&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;33&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;9&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;34&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;10&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;35&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;11&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;36&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;%&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Notice that the math acts much like a ‘clock’ — when the numerator becomes something wholly divisible by 12, it ‘resets’ the value and starts all over.&lt;/p&gt;
+
+&lt;p&gt;This operator is quite useful, even beyond mathematical operations.  One example is its use in finding even numbers&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;h2 id=&quot;order-of-operation&quot;&gt;Order of Operation&lt;/h2&gt;
+
+&lt;p&gt;The arithmetic operators in Python (and other programming languages) are interpreted according to an &lt;em&gt;order of operation&lt;/em&gt;, an order that follows that of algebra.&lt;/p&gt;
+
+&lt;p&gt;The &lt;em&gt;‘P.E.M.D.A.S.’&lt;/em&gt; rule holds:&lt;/p&gt;
 
 &lt;ul&gt;
   &lt;li&gt;
-    &lt;p&gt;find even numbers&lt;/p&gt;
+    &lt;p&gt;math operations occur from left to right&lt;/p&gt;
   &lt;/li&gt;
   &lt;li&gt;
-    &lt;p&gt;divisible by x&lt;/p&gt;
+    &lt;p&gt;__P__arentheses &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;()&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;__E__xponents &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;**&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;__M__ultiplication &amp;amp; __D__ivision &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;/&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;//&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;__A__ddition &amp;amp; __S__ubstraction &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;-&lt;/code&gt;&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
+
+&lt;p&gt;For example:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;That is, the product of 4 and 2 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4 * 2 = 8&lt;/code&gt;) is first calculated before being added to 3 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3 + 8 = 11&lt;/code&gt;), and lastly 8 is subtracted from that (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;11 - 8 = 3&lt;/code&gt;).&lt;/p&gt;
+
+&lt;p&gt;But operator precedence goes well beyond simple mathmatical operators.  See &lt;a href=&quot;https://docs.python.org/3/reference/expressions.html#operator-precedence&quot;&gt;orders of precedence&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;The good news?  You can simply use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;()&lt;/code&gt; parentheses to establish the order you desire.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h2 id=&quot;booleans&quot;&gt;Booleans&lt;/h2&gt;
 
+&lt;p&gt;Only two values in this type: &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;True&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;False&lt;/code&gt;.  These will be used extensively when we do conditional statements and logical operators.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;type&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;bp&quot;&gt;True&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;lt;&lt;/span&gt;&lt;span class=&quot;k&quot;&gt;class&lt;/span&gt; &lt;span class=&quot;err&quot;&gt;&apos;&lt;/span&gt;&lt;span class=&quot;nc&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&amp;gt;
+&amp;gt;&amp;gt;&amp;gt; type(False)
+&amp;lt;class &apos;&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;bool&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&apos;&amp;gt;
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Booleans are closely related to numbers in Python as we’ll see later.&lt;/p&gt;
+
 &lt;hr /&gt;
 
-&lt;h2 id=&quot;aside--complex-numbers&quot;&gt;Aside:  Complex Numbers&lt;/h2&gt;</content><author><name>multum-non-multa</name></author><summary type="html">A Note Before We Start</summary></entry><entry><title type="html">[6] Making Use of repls in Repl and on Your Own Machine</title><link href="http://0.0.0.0:4000/code/2021/09/03/using-work-bench-freatures.html" rel="alternate" type="text/html" title="[6] Making Use of repls in Repl and on Your Own Machine" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/using-work-bench-freatures</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/using-work-bench-freatures.html">&lt;h2 id=&quot;what-is-a-repl&quot;&gt;What is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;repl&lt;/code&gt;?&lt;/h2&gt;</content><author><name>multum-non-multa</name></author><summary type="html">What is a repl?</summary></entry><entry><title type="html">[4] Variables, Data Types, and More on Strings</title><link href="http://0.0.0.0:4000/code/2021/08/31/variables-string-methods-functions.html" rel="alternate" type="text/html" title="[4] Variables, Data Types, and More on Strings" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/31/variables-string-methods-functions</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/31/variables-string-methods-functions.html">&lt;hr /&gt;
+&lt;h2 id=&quot;aside--complex-numbers&quot;&gt;Aside:  Complex Numbers&lt;/h2&gt;
+
+&lt;p&gt;You may have dealt with complex numbers in math, i.e., numbers with two parts: a real part and an imaginary part.&lt;/p&gt;
+
+&lt;p&gt;To create a complex number in Python, you simply write the real part, then a plus sign, then the imaginary part with the letter &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;j&lt;/code&gt; at the end:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;cplx_number&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;2j&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;strong&gt;Note&lt;/strong&gt;:  In math, the imaginary part is typically written with an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;i&lt;/code&gt;.  Python uses the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;j&lt;/code&gt;.&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Number Types in Python</summary></entry><entry><title type="html">[4] Variables, Data Types, and More on Strings</title><link href="http://0.0.0.0:4000/code/2021/08/31/variables-string-methods-functions.html" rel="alternate" type="text/html" title="[4] Variables, Data Types, and More on Strings" /><published>2021-08-31T00:00:00-05:00</published><updated>2021-08-31T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/31/variables-string-methods-functions</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/31/variables-string-methods-functions.html">&lt;hr /&gt;
 
 &lt;h2 id=&quot;overview&quot;&gt;Overview&lt;/h2&gt;
 
