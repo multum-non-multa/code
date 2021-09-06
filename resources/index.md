@@ -18,27 +18,6 @@ A few things to note:
 
 #### [Python for Beginners](https://www.pythonforbeginners.com/)
 
-Just look around.  You'll see a lot of the basic stuff covered.
-
 #### [Google's Python Tutorial](https://developers.google.com/edu/python)
 
 #### [Replit Intermediate Python Course](https://docs.replit.com/teaching-curriculum/intermediate-python)
-
-<hr/>
-
-## Bash / Shell
-
-
-<hr/>
-
-## Chips, CPUs, etc
-
-
-
-
-
-
-
-
-
-

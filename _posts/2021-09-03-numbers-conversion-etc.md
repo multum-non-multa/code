@@ -39,6 +39,7 @@ Python has 7 arithmetic operators:
 >>> 1 / 2
 0.5
 ```
+> Note: returns a `float` type
 
 `//` for floor division
 

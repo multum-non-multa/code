@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-05T09:57:47-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[5] Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="[5] Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h2 id=&quot;a-note-before-we-start&quot;&gt;A Note Before We Start&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-05T16:50:17-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[5] Numbers and Booleans</title><link href="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html" rel="alternate" type="text/html" title="[5] Numbers and Booleans" /><published>2021-09-03T00:00:00-05:00</published><updated>2021-09-03T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/03/numbers-conversion-etc.html">&lt;h2 id=&quot;a-note-before-we-start&quot;&gt;A Note Before We Start&lt;/h2&gt;
 
 &lt;h2 id=&quot;math-operations&quot;&gt;Math Operations&lt;/h2&gt;
 
@@ -27,6 +27,9 @@
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
 &lt;span class=&quot;mf&quot;&gt;0.5&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;Note: returns a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; type&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;//&lt;/code&gt; for floor division&lt;/p&gt;
 
