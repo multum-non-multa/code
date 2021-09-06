@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-06T13:49:07-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;h2 id=&quot;consequences-of-a-data-type&quot;&gt;Consequences of a Data Type&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-06T14:03:33-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;h2 id=&quot;consequences-of-a-data-type&quot;&gt;Consequences of a Data Type&lt;/h2&gt;
 
 &lt;p&gt;Now that we’ve cover the primitive data types, let’s go a bit further with some of the things mentioned in an earlier post - &lt;em&gt;see&lt;/em&gt; &lt;a href=&quot;http://localhost:4000/code/2021/08/31/variables-string-methods-functions.html&quot;&gt;Variable Types in Python&lt;/a&gt;.&lt;/p&gt;
 
@@ -268,8 +268,9 @@ gain
   &lt;/blockquote&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;revisit f-strings
-[provide link to that page]&lt;/p&gt;
+&lt;p&gt;revisit f-strings&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html&quot;&gt;provide link to that page&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;can do a lot but not sure can use shorthand:&lt;/p&gt;
 
@@ -559,13 +560,23 @@ https://repl.it/@appbrewery/day-2-3-solution&lt;/p&gt;</content><author><name>mu
   &lt;li&gt;
     &lt;p&gt;More Regarding Strings&lt;/p&gt;
 
-    &lt;p&gt;a. Strings are ‘data structures’&lt;/p&gt;
+    &lt;ul&gt;
+      &lt;li&gt;
+        &lt;p&gt;Strings as &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data structures&lt;/code&gt;&lt;/p&gt;
+      &lt;/li&gt;
+      &lt;li&gt;
+        &lt;p&gt;Common Methods and Operations on Strings&lt;/p&gt;
 
-    &lt;p&gt;b. Common Methods and Operations on Strings&lt;/p&gt;
-
-    &lt;p&gt;i. Slicing&lt;/p&gt;
-
-    &lt;p&gt;ii.  Manipulations&lt;/p&gt;
+        &lt;ul&gt;
+          &lt;li&gt;
+            &lt;p&gt;Slicing&lt;/p&gt;
+          &lt;/li&gt;
+          &lt;li&gt;
+            &lt;p&gt;Intro to String Methods&lt;/p&gt;
+          &lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
   &lt;/li&gt;
 &lt;/ol&gt;
 
@@ -808,7 +819,7 @@ yield
 
 &lt;h3 id=&quot;common-methods-and-operations-on-strings&quot;&gt;Common Methods and Operations on Strings&lt;/h3&gt;
 
-&lt;h4 id=&quot;what-is-slicing&quot;&gt;What is &lt;strong&gt;Slicing&lt;/strong&gt;?&lt;/h4&gt;
+&lt;h4 id=&quot;slicing&quot;&gt;&lt;strong&gt;Slicing&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;Because a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;data structure&lt;/code&gt; holding a &lt;em&gt;sequence&lt;/em&gt; of characters, you can retrieve these characters by index value using integers and the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; operators.&lt;/p&gt;
 
@@ -838,7 +849,7 @@ yield
 
 &lt;p&gt;Get used to this.  We will be using data structures beyond &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; and, when contain a sequence of items, the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;[ ]&lt;/code&gt; operator is often used.&lt;/p&gt;
 
-&lt;h4 id=&quot;string-methods&quot;&gt;String Methods&lt;/h4&gt;
+&lt;h4 id=&quot;string-methods&quot;&gt;&lt;strong&gt;String Methods&lt;/strong&gt;&lt;/h4&gt;
 
 &lt;p&gt;Python dedicates an enormous part of its library to manipulation of &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt; — they are that important because they are that pervasive.&lt;/p&gt;
 
@@ -874,60 +885,38 @@ yield
 3
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Many other methods exist and we’ll see them a great deal later.&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">[3] Strings, Print, Input, Variables</title><link href="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="[3] Strings, Print, Input, Variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/18/printing-strings</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html">&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Contents
-
-1. Project
-
-  a.  Goal: Generate a &apos;Title&apos; with Two Separate String Inputs
-
-  b.  Requirements
-
-2. Printing to the Console in Python
-
-3. String Manipulation
-
-  a. String is a &apos;data type&apos;
-
-  b. Error Messages
-
-  c. `string` data type and comments
-
-  d. `string` concatenation
-
-4. Indentation &amp;amp; Spacing Python Code
-
-5. Code Intelligence
-
-6. Practice Debugging Errors
-
-7. The Python `input` Function
-
-  a. Model for a Program: I.P.O.
-
-  b. `input()`
-
-8. Practice Using `input`
-
-9. Variables
-
-  a. Variables in General
-
-  b. Variable-Naming Syntax
-
-  c. Rules on Variable Names
-
-  (i) Python Variable-Naming Rules
-
-  (ii) Python Variable-Naming Conventions
-
-10. Practice with Variables
-
-11. f-Strings
-
-12. Variable Naming Practice
-
-13. Title Generator Project
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+&lt;p&gt;Many other methods exist and we’ll see them a great deal later.&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html"></summary></entry><entry><title type="html">[3] Strings, Print, Input, Variables</title><link href="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html" rel="alternate" type="text/html" title="[3] Strings, Print, Input, Variables" /><published>2021-08-18T00:00:00-05:00</published><updated>2021-08-18T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/18/printing-strings</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/18/printing-strings.html">&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Project&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Printing to the Console in Python&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;String Manipulation&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Indentation &amp;amp; Spacing Python Code&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Code Intelligence&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; Function&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Practice Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Variables&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;f-Strings&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Title Generator Project&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
 
 &lt;hr /&gt;
 
@@ -1251,15 +1240,7 @@ IndentationError: unexpected indent
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;6-practice-debugging-errors&quot;&gt;6. Practice Debugging Errors&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;p&gt;Go to the team projects and work on the error and debugging exercises.&lt;/p&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;7-the-python-input-function&quot;&gt;7. The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; Function&lt;/h3&gt;
+&lt;h3 id=&quot;6-the-python-input-function&quot;&gt;6. The Python &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt; Function&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -1315,7 +1296,7 @@ You said your name is Fred
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;8-practice-using-input&quot;&gt;8. Practice Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;&lt;/h3&gt;
+&lt;h3 id=&quot;7-practice-using-input&quot;&gt;7. Practice Using &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;input&lt;/code&gt;&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -1351,7 +1332,7 @@ Fred
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;9-variables&quot;&gt;9. Variables&lt;/h3&gt;
+&lt;h3 id=&quot;8-variables&quot;&gt;8. Variables&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -1440,11 +1421,7 @@ Fred
 
 &lt;hr /&gt;
 
-&lt;h3 id=&quot;10-practice-with-variables&quot;&gt;10. Practice with Variables&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;11-f-strings&quot;&gt;11. f-Strings&lt;/h3&gt;
+&lt;h3 id=&quot;9-f-strings&quot;&gt;9. f-Strings&lt;/h3&gt;
 
 &lt;hr /&gt;
 
@@ -1477,17 +1454,13 @@ print(f&quot;McDonalds is {yrs} years old.&quot;)
 &lt;pre&gt;&lt;code class=&quot;language-Python&quot;&gt;print(f&quot;McDonalds is {yrs + 1} years old.&quot;)
 &lt;/code&gt;&lt;/pre&gt;
 
-&lt;hr /&gt;
+&lt;h3 id=&quot;10-title-generator-project&quot;&gt;10. Title Generator Project&lt;/h3&gt;
 
-&lt;h3 id=&quot;12-variable-naming-practice&quot;&gt;12. Variable Naming Practice&lt;/h3&gt;
-
-&lt;hr /&gt;
-
-&lt;h3 id=&quot;13-title-generator-project&quot;&gt;13. Title Generator Project&lt;/h3&gt;
+&lt;p&gt;&lt;em&gt;see repl project …&lt;/em&gt;&lt;/p&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">``` Contents</summary></entry><entry><title type="html">[2] Tour of a Repl’s Interface</title><link href="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html" rel="alternate" type="text/html" title="[2] Tour of a Repl’s Interface" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/17/tour-of-repl</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html">&lt;h3 id=&quot;after-creating-a-repl-in-python-&quot;&gt;After creating a repl in Python …&lt;/h3&gt;
+&lt;p&gt;&lt;small&gt;&lt;i&gt;&lt;a href=&quot;http://ecotrust-canada.github.io/markdown-toc/&quot;&gt;Table of contents generated with markdown-toc&lt;/a&gt;&lt;/i&gt;&lt;/small&gt;&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Project</summary></entry><entry><title type="html">[2] Tour of a Repl’s Interface</title><link href="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html" rel="alternate" type="text/html" title="[2] Tour of a Repl’s Interface" /><published>2021-08-17T00:00:00-05:00</published><updated>2021-08-17T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/08/17/tour-of-repl</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/08/17/tour-of-repl.html">&lt;h3 id=&quot;after-creating-a-repl-in-python-&quot;&gt;After creating a repl in Python …&lt;/h3&gt;
 
 &lt;p&gt;&lt;img src=&quot;/code/assets/images/repl-001.jpg&quot; alt=&quot;Create a repl&quot; /&gt;&lt;/p&gt;
 

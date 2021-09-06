@@ -3,62 +3,26 @@ layout: post
 title: "[3] Strings, Print, Input, Variables"
 ---
 
-```
-Contents
 
 1. Project
-
-  a.  Goal: Generate a 'Title' with Two Separate String Inputs
-
-  b.  Requirements
 
 2. Printing to the Console in Python
 
 3. String Manipulation
 
-  a. String is a 'data type'
-
-  b. Error Messages
-
-  c. `string` data type and comments
-
-  d. `string` concatenation
-
 4. Indentation & Spacing Python Code
 
 5. Code Intelligence
 
-6. Practice Debugging Errors
+6. The Python `input` Function
 
-7. The Python `input` Function
+7. Practice Using `input`
 
-  a. Model for a Program: I.P.O.
+8. Variables
 
-  b. `input()`
+9. f-Strings
 
-8. Practice Using `input`
-
-9. Variables
-
-  a. Variables in General
-
-  b. Variable-Naming Syntax
-
-  c. Rules on Variable Names
-
-  (i) Python Variable-Naming Rules
-
-  (ii) Python Variable-Naming Conventions
-
-10. Practice with Variables
-
-11. f-Strings
-
-12. Variable Naming Practice
-
-13. Title Generator Project
-```
-
+10. Title Generator Project
 
 ---
 
@@ -338,15 +302,7 @@ If you find this too annoying, simply disable the code intelligence.
 
 ---
 
-### 6. Practice Debugging Errors
-
----
-
-Go to the team projects and work on the error and debugging exercises.
-
----
-
-### 7. The Python `input` Function
+### 6. The Python `input` Function
 
 ---
 
@@ -398,7 +354,7 @@ The Python documentation says of `input()`:
 
 ---
 
-### 8. Practice Using `input`
+### 7. Practice Using `input`
 
 ---
 
@@ -435,7 +391,7 @@ Fred
 
 ---
 
-### 9. Variables
+### 8. Variables
 
 ---
 
@@ -512,11 +468,7 @@ More conventions are to follow, but that's sufficient for now.
 
 ---
 
-### 10. Practice with Variables
-
----
-
-### 11. f-Strings
+### 9. f-Strings
 
 ---
 
@@ -549,13 +501,9 @@ print(f"McDonalds is {yrs} years old.")
 print(f"McDonalds is {yrs + 1} years old.")
 ```
 
----
+### 10. Title Generator Project
 
-### 12. Variable Naming Practice
-
----
-
-### 13. Title Generator Project
+_see repl project ..._
 
 ---
 

@@ -232,7 +232,8 @@ exponential growth
 
 
 revisit f-strings
-[provide link to that page]
+
+[provide link to that page](https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html)
 
 can do a lot but not sure can use shorthand:
 

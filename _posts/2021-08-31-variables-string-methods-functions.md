@@ -22,13 +22,13 @@ title: "[4] Variables, Data Types, and More on Strings"
 
 2. More Regarding Strings
 
-    a. Strings are 'data structures'
+    - Strings as `data structures`
 
-    b. Common Methods and Operations on Strings
+    - Common Methods and Operations on Strings
 
-      i. Slicing
+      - Slicing
 
-      ii.  Manipulations
+      - Intro to String Methods
 
 ---
 
@@ -275,7 +275,7 @@ which are indexed, ___beginning at 0___ and moving __left to right__:
 
 ### Common Methods and Operations on Strings
 
-#### What is __Slicing__?
+#### __Slicing__
 
 Because a `string` is a `data structure` holding a _sequence_ of characters, you can retrieve these characters by index value using integers and the `[ ]` operators.
 
@@ -305,7 +305,7 @@ Or:
 Get used to this.  We will be using data structures beyond `strings` and, when contain a sequence of items, the `[ ]` operator is often used.
 
 
-#### String Methods
+#### __String Methods__
 
 Python dedicates an enormous part of its library to manipulation of `strings` --- they are that important because they are that pervasive.
 
