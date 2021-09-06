@@ -155,9 +155,18 @@ For example:
 
 That is, the product of 4 and 2 (`4 * 2 = 8`) is first calculated before being added to 3 (`3 + 8 = 11`), and lastly 8 is subtracted from that (`11 - 8 = 3`).
 
-But operator precedence goes well beyond simple mathmatical operators.  See [orders of precedence](https://docs.python.org/3/reference/expressions.html#operator-precedence).
+If you wanted something different, use parentheses, e.g.:
 
-The good news?  You can simply use `()` parentheses to establish the order you desire.
+```python
+>>> (3 + 4) * 2 - 8
+6
+```
+
+
+
+Operator precedence goes well beyond simple mathmatical operators.  See [orders of precedence](https://docs.python.org/3/reference/expressions.html#operator-precedence).
+
+But simply use `()` parentheses to establish the order you desire.
 
 ---
 
@@ -173,7 +182,6 @@ Only two values in this type: `True` and `False`.  These will be used extensivel
 ```
 
 Booleans are closely related to numbers in Python as we'll see later.
-
 
 ---
 

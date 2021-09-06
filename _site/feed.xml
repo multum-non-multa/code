@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-06T13:45:09-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;h2 id=&quot;consequences-of-a-data-type&quot;&gt;Consequences of a Data Type&lt;/h2&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-06T13:49:07-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;h2 id=&quot;consequences-of-a-data-type&quot;&gt;Consequences of a Data Type&lt;/h2&gt;
 
 &lt;p&gt;Now that we’ve cover the primitive data types, let’s go a bit further with some of the things mentioned in an earlier post - &lt;em&gt;see&lt;/em&gt; &lt;a href=&quot;http://localhost:4000/code/2021/08/31/variables-string-methods-functions.html&quot;&gt;Variable Types in Python&lt;/a&gt;.&lt;/p&gt;
 
@@ -503,9 +503,15 @@ https://repl.it/@appbrewery/day-2-3-solution&lt;/p&gt;</content><author><name>mu
 
 &lt;p&gt;That is, the product of 4 and 2 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;4 * 2 = 8&lt;/code&gt;) is first calculated before being added to 3 (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;3 + 8 = 11&lt;/code&gt;), and lastly 8 is subtracted from that (&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;11 - 8 = 3&lt;/code&gt;).&lt;/p&gt;
 
-&lt;p&gt;But operator precedence goes well beyond simple mathmatical operators.  See &lt;a href=&quot;https://docs.python.org/3/reference/expressions.html#operator-precedence&quot;&gt;orders of precedence&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;If you wanted something different, use parentheses, e.g.:&lt;/p&gt;
 
-&lt;p&gt;The good news?  You can simply use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;()&lt;/code&gt; parentheses to establish the order you desire.&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;-&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;8&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Operator precedence goes well beyond simple mathmatical operators.  See &lt;a href=&quot;https://docs.python.org/3/reference/expressions.html#operator-precedence&quot;&gt;orders of precedence&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;But simply use &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;()&lt;/code&gt; parentheses to establish the order you desire.&lt;/p&gt;
 
 &lt;hr /&gt;
 
