@@ -31,7 +31,7 @@ title: "[7] Data Type Conversions, More Built-in Functions, Math +, and Another 
 
 ## Data Types Revisited
 
-Now that we've cover the primitive data types, let's go a bit further with some of the things mentioned in an earlier post - _see_ [Variable Types in Python](http://localhost:4000/code/2021/08/31/variables-string-methods-functions.html).
+Let's go a bit further with some of the things mentioned in an earlier post - _see_ [Variable Types in Python](http://localhost:4000/code/2021/08/31/variables-string-methods-functions.html).
 
 As mentioned, we may or may not be able to use a Python built-in function with the data.  For example, you can't use
 
@@ -39,34 +39,55 @@ As mentioned, we may or may not be able to use a Python built-in function with t
 
 - the `[ ]` subscripting operators on a number, but, once again, only a sequence like a `string`
 
-emphasize - start counting from 0
-standard
+Sometimes, however you are able to convert from one type to another.
 
 ---
 
 ## Type Conversion
 
+Converting from one type to another is often used when the input data is a `string` but needs to be processed as an `integer` or `float`.
 
+E.g.,
 
-Integers
+```python
+age = input("Enter your age in years")
 
-"123" != 123
+# convert to an integer
+int_age = int(age)
+# or you could just do
+age = int(age) # changing the existing variable
 
-123
+weight = input("Enter your weight in kilos ")
 
-arithmetic operators
-+ - * /
-others
-// ** %
+# convert to a float
+float_weight = float(weight)
+```
 
-Floats
+But it occurs elsewhere.  For example, you may want convert a `float` to an `integer`:
 
-When you take in an input(), returns a string
-
+```python
+>>> ratio_value = 38 / 6
+>>> ratio_value
+6.333333333333333
+>>> ratio_value_estimate = int(ratio_value)
+>>> ratio_value_estimate
+6
+>>>
+```
 
 ---
 
 ## `f-strings` Redux
+
+Refer back to [the first mention of f-strings](https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html).
+
+Also, you'll remember that sometimes you wanted to convert an `integer` to a `string` in order to accomplish concatenation:
+
+```python
+print("The estimated ratio value is " + str(ratio_value_estimate))
+```
+
+
 
 ---
 
@@ -261,7 +282,7 @@ exponential growth
 
 revisit f-strings
 
-[provide link to that page](https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html)
+
 
 can do a lot but not sure can use shorthand:
 

@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-06T15:07:00-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-06T18:37:22-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;Project: Diners’ Calculator&lt;/p&gt;
   &lt;/li&gt;
@@ -40,7 +40,7 @@
 
 &lt;h2 id=&quot;data-types-revisited&quot;&gt;Data Types Revisited&lt;/h2&gt;
 
-&lt;p&gt;Now that we’ve cover the primitive data types, let’s go a bit further with some of the things mentioned in an earlier post - &lt;em&gt;see&lt;/em&gt; &lt;a href=&quot;http://localhost:4000/code/2021/08/31/variables-string-methods-functions.html&quot;&gt;Variable Types in Python&lt;/a&gt;.&lt;/p&gt;
+&lt;p&gt;Let’s go a bit further with some of the things mentioned in an earlier post - &lt;em&gt;see&lt;/em&gt; &lt;a href=&quot;http://localhost:4000/code/2021/08/31/variables-string-methods-functions.html&quot;&gt;Variable Types in Python&lt;/a&gt;.&lt;/p&gt;
 
 &lt;p&gt;As mentioned, we may or may not be able to use a Python built-in function with the data.  For example, you can’t use&lt;/p&gt;
 
@@ -53,41 +53,50 @@
   &lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;p&gt;emphasize - start counting from 0
-standard&lt;/p&gt;
+&lt;p&gt;Sometimes, however you are able to convert from one type to another.&lt;/p&gt;
 
 &lt;hr /&gt;
 
 &lt;h2 id=&quot;type-conversion&quot;&gt;Type Conversion&lt;/h2&gt;
 
-&lt;p&gt;Integers&lt;/p&gt;
+&lt;p&gt;Converting from one type to another is often used when the input data is a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; but needs to be processed as an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;integer&lt;/code&gt; or &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt;.&lt;/p&gt;
 
-&lt;p&gt;“123” != 123&lt;/p&gt;
+&lt;p&gt;E.g.,&lt;/p&gt;
 
-&lt;p&gt;123&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter your age in years&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-&lt;p&gt;arithmetic operators&lt;/p&gt;
-&lt;ul&gt;
-  &lt;li&gt;
-    &lt;ul&gt;
-      &lt;li&gt;
-        &lt;ul&gt;
-          &lt;li&gt;/
-others
-// ** %&lt;/li&gt;
-        &lt;/ul&gt;
-      &lt;/li&gt;
-    &lt;/ul&gt;
-  &lt;/li&gt;
-&lt;/ul&gt;
+&lt;span class=&quot;c1&quot;&gt;# convert to an integer
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;int_age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# or you could just do
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;age&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;age&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# changing the existing variable
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;input&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;Enter your weight in kilos &quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 
-&lt;p&gt;Floats&lt;/p&gt;
+&lt;span class=&quot;c1&quot;&gt;# convert to a float
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;float_weight&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;float&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;weight&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;When you take in an input(), returns a string&lt;/p&gt;
+&lt;p&gt;But it occurs elsewhere.  For example, you may want convert a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; to an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;integer&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ratio_value&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;38&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ratio_value&lt;/span&gt;
+&lt;span class=&quot;mf&quot;&gt;6.333333333333333&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ratio_value_estimate&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;int&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ratio_value&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;ratio_value_estimate&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;6&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;hr /&gt;
 
 &lt;h2 id=&quot;f-strings-redux&quot;&gt;&lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f-strings&lt;/code&gt; Redux&lt;/h2&gt;
+
+&lt;p&gt;Refer back to &lt;a href=&quot;https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html&quot;&gt;the first mention of f-strings&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Also, you’ll remember that sometimes you wanted to convert an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;integer&lt;/code&gt; to a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; in order to accomplish concatenation:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;The estimated ratio value is &quot;&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;nb&quot;&gt;str&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;ratio_value_estimate&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;))&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;hr /&gt;
 
@@ -309,8 +318,6 @@ gain
 &lt;/blockquote&gt;
 
 &lt;p&gt;revisit f-strings&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&quot;https://multum-non-multa.github.io/code/2021/08/18/printing-strings.html&quot;&gt;provide link to that page&lt;/a&gt;&lt;/p&gt;
 
 &lt;p&gt;can do a lot but not sure can use shorthand:&lt;/p&gt;
 
