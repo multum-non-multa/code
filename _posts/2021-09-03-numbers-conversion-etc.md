@@ -138,13 +138,13 @@ The _'P.E.M.D.A.S.'_ rule holds:
 
 - math operations occur from left to right
 
-- __P__arentheses `()`
+- __P__ arentheses `()`
 
-- __E__xponents `**`
+- __E__ xponents `**`
 
-- __M__ultiplication & __D__ivision `*` and `/` or `//`
+- __M__ ultiplication & __D__ ivision `*` and `/` (or `//`)
 
-- __A__ddition & __S__ubstraction `+` and `-`
+- __A__ ddition & __S__ ubstraction `+` and `-`
 
 For example:
 
