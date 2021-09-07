@@ -25,6 +25,12 @@ title: "[7] Data Type Conversions, More Built-in Functions, Math +, and Another 
 
 ---
 
+### Note
+
+<h4 style="color:firebrick;font-weight:bold">When you see some a code snippet below, dump it in a repl and play around with it.  It will help you build an understanding of, and memory for, Python.</h4>
+
+---
+
 ## Diner's Calculator Project
 
 ---
