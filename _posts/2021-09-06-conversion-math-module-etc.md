@@ -19,6 +19,10 @@ title: "[7] Data Type Conversions, More Built-in Functions, Math +, and Another 
 
   - Math Module & Imports
 
+- Beware Floats
+
+- Shorthand Operators
+
 ---
 
 ## Diner's Calculator Project
@@ -175,163 +179,153 @@ Whereas `min()` and `max()` can take a number of comma-separated values in the p
 6
 ```
 
-
-
 ### Intro to Custom (i.e., __Your Own__) Functions
+
+You'll be spending a lot of time crafting your own functions, and we'll dig deeper as time goes on.  However, a quick anatomy of a function will help understand something of what's going on under the hood with these built-in functions and the math module below.
+
+A function is essentially a _black box_ --- you need not know how it operates in order to use it.  You simply need to know two things:  what type of thing to put in and what type of thing it will return to you.
+
+![black box](/code/assets/images/fx-machine.png)
+
+That is true, of course, if the only thing you're doing is using it.  If you're the one ___writing___ the function, you're the one who puts the insides in it.
+
+In Python, a function is defined by the keyword `def` followed by the name of the function and a set of parentheses.  Then a colon `:` The code implementing the function appears on indented lines below that function __signature__.
+
+Put this in a repl and run it:
+
+```python
+
+def speak():
+  print("I am talking")
+
+# that ends the function definition
+# but for it to work, you have to call it:
+
+speak()
+
+```
+
+The resulting output is just as you'd expect:
+
+```bash
+I am talking
+```
+
+But typically you want a function to 'take in' values (i.e., in the parentheses) that it will process somehow and then return a value:
+
+```python
+def add(a, b):
+  return a + b
+```
+
+Here we've defined a function.  But we haven't used it.  How do you do that?  What are `a` and `b`?  Best by way of example.
+
+```python
+>>> add3_4 = add(3,4)
+>>> add3_4
+7
+```
+
+> Regarding Function Terminology:  The a and b are called _parameters_.  But when you call the function and put in actual values, those are called _arguments_.  So here 3 and 4 are the arguments.
+
+To repeat something said earlier, but to emphasize here:  notice that the `add()` function defined above would only work with certain types.  You could use two `ints` or a `float` and an `int`.  You could even use two `strings`.  However, it wouldn't work with two `booleans` or a `string` and a `float`.
+
+Later on we'll talk about how you handle or anticipate errors that might be raised when someone uses your function with inappropriate argument types.
 
 ### Math Module & Imports
 
-The [Python math module](https://docs.python.org/3/library/math.html#module-math)
+We've used basic arithmetic operators like `+` and `*`.  But Python provides a great deal more for mathematical operations.  The [Python math module](https://docs.python.org/3/library/math.html#module-math) provides some sophisticated and not so sophisticated methods / functions.
 
----
+The problem is that these are not built-in.  They are ___in___ Python, but you need to `import` them in order to use them.
 
+Let's take the example of the `pow()` [method](https://docs.python.org/3/library/math.html#math.pow) in the math module.  It takes two arguments in the form of numbers.  The docs explain:
 
-
-## How Functions Work
-
---> input --> [... process ...] -> output
-
-e.g. shake maker
-
-recipe in => ... => shake out
-
-many times a function depends on a certain type of input
-
-e.g., len() takes a sequence type, e.g., string, but NOT a number
-
-and functions often return a certain type
-
-input() returns a string
-
-how to determine --- the type() function
-returns the type
-
-print(type(input("What is your name?" )))
-print(type(len(input("What is your name?" ))))
-
-type conversion (aka 'casting') required if
-type == string but need integer or float
-
-int()
-float()
-
-if len() => integer
-str(len())
-then can concatenate
-
-
-exercise / challenge
-
-given a random 2-digit number
-from input()
-print the sum of the two digits as a type of float
-e.g.
-```bash
-Type a two-digit number: 43
-7.0
 ```
-involves
-type checking
-string subscripting
-conversion
-arithmetic operations
+
+math.pow(x, y):  Returns x raised to the power y.
+
+```
+
+Example:
+
+```python
+# must import the math module
+import math
+# then can use by way of the `dot` notation
+# mentioned in an earlier post
+>>> math.pow(2,3)
+8.0
+```
+
+Here `2` is cubed and the method returns `8.0`.  (Note that it returns a `float` value.)
+
+The module contains many more, but its worth considering for now  the [random module](https://docs.python.org/3/library/random.html#module-random).
+
+### Random
+
+One of its methods, `randint()`, generates a random integer.  You supply two arguments to determine the range:
+
+```python
+>>> import random
+>>> random.randint(1, 100)
+12
+>>> random.randint(1, 100)
+97
+>>> random.randint(1, 100)
+62
+>>>
+```
+
+Whereas `random.random()` returns __the next random floating point number in the range [0.0, 1.0).__
+
+```python
+>>> random.random()
+0.08740664919851404
+>>> random.random()
+0.021291023690050426
+>>> random.random()
+0.68783739905084
+>>>
+```
 
 ---
 
-More math
+## Inexactitude of Floating Point Numbers and Why You Round
 
-+ = * /
-
-** exponent
-
-%
-
-now introduce math module
-
-> compare ** with math.pow()
-
-** returns integer
-pow returns float
-
->>> import math
->>> math.pow(4,5)
-1024.0
->>> 4**5
-1024
->>>
-
-
-> other modules in math
-
-...
-
-> also see random module
-
----
-
-cover operations for bmi calc (without mentioning bmi challenge)
-
-bmi calculator
-height = input("Enter the height in inches ")
-weight = input("Enter the weight in pounts ")
-
-bmi = weight / height**2
-
-
-note:
-
->>> int(34.967)
-34
->>> math.ceil(34.967)
-35
->>> math.floor(34.967)
-34
->>>
-
-
-math rounding
-e.g.
-print(8 / 3)
-2.66666666666666
-int()
-not great
-rather use built-in round()
-
-round((8/3))
-options in round()
-round((8/3), 3)
-
-or use floor division
-
-8 // 3
-same as math.floor(8/3)
-
-
-
-
-Beware the inexactitude of floating point numbers.
 Note what happens here:
+
+```python
 >>> 100 * 1.12
 112.00000000000001
 >>>
-https://docs.python.org/3/tutorial/floatingpoint.html
+
+```
+
+See this [article](https://docs.python.org/3/tutorial/floatingpoint.html) on this rather common problem.
 
 So it's a good idea to choose a rounding so as not to factor in that inexactitude.
-Not an issue now, but we'll return to it when we do comparison operators and conditional statements.
+
+It's not an issue now; still we'll return to it when we do comparison operators and conditional statements.
+
+## Shorthand Arithmetic Operations
+
+Because arithmetic operators are so common, a shorthand has been built in to many programming languages.
+
+Thus, in Python, for example, when incrementing a score:
 
 
----
-shorthand arithmetic operations
-
-increment
-
+```python
+# starting score
 score = 0
-could do
+# add a point
 score = score + 1
-or use shorthand
+# or use shorthand operator
 score += 1
+```
 
-halving
+Or halving:
+
+```python
 >>> volume = 85.0
 >>> volume /= 2
 >>> volume
@@ -340,8 +334,11 @@ halving
 >>> volume
 21.25
 >>>
+```
 
-exponential growth
+Or exponential growth:
+
+```python
 >>> gain = 2
 >>> gain **= 2
 >>> gain
@@ -349,77 +346,4 @@ exponential growth
 >>> gain **= 2
 >>> gain
 16
-
-
-revisit f-strings
-
-
-
-can do a lot but not sure can use shorthand:
-
->>> h = 12.33
->>> m = False
->>> msg = f"When you reach {h} then go to {h + 100} and return {m}"
->>> msg
-'When you reach 12.33 then go to 112.33 and return False'
->>> msg = f"When you reach {h} then go to {h += 233} and return {m}"
-  File "<input>", line 1
-    (h +)
-        ^
-
-alternative: lambda functions
- msg = f"When you reach {h} then go to {(lambda x: x + 1)(h)} and return {m}"
->>> msg
-'When you reach 12.33 then go to 13.33 and return False'
->>>
-
-
-challenge / homework
-Your Life in Weeks
-Instructions
-
-Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.
-
-It will take your current age as the input and output a message with our time left in this format:
-
-You have x days, y weeks, and z months left.
-
-Where x, y and z are replaced with the actual calculated numbers.
-
-Warning your output should match the Example Output format exactly, even the positions of the commas and full stops.
-
-Example Input
-56
-Example Output
-You have 12410 days, 1768 weeks, and 408 months left.
-e.g. When you hit run, this is what should happen:
-
-https://cdn.fs.teachablecdn.com/RjqBViZQpyVTv7XY6cfA
-
-Hint
-There are 365 days in a year, 52 weeks in a year and 12 months in a year.
-Try copying the example output into your code and replace the relevant parts so that the sentence is formated the same way.
-Test Your Code
-Before checking the solution, try copy-pasting your code into this repl:
-
-https://repl.it/@appbrewery/day-2-3-test-your-code
-
-This repl includes my testing code that will check if your code meets this assignment's objectives.
-
-Solution
-https://repl.it/@appbrewery/day-2-3-solution
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+```

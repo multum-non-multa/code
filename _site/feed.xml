@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-06T20:33:56-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-06T21:25:18-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;Project: Diners’ Calculator&lt;/p&gt;
   &lt;/li&gt;
@@ -25,6 +25,12 @@
         &lt;p&gt;Math Module &amp;amp; Imports&lt;/p&gt;
       &lt;/li&gt;
     &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Beware Floats&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Shorthand Operators&lt;/p&gt;
   &lt;/li&gt;
 &lt;/ul&gt;
 
@@ -189,270 +195,161 @@
 
 &lt;h3 id=&quot;intro-to-custom-ie-your-own-functions&quot;&gt;Intro to Custom (i.e., &lt;strong&gt;Your Own&lt;/strong&gt;) Functions&lt;/h3&gt;
 
+&lt;p&gt;You’ll be spending a lot of time crafting your own functions, and we’ll dig deeper as time goes on.  However, a quick anatomy of a function will help understand something of what’s going on under the hood with these built-in functions and the math module below.&lt;/p&gt;
+
+&lt;p&gt;A function is essentially a &lt;em&gt;black box&lt;/em&gt; — you need not know how it operates in order to use it.  You simply need to know two things:  what type of thing to put in and what type of thing it will return to you.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/code/assets/images/fx-machine.png&quot; alt=&quot;black box&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;That is true, of course, if the only thing you’re doing is using it.  If you’re the one &lt;strong&gt;&lt;em&gt;writing&lt;/em&gt;&lt;/strong&gt; the function, you’re the one who puts the insides in it.&lt;/p&gt;
+
+&lt;p&gt;In Python, a function is defined by the keyword &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;def&lt;/code&gt; followed by the name of the function and a set of parentheses.  Then a colon &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:&lt;/code&gt; The code implementing the function appears on indented lines below that function &lt;strong&gt;signature&lt;/strong&gt;.&lt;/p&gt;
+
+&lt;p&gt;Put this in a repl and run it:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I am talking&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+
+&lt;span class=&quot;c1&quot;&gt;# that ends the function definition
+# but for it to work, you have to call it:
+&lt;/span&gt;
+&lt;span class=&quot;n&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;The resulting output is just as you’d expect:&lt;/p&gt;
+
+&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;I am talking
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;But typically you want a function to ‘take in’ values (i.e., in the parentheses) that it will process somehow and then return a value:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here we’ve defined a function.  But we haven’t used it.  How do you do that?  What are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;b&lt;/code&gt;?  Best by way of example.&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add3_4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add3_4&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;7&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Regarding Function Terminology:  The a and b are called &lt;em&gt;parameters&lt;/em&gt;.  But when you call the function and put in actual values, those are called &lt;em&gt;arguments&lt;/em&gt;.  So here 3 and 4 are the arguments.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;To repeat something said earlier, but to emphasize here:  notice that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;add()&lt;/code&gt; function defined above would only work with certain types.  You could use two &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ints&lt;/code&gt; or a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; and an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt;.  You could even use two &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt;.  However, it wouldn’t work with two &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;booleans&lt;/code&gt; or a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; and a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Later on we’ll talk about how you handle or anticipate errors that might be raised when someone uses your function with inappropriate argument types.&lt;/p&gt;
+
 &lt;h3 id=&quot;math-module--imports&quot;&gt;Math Module &amp;amp; Imports&lt;/h3&gt;
 
-&lt;p&gt;The &lt;a href=&quot;https://docs.python.org/3/library/math.html#module-math&quot;&gt;Python math module&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;We’ve used basic arithmetic operators like &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;+&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;*&lt;/code&gt;.  But Python provides a great deal more for mathematical operations.  The &lt;a href=&quot;https://docs.python.org/3/library/math.html#module-math&quot;&gt;Python math module&lt;/a&gt; provides some sophisticated and not so sophisticated methods / functions.&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;p&gt;The problem is that these are not built-in.  They are &lt;strong&gt;&lt;em&gt;in&lt;/em&gt;&lt;/strong&gt; Python, but you need to &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;import&lt;/code&gt; them in order to use them.&lt;/p&gt;
 
-&lt;h2 id=&quot;how-functions-work&quot;&gt;How Functions Work&lt;/h2&gt;
+&lt;p&gt;Let’s take the example of the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;pow()&lt;/code&gt; &lt;a href=&quot;https://docs.python.org/3/library/math.html#math.pow&quot;&gt;method&lt;/a&gt; in the math module.  It takes two arguments in the form of numbers.  The docs explain:&lt;/p&gt;
 
-&lt;p&gt;–&amp;gt; input –&amp;gt; [… process …] -&amp;gt; output&lt;/p&gt;
+&lt;div class=&quot;language-plaintext highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
+math.pow(x, y):  Returns x raised to the power y.
 
-&lt;p&gt;e.g. shake maker&lt;/p&gt;
-
-&lt;p&gt;recipe in =&amp;gt; … =&amp;gt; shake out&lt;/p&gt;
-
-&lt;p&gt;many times a function depends on a certain type of input&lt;/p&gt;
-
-&lt;p&gt;e.g., len() takes a sequence type, e.g., string, but NOT a number&lt;/p&gt;
-
-&lt;p&gt;and functions often return a certain type&lt;/p&gt;
-
-&lt;p&gt;input() returns a string&lt;/p&gt;
-
-&lt;p&gt;how to determine — the type() function
-returns the type&lt;/p&gt;
-
-&lt;p&gt;print(type(input(“What is your name?” )))
-print(type(len(input(“What is your name?” ))))&lt;/p&gt;
-
-&lt;p&gt;type conversion (aka ‘casting’) required if
-type == string but need integer or float&lt;/p&gt;
-
-&lt;p&gt;int()
-float()&lt;/p&gt;
-
-&lt;p&gt;if len() =&amp;gt; integer
-str(len())
-then can concatenate&lt;/p&gt;
-
-&lt;p&gt;exercise / challenge&lt;/p&gt;
-
-&lt;p&gt;given a random 2-digit number
-from input()
-print the sum of the two digits as a type of float
-e.g.&lt;/p&gt;
-&lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;Type a two-digit number: 43
-7.0
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
-&lt;p&gt;involves
-type checking
-string subscripting
-conversion
-arithmetic operations&lt;/p&gt;
+
+&lt;p&gt;Example:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# must import the math module
+&lt;/span&gt;&lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;math&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# then can use by way of the `dot` notation
+# mentioned in an earlier post
+&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;math&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nb&quot;&gt;pow&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;mf&quot;&gt;8.0&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Here &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;2&lt;/code&gt; is cubed and the method returns &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;8.0&lt;/code&gt;.  (Note that it returns a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; value.)&lt;/p&gt;
+
+&lt;p&gt;The module contains many more, but its worth considering for now  the &lt;a href=&quot;https://docs.python.org/3/library/random.html#module-random&quot;&gt;random module&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;random&quot;&gt;Random&lt;/h3&gt;
+
+&lt;p&gt;One of its methods, &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;randint()&lt;/code&gt;, generates a random integer.  You supply two arguments to determine the range:&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;kn&quot;&gt;import&lt;/span&gt; &lt;span class=&quot;nn&quot;&gt;random&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;12&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;97&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;randint&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;62&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;Whereas &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;random.random()&lt;/code&gt; returns &lt;strong&gt;the next random floating point number in the range [0.0, 1.0).&lt;/strong&gt;&lt;/p&gt;
+
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;mf&quot;&gt;0.08740664919851404&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;mf&quot;&gt;0.021291023690050426&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;random&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;()&lt;/span&gt;
+&lt;span class=&quot;mf&quot;&gt;0.68783739905084&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;hr /&gt;
 
-&lt;p&gt;More math&lt;/p&gt;
+&lt;h2 id=&quot;inexactitude-of-floating-point-numbers-and-why-you-round&quot;&gt;Inexactitude of Floating Point Numbers and Why You Round&lt;/h2&gt;
 
-&lt;ul&gt;
-  &lt;li&gt;= * /&lt;/li&gt;
-&lt;/ul&gt;
+&lt;p&gt;Note what happens here:&lt;/p&gt;
 
-&lt;p&gt;** exponent&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;100&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;*&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;1.12&lt;/span&gt;
+&lt;span class=&quot;mf&quot;&gt;112.00000000000001&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
 
-&lt;p&gt;%&lt;/p&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;now introduce math module&lt;/p&gt;
+&lt;p&gt;See this &lt;a href=&quot;https://docs.python.org/3/tutorial/floatingpoint.html&quot;&gt;article&lt;/a&gt; on this rather common problem.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;compare ** with math.pow()&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;So it’s a good idea to choose a rounding so as not to factor in that inexactitude.&lt;/p&gt;
 
-&lt;p&gt;** returns integer
-pow returns float&lt;/p&gt;
+&lt;p&gt;It’s not an issue now; still we’ll return to it when we do comparison operators and conditional statements.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;import math
-math.pow(4,5)
-1024.0
-4**5
-1024&lt;/p&gt;
+&lt;h2 id=&quot;shorthand-arithmetic-operations&quot;&gt;Shorthand Arithmetic Operations&lt;/h2&gt;
 
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Because arithmetic operators are so common, a shorthand has been built in to many programming languages.&lt;/p&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;other modules in math&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Thus, in Python, for example, when incrementing a score:&lt;/p&gt;
 
-&lt;p&gt;…&lt;/p&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;c1&quot;&gt;# starting score
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# add a point
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;span class=&quot;c1&quot;&gt;# or use shorthand operator
+&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;score&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;1&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;blockquote&gt;
-  &lt;p&gt;also see random module&lt;/p&gt;
-&lt;/blockquote&gt;
+&lt;p&gt;Or halving:&lt;/p&gt;
 
-&lt;hr /&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;volume&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mf&quot;&gt;85.0&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;volume&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;volume&lt;/span&gt;
+&lt;span class=&quot;mf&quot;&gt;42.5&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;volume&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;/=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;volume&lt;/span&gt;
+&lt;span class=&quot;mf&quot;&gt;21.25&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;cover operations for bmi calc (without mentioning bmi challenge)&lt;/p&gt;
+&lt;p&gt;Or exponential growth:&lt;/p&gt;
 
-&lt;p&gt;bmi calculator
-height = input(“Enter the height in inches “)
-weight = input(“Enter the weight in pounts “)&lt;/p&gt;
-
-&lt;p&gt;bmi = weight / height**2&lt;/p&gt;
-
-&lt;p&gt;note:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;int(34.967)
-34
-math.ceil(34.967)
-35
-math.floor(34.967)
-34&lt;/p&gt;
-
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;math rounding
-e.g.
-print(8 / 3)
-2.66666666666666
-int()
-not great
-rather use built-in round()&lt;/p&gt;
-
-&lt;p&gt;round((8/3))
-options in round()
-round((8/3), 3)&lt;/p&gt;
-
-&lt;p&gt;or use floor division&lt;/p&gt;
-
-&lt;p&gt;8 // 3
-same as math.floor(8/3)&lt;/p&gt;
-
-&lt;p&gt;Beware the inexactitude of floating point numbers.
-Note what happens here:&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;100 * 1.12
-112.00000000000001&lt;/p&gt;
-
-      &lt;p&gt;https://docs.python.org/3/tutorial/floatingpoint.html&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;So it’s a good idea to choose a rounding so as not to factor in that inexactitude.
-Not an issue now, but we’ll return to it when we do comparison operators and conditional statements.&lt;/p&gt;
-
-&lt;hr /&gt;
-&lt;p&gt;shorthand arithmetic operations&lt;/p&gt;
-
-&lt;p&gt;increment&lt;/p&gt;
-
-&lt;p&gt;score = 0
-could do
-score = score + 1
-or use shorthand
-score += 1&lt;/p&gt;
-
-&lt;p&gt;halving&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;volume = 85.0
-volume /= 2
-volume
-42.5
-volume /= 2
-volume
-21.25&lt;/p&gt;
-
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;exponential growth&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;gain = 2
-gain **= 2
-gain
-4
-gain **= 2
-gain
-16&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;revisit f-strings&lt;/p&gt;
-
-&lt;p&gt;can do a lot but not sure can use shorthand:&lt;/p&gt;
-
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;h = 12.33
-m = False
-msg = f”When you reach {h} then go to {h + 100} and return {m}”
-msg
-‘When you reach 12.33 then go to 112.33 and return False’
-msg = f”When you reach {h} then go to {h += 233} and return {m}”
-  File “&lt;input /&gt;”, line 1
-    (h +)
-        ^&lt;/p&gt;
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;alternative: lambda functions
- msg = f”When you reach {h} then go to {(lambda x: x + 1)(h)} and return {m}”&lt;/p&gt;
-&lt;blockquote&gt;
-  &lt;blockquote&gt;
-    &lt;blockquote&gt;
-      &lt;p&gt;msg
-‘When you reach 12.33 then go to 13.33 and return False’&lt;/p&gt;
-
-    &lt;/blockquote&gt;
-  &lt;/blockquote&gt;
-&lt;/blockquote&gt;
-
-&lt;p&gt;challenge / homework
-Your Life in Weeks
-Instructions&lt;/p&gt;
-
-&lt;p&gt;Create a program using maths and f-Strings that tells us how many days, weeks, months we have left if we live until 90 years old.&lt;/p&gt;
-
-&lt;p&gt;It will take your current age as the input and output a message with our time left in this format:&lt;/p&gt;
-
-&lt;p&gt;You have x days, y weeks, and z months left.&lt;/p&gt;
-
-&lt;p&gt;Where x, y and z are replaced with the actual calculated numbers.&lt;/p&gt;
-
-&lt;p&gt;Warning your output should match the Example Output format exactly, even the positions of the commas and full stops.&lt;/p&gt;
-
-&lt;p&gt;Example Input
-56
-Example Output
-You have 12410 days, 1768 weeks, and 408 months left.
-e.g. When you hit run, this is what should happen:&lt;/p&gt;
-
-&lt;p&gt;https://cdn.fs.teachablecdn.com/RjqBViZQpyVTv7XY6cfA&lt;/p&gt;
-
-&lt;p&gt;Hint
-There are 365 days in a year, 52 weeks in a year and 12 months in a year.
-Try copying the example output into your code and replace the relevant parts so that the sentence is formated the same way.
-Test Your Code
-Before checking the solution, try copy-pasting your code into this repl:&lt;/p&gt;
-
-&lt;p&gt;https://repl.it/@appbrewery/day-2-3-test-your-code&lt;/p&gt;
-
-&lt;p&gt;This repl includes my testing code that will check if your code meets this assignment’s objectives.&lt;/p&gt;
-
-&lt;p&gt;Solution
-https://repl.it/@appbrewery/day-2-3-solution&lt;/p&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Project: Diners’ Calculator</summary></entry><entry><title type="html">[6] Video on Replit Features: (a) Python Shell and (b) Run Button</title><link href="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html" rel="alternate" type="text/html" title="[6] Video on Replit Features: (a) Python Shell and (b) Run Button" /><published>2021-09-04T00:00:00-05:00</published><updated>2021-09-04T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html">&lt;h2 id=&quot;using-the-python-shell-in-replit&quot;&gt;Using the Python Shell in Replit&lt;/h2&gt;
+&lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gain&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gain&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gain&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gain&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;**=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;2&lt;/span&gt;
+&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;gain&lt;/span&gt;
+&lt;span class=&quot;mi&quot;&gt;16&lt;/span&gt;
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;</content><author><name>multum-non-multa</name></author><summary type="html">Project: Diners’ Calculator</summary></entry><entry><title type="html">[6] Video on Replit Features: (a) Python Shell and (b) Run Button</title><link href="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html" rel="alternate" type="text/html" title="[6] Video on Replit Features: (a) Python Shell and (b) Run Button" /><published>2021-09-04T00:00:00-05:00</published><updated>2021-09-04T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/04/using-work-bench-freatures.html">&lt;h2 id=&quot;using-the-python-shell-in-replit&quot;&gt;Using the Python Shell in Replit&lt;/h2&gt;
 
 &lt;div style=&quot;position: relative; padding-bottom: 56.25%; height: 0;&quot;&gt;&lt;iframe src=&quot;https://www.loom.com/embed/cd2c6d9aeaf9492f838104eea47d47da&quot; frameborder=&quot;0&quot; webkitallowfullscreen=&quot;&quot; mozallowfullscreen=&quot;&quot; allowfullscreen=&quot;&quot; style=&quot;position: absolute; top: 0; left: 0; width: 100%; height: 100%;&quot;&gt;&lt;/iframe&gt;&lt;/div&gt;
 
