@@ -87,10 +87,103 @@ Also, you'll remember that sometimes you wanted to convert an `integer` to a `st
 print("The estimated ratio value is " + str(ratio_value_estimate))
 ```
 
+With `f-strings` you need not convert types:
 
+```python
+print(f"The estimated ratio value is {ratio_value_estimate}")
+```
+
+And you can combine types in same `f-string` and even embed expressions:
+
+```python
+message = f"The estimated ratio value is {ratio_value_estimate}; the more precise value is {ratio_value}, representing an error of approximately {ratio_value - ratio_value_estimate}"
+```
+
+If printed out it will render:
+
+```bash
+'The estimated ratio value is 6; the more precise value is 6.333333333333333, representing an error of approximately 0.33333333333333304'
+```
 
 ---
 
+## Math Methods & Functions
+
+### Built-ins
+
+We've seen a number of __built-in__ methods or functions in Python, e.g.,
+
+- `len()` to determine the length of a `string`
+
+- `int()` converts a data type into an `integer`
+
+- `str()` converts a data type into a `string`
+
+- `print()`
+
+- `input()`
+
+In fact, Python has almost 70 [built-in functions](https://docs.python.org/3/library/functions.html#built-in-functions).
+
+We won't be using all of them and, for now, we'll only mention a few more.
+
+#### `round()`
+
+This [function](https://docs.python.org/3/library/functions.html#round) will to whatever decimal value you desire.  Here we ask for 3 decimal values:
+
+```python
+>>> round(ratio_value, 3)
+6.333
+```
+
+In fact, without the second argument (see the `3` in the first use above), it will round down or up using the usual 0.5 rule:
+
+```python
+>>> round(6.99999)
+7
+>>> round(6.4999)
+6
+>>> round(6.5)
+6
+>>> round(6.50001)
+7
+```
+
+#### `max()` and `min()`
+
+[These](https://docs.python.org/3/library/functions.html#max) will take in between the parenthesis any number of `integers` or `floats` and return the maximum or minimum value:
+
+```python
+>>> max(100, 0)
+100
+>>> max(100, 101)
+101
+>>> max(100, 101, 333, 54)
+333
+>>> min(100, 101, 333, 54)
+54
+>>> min(100, 101, 333, 54.999)
+54.999
+```
+
+#### `sum()`
+
+Whereas `min()` and `max()` can take a number of comma-separated values in the parentheses, `sum()` must take in a list of items.  We'll be going through `lists` and _iterables_ quite a bit later, but for now, just know that you can get the sum of values using this function merely by providing a comma-separated list of the values within square brackets `[ ]`:
+
+```python
+>>> sum([1,2,3])
+6
+```
+
+
+
+### Intro to Custom (i.e., __Your Own__) Functions
+
+### Math Module & Imports
+
+The [Python math module](https://docs.python.org/3/library/math.html#module-math)
+
+---
 
 
 
@@ -152,28 +245,6 @@ More math
 ** exponent
 
 %
-
---
-<!-- order of operations
-essentially same as algebra
-'PEMDAS'
-from L => R
-left to right
-===
-() parentheses <==
-===
-** exponents
-===
-* multiplication & / division
-===
-+ addition & - substraction -->
-
-homework
-using ** and +
-produce the value 9
-1 1 1 3
-
---
 
 now introduce math module
 
