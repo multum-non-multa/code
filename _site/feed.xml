@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-07T06:27:43-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;ul&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-07T06:34:40-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project</title><link href="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html" rel="alternate" type="text/html" title="[7] Data Type Conversions, More Built-in Functions, Math +, and Another Project" /><published>2021-09-06T00:00:00-05:00</published><updated>2021-09-06T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/06/conversion-math-module-etc.html">&lt;ul&gt;
   &lt;li&gt;
     &lt;p&gt;Project: Diners’ Calculator&lt;/p&gt;
   &lt;/li&gt;
@@ -209,14 +209,16 @@
 
 &lt;p&gt;That is true, of course, if the only thing you’re doing is using it.  If you’re the one &lt;strong&gt;&lt;em&gt;writing&lt;/em&gt;&lt;/strong&gt; the function, you’re the one who puts the insides in it.&lt;/p&gt;
 
-&lt;p&gt;In Python, a function is defined by the keyword &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;def&lt;/code&gt; followed by the name of the function and a set of parentheses.  Then a colon &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:&lt;/code&gt; The code implementing the function appears on indented lines below that function &lt;strong&gt;signature&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;In Python, a function is defined by the keyword &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;def&lt;/code&gt;, followed by the name of the function, a set of parentheses, and a colon &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;:&lt;/code&gt; .&lt;/p&gt;
+
+&lt;p&gt;The code implementing the function appears on &lt;strong&gt;indented&lt;/strong&gt; lines below that function &lt;strong&gt;signature&lt;/strong&gt;.&lt;/p&gt;
 
 &lt;p&gt;Put this in a repl and run it:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;
 &lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;speak&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;():&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I am talking&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
-
+  &lt;span class=&quot;k&quot;&gt;print&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;s&quot;&gt;&quot;I am talking&quot;&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt; &lt;span class=&quot;c1&quot;&gt;# note the indentation
+&lt;/span&gt;
 &lt;span class=&quot;c1&quot;&gt;# that ends the function definition
 # but for it to work, you have to call it:
 &lt;/span&gt;
@@ -229,13 +231,17 @@
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;I am talking
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;But typically you want a function to ‘take in’ values (i.e., in the parentheses) that it will process somehow and then return a value:&lt;/p&gt;
+&lt;p&gt;But typically you want a function to ‘take in’ values (i.e., in the parentheses) that will be ‘processed’ somehow and then return a value:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;k&quot;&gt;def&lt;/span&gt; &lt;span class=&quot;nf&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;a&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;):&lt;/span&gt;
-  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;
-&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+  &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;a&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;+&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;b&lt;/span&gt;  &lt;span class=&quot;c1&quot;&gt;# &apos;return&apos; is a python keyword
+&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
-&lt;p&gt;Here we’ve defined a function.  But we haven’t used it.  How do you do that?  What are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;b&lt;/code&gt;?  Best by way of example.&lt;/p&gt;
+&lt;p&gt;Here we’ve defined a function, but we haven’t used it.&lt;/p&gt;
+
+&lt;p&gt;How do you do that?  What are &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;a&lt;/code&gt; and &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;b&lt;/code&gt;?&lt;/p&gt;
+
+&lt;p&gt;Best by way of example:&lt;/p&gt;
 
 &lt;div class=&quot;language-python highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add3_4&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;3&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;,&lt;/span&gt;&lt;span class=&quot;mi&quot;&gt;4&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
 &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;n&quot;&gt;add3_4&lt;/span&gt;
@@ -243,10 +249,14 @@
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
 
 &lt;blockquote&gt;
-  &lt;p&gt;Regarding Function Terminology:  The a and b are called &lt;em&gt;parameters&lt;/em&gt;.  But when you call the function and put in actual values, those are called &lt;em&gt;arguments&lt;/em&gt;.  So here 3 and 4 are the arguments.&lt;/p&gt;
+  &lt;p&gt;&lt;strong&gt;Function Terminology&lt;/strong&gt;&lt;/p&gt;
 &lt;/blockquote&gt;
 
-&lt;p&gt;To repeat something said earlier, but to emphasize here:  notice that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;add()&lt;/code&gt; function defined above would only work with certain types.  You could use two &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ints&lt;/code&gt; or a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; and an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt;.  You could even use two &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt;.  However, it wouldn’t work with two &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;booleans&lt;/code&gt; or a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; and a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt;.&lt;/p&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;The a and b are called &lt;strong&gt;parameters&lt;/strong&gt;.  But when you call the function and put in actual values, those are called &lt;strong&gt;arguments&lt;/strong&gt;.  So here both 3 and 4 are the arguments.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;strong&gt;To repeat something said earlier, but to emphasize here&lt;/strong&gt;:  notice that the &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;add()&lt;/code&gt; function defined above would only work with certain types.  You could use two &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;ints&lt;/code&gt; or a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt; and an &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;int&lt;/code&gt;.  You could even use two &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;strings&lt;/code&gt;.  However, it wouldn’t work with two &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;booleans&lt;/code&gt; or a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;string&lt;/code&gt; and a &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;float&lt;/code&gt;.&lt;/p&gt;
 
 &lt;p&gt;Later on we’ll talk about how you handle or anticipate errors that might be raised when someone uses your function with inappropriate argument types.&lt;/p&gt;
 

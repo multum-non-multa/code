@@ -195,14 +195,16 @@ A function is essentially a _black box_ --- you need not know how it operates in
 
 That is true, of course, if the only thing you're doing is using it.  If you're the one ___writing___ the function, you're the one who puts the insides in it.
 
-In Python, a function is defined by the keyword `def` followed by the name of the function and a set of parentheses.  Then a colon `:` The code implementing the function appears on indented lines below that function __signature__.
+In Python, a function is defined by the keyword `def`, followed by the name of the function, a set of parentheses, and a colon `:` .
+
+The code implementing the function appears on __indented__ lines below that function __signature__.
 
 Put this in a repl and run it:
 
 ```python
 
 def speak():
-  print("I am talking")
+  print("I am talking") # note the indentation
 
 # that ends the function definition
 # but for it to work, you have to call it:
@@ -217,14 +219,18 @@ The resulting output is just as you'd expect:
 I am talking
 ```
 
-But typically you want a function to 'take in' values (i.e., in the parentheses) that it will process somehow and then return a value:
+But typically you want a function to 'take in' values (i.e., in the parentheses) that will be 'processed' somehow and then return a value:
 
 ```python
 def add(a, b):
-  return a + b
+  return a + b  # 'return' is a python keyword
 ```
 
-Here we've defined a function.  But we haven't used it.  How do you do that?  What are `a` and `b`?  Best by way of example.
+Here we've defined a function, but we haven't used it.
+
+How do you do that?  What are `a` and `b`?
+
+Best by way of example:
 
 ```python
 >>> add3_4 = add(3,4)
@@ -232,9 +238,11 @@ Here we've defined a function.  But we haven't used it.  How do you do that?  Wh
 7
 ```
 
-> Regarding Function Terminology:  The a and b are called _parameters_.  But when you call the function and put in actual values, those are called _arguments_.  So here 3 and 4 are the arguments.
+> __Function Terminology__
 
-To repeat something said earlier, but to emphasize here:  notice that the `add()` function defined above would only work with certain types.  You could use two `ints` or a `float` and an `int`.  You could even use two `strings`.  However, it wouldn't work with two `booleans` or a `string` and a `float`.
+> The a and b are called __parameters__.  But when you call the function and put in actual values, those are called __arguments__.  So here both 3 and 4 are the arguments.
+
+__To repeat something said earlier, but to emphasize here__:  notice that the `add()` function defined above would only work with certain types.  You could use two `ints` or a `float` and an `int`.  You could even use two `strings`.  However, it wouldn't work with two `booleans` or a `string` and a `float`.
 
 Later on we'll talk about how you handle or anticipate errors that might be raised when someone uses your function with inappropriate argument types.
 
