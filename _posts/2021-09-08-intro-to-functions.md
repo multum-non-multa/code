@@ -43,6 +43,10 @@ ratio = calc_ratio(savings_account_balance, debt_owed)
 
 ## Anatomy of a Function
 
+![Anatomy](/code/assets/images/functions/anatomy.png)
+
+---
+
 - `def` keyword
 
 - name
@@ -53,9 +57,22 @@ ratio = calc_ratio(savings_account_balance, debt_owed)
 
 - colon `:`
 
-- whatever you want done
+- indented code; here you code whatever you want done
 
 - `return` value
+
+    - this is optional, but unless you use it, nothing is returned
+
+    - an example of a function without `return` --- one that just contains a `print()` statement:
+
+    ```python
+
+    def just_print_add(a,b):
+        print(a + b)
+    # no return statement
+    ```
+
+---
 
 ## Need Them?
 
