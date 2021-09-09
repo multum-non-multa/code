@@ -2,8 +2,7 @@
 layout: post
 title: "[8] Introduction to Functions"
 ---
-
-<div style="border: 1px solid black;background: beige; padding-left: 50px">
+<div style="border: 1px solid black;background: beige; padding-left: 150px; padding-bottom: 50px">
 <h2 style="color:firebrick">
 
     Under Construction
