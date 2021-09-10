@@ -73,6 +73,8 @@ ratio = calc_ratio(savings_account_balance, debt_owed)
 
 ---
 
+<iframe src="https://trinket.io/embed/python/d801d5e390" width="100%" height="500" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
 ## Need Them?
 
 Just all the time.
