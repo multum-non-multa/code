@@ -209,3 +209,7 @@ cplx_number = 1 + 2j
 ```
 
 __Note__:  In math, the imaginary part is typically written with an `i`.  Python uses the `j`.
+
+---
+
+___See also___ [Data Type Conversions, More Built-in Functions, Math](https://multum-non-multa.github.io/code/2021/09/06/conversion-math-module-etc.html)
