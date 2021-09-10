@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-10T07:34:16-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[10] Conditionals and Flow Control</title><link href="http://0.0.0.0:4000/code/2021/09/10/conditionals-flow-control.html" rel="alternate" type="text/html" title="[10] Conditionals and Flow Control" /><published>2021-09-10T00:00:00-05:00</published><updated>2021-09-10T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/10/conditionals-flow-control</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/10/conditionals-flow-control.html">&lt;div style=&quot;border: 1px solid black;background: beige; padding-left: 150px; padding-bottom: 50px&quot;&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.0">Jekyll</generator><link href="http://0.0.0.0:4000/code/feed.xml" rel="self" type="application/atom+xml" /><link href="http://0.0.0.0:4000/code/" rel="alternate" type="text/html" /><updated>2021-09-10T08:00:01-05:00</updated><id>http://0.0.0.0:4000/code/feed.xml</id><title type="html">Code</title><subtitle></subtitle><author><name>multum-non-multa</name></author><entry><title type="html">[10] Conditionals and Flow Control</title><link href="http://0.0.0.0:4000/code/2021/09/10/conditionals-flow-control.html" rel="alternate" type="text/html" title="[10] Conditionals and Flow Control" /><published>2021-09-10T00:00:00-05:00</published><updated>2021-09-10T00:00:00-05:00</updated><id>http://0.0.0.0:4000/code/2021/09/10/conditionals-flow-control</id><content type="html" xml:base="http://0.0.0.0:4000/code/2021/09/10/conditionals-flow-control.html">&lt;div style=&quot;border: 1px solid black;background: beige; padding-left: 150px; padding-bottom: 50px&quot;&gt;
 &lt;h2 style=&quot;color:firebrick&quot;&gt;
 
     Under Construction
@@ -391,6 +391,12 @@ data out == return value
 
 &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt;&lt;span class=&quot;s1&quot;&gt;&apos;The estimated ratio value is 6; the more precise value is 6.333333333333333, representing an error of approximately 0.33333333333333304&apos;&lt;/span&gt;
 &lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;Try &lt;code class=&quot;language-plaintext highlighter-rouge&quot;&gt;f-strings&lt;/code&gt; below:&lt;/p&gt;
+
+&lt;iframe src=&quot;https://trinket.io/embed/python3/51cabfcbe9&quot; width=&quot;100%&quot; height=&quot;356&quot; frameborder=&quot;0&quot; marginwidth=&quot;0&quot; marginheight=&quot;0&quot; allowfullscreen=&quot;&quot;&gt;&lt;/iframe&gt;
 
 &lt;hr /&gt;
 
