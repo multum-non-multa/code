@@ -79,9 +79,15 @@ ___Modulus___ `%` (where `%` is the __modulo__ operator)
 
 > the modulo operation returns the remainder ... of a division, after one number is divided by another ...  [Wikipedia](https://en.wikipedia.org/wiki/Modulo_operation)
 
-Try it out.
+---
 
-In a `main.py` file on Replit, code the following (without worrying about exactly what the code means):
+Try it out some of the math operators here:
+
+<iframe src="https://trinket.io/embed/python3/1d27960c6b?runOption=console&runMode=console" width="100%" height="356" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+
+---
+
+Above or in a `main.py` file on Replit, see the result of the modulo operator.  Simply code the following (without worrying about exactly what the code means):
 
 ```python
 for i in range(0,37):
